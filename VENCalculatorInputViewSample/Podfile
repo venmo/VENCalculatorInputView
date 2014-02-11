@@ -2,5 +2,5 @@ platform :ios, '5.0'
 inhibit_all_warnings!
 
 target 'VENCalculatorInputViewSample', :exclusive => true do
-  pod 'VENCalculatorInputView', :path => '../VENCalculatorInputView/VENCalculatorInputView.podspec'
+  pod 'VENCalculatorInputView', :path => '../VENCalculatorInputView.podspec'
 end
