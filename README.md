@@ -3,12 +3,12 @@ VENCalculatorInputView
 
 VENCalculatorInputView is the calculator keyboard that is used in the Venmo iOS app. Enjoy.
 
+![alt text](http://imgur.com/Y2ZsWPx.png "VENCalculatorInputView")
+
 Installation
 ----
 
 The easiest way to get started is to use [CocoaPods](http://cocoapods.org/). Just add the following line to your Podfile:
-
-![alt text](http://imgur.com/Y2ZsWPx.png "VENCalculatorInputView")
 
 ```ruby
 pod 'VENCalculatorInputView'
