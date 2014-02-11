@@ -14,6 +14,6 @@ Pod::Spec.new do |s|
                      :tag => "v#{s.version}"
   }
   s.source_files = 'VENCalculatorInputView/**/*.{h,m}'
-  s.resources    = ["VENCalculatorInputView/**/*.xib"]
+  s.resources    = ["VENCalculatorInputView/**/*.{xib,png}"]
   s.requires_arc = true
 end
