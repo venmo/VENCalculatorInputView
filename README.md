@@ -8,8 +8,7 @@ Installation
 
 The easiest way to get started is to use [CocoaPods](http://cocoapods.org/). Just add the following line to your Podfile:
 
-![alt text](http://imgur.com/QIFX8Oa.png "VENCalculatorInputView")
-![alt text](http://imgur.com/G3h13uv.png "VENCalculatorInputView highlighted")
+![alt text](http://imgur.com/Y2ZsWPx.png "VENCalculatorInputView")
 
 ```ruby
 pod 'VENCalculatorInputView'
