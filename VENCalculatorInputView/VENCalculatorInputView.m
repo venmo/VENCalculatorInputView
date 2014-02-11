@@ -54,11 +54,11 @@
 #pragma mark - Helpers
 
 - (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size {
-    UIGraphicsBeginImageContextWithOptions(size, NO, .0);
+    UIGraphicsBeginImageContextWithOptions(size, NO, 0);
     CGContextRef context = UIGraphicsGetCurrentContext();
 
     [color set];
-    CGContextFillRect(context, CGRectMake(.0, .0, size.width, size.height));
+    CGContextFillRect(context, CGRectMake(0, 0, size.width, size.height));
 
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

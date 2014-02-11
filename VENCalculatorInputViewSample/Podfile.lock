@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../VENCalculatorInputView.podspec
 
 SPEC CHECKSUMS:
-  VENCalculatorInputView: 7c5a5bad0b5ce491b89a55fa9393aae49e0823ec
+  VENCalculatorInputView: db37790d9cc920b98c406210e0e2199367d4ab0b
 
 COCOAPODS: 0.29.0
