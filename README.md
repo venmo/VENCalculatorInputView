@@ -49,6 +49,10 @@ Finally, implement the delegate method that handles the backspace key:
 }
 ```
 
+Try it!
+
+You can read more about custom keyboards in [Apple's documentation](https://developer.apple.com/library/ios/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/InputViews/InputViews.html).
+
 ### Using the calculator text field (optimized for money calculation)
 
 All you need to do is use ```VENCalculatorInputTextField``` instead of ```UITextField``` and use it like normal text field. It will automagically handle the input and make calculations. Take a look at out our ```VENCalculatorInputViewSample``` project.
