@@ -27,6 +27,8 @@ Find the ```UITextField``` or ```UITextView``` that you want to display the keyb
 myTextField.inputView = [[VENCalculatorInputView alloc] init];
 ```
 
+This will have ```VENCalculatorInputView``` display when ```myTextField``` becomes ```firstResponder``` instead of the system keyboard.
+
 #### 2. Implement the ```<VENCalculatorInputViewDelegate>``` methods.
 
 First, have a class implement the ```<VENCalculatorInputViewDelegate>``` protocol and set ```myTextField.inputView.delegate``` to an instance of that class.
