@@ -1,13 +1,13 @@
-#import "VENCalculator.h"
+#import "VENMoneyCalculator.h"
 
-@implementation VENCalculator
+@implementation VENMoneyCalculator
 
 + (NSString *)evaluateExpression:(NSString *)expressionString {
     if (!expressionString) {
         return nil;
     }
     NSString *floatString = [NSString stringWithFormat:@"1.0*%@", expressionString];
-    NSString *sanitizedString = [VENCalculator replaceOperandsInString:floatString];
+    NSString *sanitizedString = [VENMoneyCalculator replaceOperandsInString:floatString];
     NSExpression *expression;
     @try {
         expression = [NSExpression expressionWithFormat:sanitizedString];

@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 
-@interface VENCalculator : NSObject
+@interface VENMoneyCalculator : NSObject
 
 /**
  * Evaluates a mathematical expression containing +, −, ×, and ÷.

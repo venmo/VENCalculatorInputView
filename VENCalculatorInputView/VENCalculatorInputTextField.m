@@ -1,5 +1,5 @@
 #import "VENCalculatorInputTextField.h"
-#import "VENCalculator.h"
+#import "VENMoneyCalculator.h"
 
 @implementation VENCalculatorInputTextField
 
@@ -34,7 +34,7 @@
         [lastCharacterString isEqualToString:@"−"] ||
         [lastCharacterString isEqualToString:@"×"] ||
         [lastCharacterString isEqualToString:@"÷"]) {
-        NSString *evaluatedString = [VENCalculator evaluateExpression:subString];
+        NSString *evaluatedString = [VENMoneyCalculator evaluateExpression:subString];
         if (evaluatedString) {
             self.text = [NSString stringWithFormat:@"%@%@", evaluatedString, lastCharacterString];
         } else {
@@ -50,7 +50,7 @@
 
 - (void)venCalculatorTextFieldDidEndEditing {
     NSString *textToEvaluate = [self trimExpressionString:self.text];
-    NSString *evaluatedString = [VENCalculator evaluateExpression:textToEvaluate];
+    NSString *evaluatedString = [VENMoneyCalculator evaluateExpression:textToEvaluate];
     if (evaluatedString) {
         self.text = evaluatedString;
     }
