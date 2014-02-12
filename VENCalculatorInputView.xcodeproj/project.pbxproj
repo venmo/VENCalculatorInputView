@@ -10,7 +10,6 @@
 		40BED60EE864401D8AFB2433 /* libPods-VENCalculatorInputViewTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 142758DF9FEC443BA2D635DE /* libPods-VENCalculatorInputViewTests.a */; };
 		B6F22CFD18AC031100543816 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F22CFC18AC031100543816 /* Foundation.framework */; };
 		B6F22D0C18AC031100543816 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F22CFC18AC031100543816 /* Foundation.framework */; };
-		B6F22D0E18AC031100543816 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F22D0D18AC031100543816 /* UIKit.framework */; };
 		B6F22D1118AC031100543816 /* libVENCalculatorInputView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F22CF918AC031100543816 /* libVENCalculatorInputView.a */; };
 		B6F22D1718AC031100543816 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6F22D1518AC031100543816 /* InfoPlist.strings */; };
 		B6F22D2318AC039100543816 /* VENCalculatorSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F22D2218AC039100543816 /* VENCalculatorSpecs.m */; };
@@ -51,7 +50,6 @@
 		B6F22CFC18AC031100543816 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B6F22D0018AC031100543816 /* VENCalculatorInputView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VENCalculatorInputView-Prefix.pch"; sourceTree = "<group>"; };
 		B6F22D0918AC031100543816 /* VENCalculatorInputViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VENCalculatorInputViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6F22D0D18AC031100543816 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		B6F22D1418AC031100543816 /* VENCalculatorInputViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VENCalculatorInputViewTests-Info.plist"; sourceTree = "<group>"; };
 		B6F22D1618AC031100543816 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B6F22D2218AC039100543816 /* VENCalculatorSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VENCalculatorSpecs.m; sourceTree = "<group>"; };
@@ -82,7 +80,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6F22D0E18AC031100543816 /* UIKit.framework in Frameworks */,
 				B6F22D0C18AC031100543816 /* Foundation.framework in Frameworks */,
 				B6F22D1118AC031100543816 /* libVENCalculatorInputView.a in Frameworks */,
 				40BED60EE864401D8AFB2433 /* libPods-VENCalculatorInputViewTests.a in Frameworks */,
@@ -117,7 +114,6 @@
 			children = (
 				B6F22D3618AC045300543816 /* CoreGraphics.framework */,
 				B6F22CFC18AC031100543816 /* Foundation.framework */,
-				B6F22D0D18AC031100543816 /* UIKit.framework */,
 				142758DF9FEC443BA2D635DE /* libPods-VENCalculatorInputViewTests.a */,
 			);
 			name = Frameworks;
