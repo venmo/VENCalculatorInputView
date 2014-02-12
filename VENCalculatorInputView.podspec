@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version      = "1.0.0"
   s.summary      = "Venmo-style calculator keyboard for iOS"
   s.description  = <<-DESC
-                   A pretty calculator keyboard for iOS. Use it as a standalone keyboard or user our VENCalculatorInputTextField.
+                   A pretty calculator keyboard for iOS. Use it as a standalone keyboard or use our VENCalculatorInputTextField.
                    DESC
 
   s.homepage     = "https://github.com/venmo/VENCalculatorInputView"
