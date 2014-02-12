@@ -24,7 +24,7 @@ You can choose to use just ```VENCalculatorInputView``` (only the keyboard) and 
 Find the ```UITextField``` or ```UITextView``` that you want to display the keyboard and set its ```inputView``` to an instance of ```VENCalculatorInputView```.
 
 ```obj-c
-myTextField.inputView = [[VENCalculatorInputView alloc] init];
+myTextField.inputView = [VENCalculatorInputView new];
 ```
 
 This will have ```VENCalculatorInputView``` display when ```myTextField``` becomes ```firstResponder``` instead of the system keyboard.
