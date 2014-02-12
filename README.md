@@ -24,7 +24,7 @@ You can choose to use just ```VENCalculatorInputView``` (only the keyboard) and 
 Find the ```UITextField``` or ```UITextView``` that you want to display the keyboard and set its ```inputView``` to an instance of ```VENCalculatorInputView```.
 
 ```obj-c
-myTextField.inputView = [[VENCalculatorInputView alloc] init];
+myTextField.inputView = [VENCalculatorInputView new];
 ```
 
 This will have ```VENCalculatorInputView``` display when ```myTextField``` becomes ```firstResponder``` instead of the system keyboard.
@@ -59,11 +59,14 @@ You can read more about custom keyboards in [Apple's documentation](https://deve
 
 All you need to do is use ```VENCalculatorInputTextField``` instead of ```UITextField``` and use it like normal text field. It will automagically handle the input and make calculations. Take a look at out our ```VENCalculatorInputViewSample``` project.
 
-Version
-----
-1.0.0
+Testing
+------
 
-License
-----
+We've written some tests. You can run them by opening the project in Xcode and hitting `Command-U`.
 
-MIT
+Contributing
+------------
+
+We'd love to see your ideas for improving this library! The best way to contribute is by submitting a pull request. We'll do our best to respond to your patch as soon as possible. You can also submit a [new Github issue](https://github.com/venmo/VENCalculatorInputView/issues/new) if you find bugs or have questions. :octocat:
+
+Please make sure to follow our general coding style and add test coverage for new features!
