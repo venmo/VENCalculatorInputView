@@ -159,7 +159,7 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <accessibility key="accessibilityConfiguration" label="Backspace"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
-                    <state key="normal" image="CalculatorIconBackspace.png">
+                    <state key="normal" image="VENCalculatorIconBackspace.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -227,6 +227,6 @@
         </view>
     </objects>
     <resources>
-        <image name="CalculatorIconBackspace.png" width="25" height="26"/>
+        <image name="VENCalculatorIconBackspace.png" width="25" height="26"/>
     </resources>
 </document>
