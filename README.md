@@ -1,7 +1,7 @@
 VENCalculatorInputView
 =========
 
-VENCalculatorInputView is the calculator keyboard that is used in the Venmo iOS app.
+VENCalculatorInputView is the calculator keyboard that is used in the [Venmo](https://venmo.com/) iOS app.
 Available for iOS 5 and beyond. Enjoy.
 
 ![alt text](http://i.imgur.com/VWgymjH.gif "VENCalculatorInputView demo")
