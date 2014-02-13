@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "VENCalculatorInputView"
-  s.version      = "1.0.0"
+  s.version      = "1.1.0"
   s.summary      = "Venmo-style calculator keyboard for iOS"
   s.description  = <<-DESC
                    A pretty calculator keyboard for iOS. Use it as a standalone keyboard or use our VENCalculatorInputTextField.
