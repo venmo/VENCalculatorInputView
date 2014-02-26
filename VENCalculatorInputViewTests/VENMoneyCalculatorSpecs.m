@@ -57,6 +57,13 @@ describe(@"Evaluate expressions", ^{
         expect([VENMoneyCalculator evaluateExpression:@"1÷2"]).to.equal(@"0.50");
     });
 
+    it(@"should handle ÷ 0", ^{
+        expect([VENMoneyCalculator evaluateExpression:@"2÷0"]).to.equal(@"0");
+        expect([VENMoneyCalculator evaluateExpression:@"0÷0"]).to.equal(@"0");
+        expect([VENMoneyCalculator evaluateExpression:@"-2÷0"]).to.equal(@"0");
+        expect([VENMoneyCalculator evaluateExpression:@"-0÷0"]).to.equal(@"0");
+    });
+
 });
 
 SpecEnd
