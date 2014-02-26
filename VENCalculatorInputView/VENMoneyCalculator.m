@@ -25,6 +25,8 @@
         CGFloat floatExpression = [(NSNumber *)result floatValue];
         if (integerExpression == floatExpression) {
             return [(NSNumber *)result stringValue];
+        } else if (floatExpression >= CGFLOAT_MAX || floatExpression <= CGFLOAT_MIN) {
+            return @"0";
         } else {
             return [NSString stringWithFormat:@"%.2f", floatExpression];
         }
