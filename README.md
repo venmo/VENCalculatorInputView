@@ -62,6 +62,11 @@ You can read more about custom keyboards in [Apple's documentation](https://deve
 
 All you need to do is use ```VENCalculatorInputTextField``` instead of ```UITextField``` and use it like normal text field. It will automagically handle the input and make calculations. Take a look at out our ```VENCalculatorInputViewSample``` project.
 
+Localization
+------
+
+Different regions use different symbols as their decimal separator. By default, ```VENCalculatorInputView``` and ```VENCalculatorInputTextField``` use the current locale of the device. You can change it by setting the ```locale``` property.
+
 Testing
 ------
 

@@ -207,6 +207,7 @@
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="decimalButton" destination="eYd-gM-or0" id="Lng-xU-k41"/>
                 <outletCollection property="numberButtonCollection" destination="2Ty-om-JCT" id="YQr-Vb-a62"/>
                 <outletCollection property="operationButtonCollection" destination="WE3-xD-kgf" id="m1z-hQ-z5E"/>
                 <outletCollection property="numberButtonCollection" destination="i9h-WF-taO" id="kgO-g8-e3f"/>

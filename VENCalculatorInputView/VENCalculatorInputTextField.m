@@ -1,6 +1,10 @@
 #import "VENCalculatorInputTextField.h"
 #import "VENMoneyCalculator.h"
 
+@interface VENCalculatorInputTextField ()
+@property (strong, nonatomic) VENMoneyCalculator *moneyCalculator;
+@end
+
 @implementation VENCalculatorInputTextField
 
 - (id)initWithFrame:(CGRect)frame {
@@ -16,10 +20,29 @@
 }
 
 - (void)setUpInit {
-    self.inputView = [[VENCalculatorInputView alloc] init];
-    ((VENCalculatorInputView *)self.inputView).delegate = self;
+    self.locale = [NSLocale currentLocale];
+
+    VENCalculatorInputView *inputView = [VENCalculatorInputView new];
+    inputView.delegate = self;
+    inputView.locale = self.locale;
+    self.inputView = inputView;
+
+    VENMoneyCalculator *moneyCalculator = [VENMoneyCalculator new];
+    moneyCalculator.locale = self.locale;
+    self.moneyCalculator = moneyCalculator;
+
     [self addTarget:self action:@selector(venCalculatorTextFieldDidChange) forControlEvents:UIControlEventEditingChanged];
     [self addTarget:self action:@selector(venCalculatorTextFieldDidEndEditing) forControlEvents:UIControlEventEditingDidEnd];
+}
+
+
+#pragma mark - Properties
+
+- (void)setLocale:(NSLocale *)locale {
+    _locale = locale;
+    VENCalculatorInputView *inputView = self.inputView;
+    inputView.locale = locale;
+    self.moneyCalculator.locale = locale;
 }
 
 
@@ -34,15 +57,15 @@
         [lastCharacterString isEqualToString:@"−"] ||
         [lastCharacterString isEqualToString:@"×"] ||
         [lastCharacterString isEqualToString:@"÷"]) {
-        NSString *evaluatedString = [VENMoneyCalculator evaluateExpression:subString];
+        NSString *evaluatedString = [self.moneyCalculator evaluateExpression:subString];
         if (evaluatedString) {
             self.text = [NSString stringWithFormat:@"%@%@", evaluatedString, lastCharacterString];
         } else {
             self.text = subString;
         }
-    } else if ([lastCharacterString isEqualToString:@"."]) {
+    } else if ([lastCharacterString isEqualToString:[self decimalSeparator]]) {
         NSString *secondToLastCharacterString = [self.text substringWithRange:NSMakeRange([self.text length] - 2, 1)];
-        if ([secondToLastCharacterString isEqualToString:@"."]) {
+        if ([secondToLastCharacterString isEqualToString:[self decimalSeparator]]) {
             self.text = subString;
         }
     }
@@ -50,7 +73,7 @@
 
 - (void)venCalculatorTextFieldDidEndEditing {
     NSString *textToEvaluate = [self trimExpressionString:self.text];
-    NSString *evaluatedString = [VENMoneyCalculator evaluateExpression:textToEvaluate];
+    NSString *evaluatedString = [self.moneyCalculator evaluateExpression:textToEvaluate];
     if (evaluatedString) {
         self.text = evaluatedString;
     }
@@ -82,11 +105,15 @@
             [lastCharacterString isEqualToString:@"−"] ||
             [lastCharacterString isEqualToString:@"×"] ||
             [lastCharacterString isEqualToString:@"÷"] ||
-            [lastCharacterString isEqualToString:@"."]) {
+            [lastCharacterString isEqualToString:[self decimalSeparator]]) {
             return [self.text substringToIndex:self.text.length - 1];
         }
     }
     return expressionString;
+}
+
+- (NSString *)decimalSeparator {
+    return [self.locale objectForKey:NSLocaleDecimalSeparator];
 }
 
 @end

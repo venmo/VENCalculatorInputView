@@ -13,8 +13,16 @@
 
 @property (weak, nonatomic) id<VENCalculatorInputViewDelegate> delegate;
 
-@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *numberButtonCollection;
-@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *operationButtonCollection;
+/**-----------------------------------------------------------------------------
+ * @name Localization
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ The locale to use for the decimal separator.
+ Defaults to locale for current device.
+ */
+@property (strong, nonatomic) NSLocale *locale;
 
 
 /**-----------------------------------------------------------------------------
