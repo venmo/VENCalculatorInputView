@@ -65,7 +65,7 @@ All you need to do is use ```VENCalculatorInputTextField``` instead of ```UIText
 Localization
 ------
 
-Different regions use different symbols as their decimal separator. By default, ```VENCalculatorInputView``` and ```VENCalculatorInputTextField``` use the current locale of the device. You can change it by setting the ```locale``` property.
+Different regions use different symbols as their decimal separator (e.g. ```.```, ```,```). By default, ```VENCalculatorInputView``` and ```VENCalculatorInputTextField``` use the current locale of the device. You can change it by setting the ```locale``` property.
 
 Testing
 ------
