@@ -21,8 +21,10 @@
     NSString *floatString = [NSString stringWithFormat:@"1.0*%@", expressionString];
     NSString *sanitizedString = [self replaceOperandsInString:floatString];
     NSExpression *expression;
+    id result;
     @try {
         expression = [NSExpression expressionWithFormat:sanitizedString];
+        result = [expression expressionValueWithObject:nil context:nil];
     }
     @catch (NSException *exception) {
         if ([[exception name] isEqualToString:NSInvalidArgumentException]) {
@@ -31,7 +33,6 @@
             [exception raise];
         }
     }
-    id result = [expression expressionValueWithObject:nil context:nil];
     if ([result isKindOfClass:[NSNumber class]]) {
         NSInteger integerExpression = [(NSNumber *)result integerValue];
         CGFloat floatExpression = [(NSNumber *)result floatValue];
