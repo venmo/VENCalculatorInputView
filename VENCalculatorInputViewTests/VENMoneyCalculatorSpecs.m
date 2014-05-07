@@ -43,6 +43,8 @@ describe(@"Evaluate expressions", ^{
         expect([moneyCalculator evaluateExpression:@"++++-12!@#"]).to.beNil();
         expect([moneyCalculator evaluateExpression:@"+"]).to.beNil();
         expect([moneyCalculator evaluateExpression:@"1+"]).to.beNil();
+        expect([moneyCalculator evaluateExpression:@"2a"]).to.beNil();
+        expect([moneyCalculator evaluateExpression:@"a2"]).to.beNil();
     });
 
     it(@"should handle − (longer dash)", ^{
