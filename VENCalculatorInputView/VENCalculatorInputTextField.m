@@ -40,7 +40,7 @@
 
 - (void)setLocale:(NSLocale *)locale {
     _locale = locale;
-    VENCalculatorInputView *inputView = self.inputView;
+    VENCalculatorInputView *inputView = (VENCalculatorInputView*)self.inputView;
     inputView.locale = locale;
     self.moneyCalculator.locale = locale;
 }
