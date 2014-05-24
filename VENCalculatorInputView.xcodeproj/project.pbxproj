@@ -45,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		142758DF9FEC443BA2D635DE /* libPods-VENCalculatorInputViewTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VENCalculatorInputViewTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68B7B0891930B739006C60DA /* VENCalculatorIconHideKeyboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VENCalculatorIconHideKeyboard.png; sourceTree = "<group>"; };
 		8ECCE86895A54E0F8FA38DA9 /* Pods-VENCalculatorInputViewTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VENCalculatorInputViewTests.xcconfig"; path = "Pods/Pods-VENCalculatorInputViewTests.xcconfig"; sourceTree = "<group>"; };
 		B6F22CF918AC031100543816 /* libVENCalculatorInputView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVENCalculatorInputView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F22CFC18AC031100543816 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -165,6 +166,7 @@
 		B6F22D3118AC03C700543816 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				68B7B0891930B739006C60DA /* VENCalculatorIconHideKeyboard.png */,
 				B6F22D3218AC03C700543816 /* VENCalculatorIconBackspace.png */,
 				B6F22D3318AC03C700543816 /* VENCalculatorIconBackspace@2x.png */,
 			);

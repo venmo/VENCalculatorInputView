@@ -90,6 +90,23 @@
     [self deleteBackward];
 }
 
+- (void)calculatorInputViewDidTapEquals:(VENCalculatorInputView *)calculatorInputView {
+    NSString *textToEvaluate = [self trimExpressionString:self.text];
+    NSString *evaluatedString = [self.moneyCalculator evaluateExpression:textToEvaluate];
+    if (evaluatedString) {
+        self.text = evaluatedString;
+    }
+}
+
+- (void)calculatorInputViewDidTapClear:(VENCalculatorInputView *)calculatorInputView {
+    self.text = @"";
+}
+
+- (void)calculatorInputViewDidTapHideKeyboard:(VENCalculatorInputView *)calculatorInputView {
+    [self venCalculatorTextFieldDidEndEditing];
+    [self endEditing:YES];
+}
+
 
 #pragma mark - Helpers
 
