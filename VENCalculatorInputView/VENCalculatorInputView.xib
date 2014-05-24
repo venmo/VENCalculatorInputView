@@ -155,7 +155,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nEm-qn-8Il">
-                    <rect key="frame" x="256" y="54" width="64" height="54"/>
+                    <rect key="frame" x="256" y="0.0" width="64" height="54"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <accessibility key="accessibilityConfiguration" label="Clear"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
@@ -167,7 +167,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rF5-sT-WS8">
-                    <rect key="frame" x="256" y="108" width="64" height="108"/>
+                    <rect key="frame" x="256" y="54" width="64" height="108"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <accessibility key="accessibilityConfiguration" label="Clear"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
@@ -191,7 +191,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UKH-If-fea">
-                    <rect key="frame" x="256" y="0.0" width="64" height="54"/>
+                    <rect key="frame" x="256" y="162" width="64" height="54"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <accessibility key="accessibilityConfiguration" label="Hide keyboard"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
@@ -258,11 +258,11 @@
                 <outletCollection property="operationButtonCollection" destination="x27-vp-6DR" id="UQW-WX-jyQ"/>
                 <outletCollection property="operationButtonCollection" destination="nS1-xf-Wd3" id="Cyu-bs-cdg"/>
                 <outletCollection property="operationButtonCollection" destination="xVG-Mb-OFf" id="vMh-VD-5cC"/>
-                <outletCollection property="operationButtonCollection" destination="eYd-gM-or0" id="Pcu-vP-N1v"/>
-                <outletCollection property="operationButtonCollection" destination="Vjs-Bi-wiF" id="Ali-RS-13G"/>
                 <outletCollection property="operationButtonCollection" destination="rF5-sT-WS8" id="1aQ-ch-h3L"/>
                 <outletCollection property="operationButtonCollection" destination="nEm-qn-8Il" id="rnn-aI-1lJ"/>
                 <outletCollection property="operationButtonCollection" destination="UKH-If-fea" id="hKP-Qy-lYo"/>
+                <outletCollection property="numberButtonCollection" destination="eYd-gM-or0" id="WDY-ip-TXG"/>
+                <outletCollection property="numberButtonCollection" destination="Vjs-Bi-wiF" id="UBg-MC-fUE"/>
             </connections>
         </view>
     </objects>
