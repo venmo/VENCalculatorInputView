@@ -52,6 +52,27 @@
     }
 }
 
+- (IBAction)userDidTapHideKeyboard:(UIButton *)sender {
+    [[UIDevice currentDevice] playInputClick];
+    if ([self.delegate respondsToSelector:@selector(calculatorInputViewDidTapHideKeyboard:)]) {
+        [self.delegate calculatorInputViewDidTapHideKeyboard:self];
+    }
+}
+
+- (IBAction)userDidTapClear:(UIButton *)sender {
+    [[UIDevice currentDevice] playInputClick];
+    if ([self.delegate respondsToSelector:@selector(calculatorInputViewDidTapClear:)]) {
+        [self.delegate calculatorInputViewDidTapClear:self];
+    }
+}
+
+- (IBAction)userDidTapEquals:(UIButton *)sender {
+    [[UIDevice currentDevice] playInputClick];
+    if ([self.delegate respondsToSelector:@selector(calculatorInputViewDidTapEquals:)]) {
+        [self.delegate calculatorInputViewDidTapEquals:self];
+    }
+}
+
 - (IBAction)userDidTapKey:(UIButton *)sender {
     [[UIDevice currentDevice] playInputClick];
     if ([self.delegate respondsToSelector:@selector(calculatorInputView:didTapKey:)]) {
