@@ -268,6 +268,6 @@
     </objects>
     <resources>
         <image name="VENCalculatorIconBackspace.png" width="25" height="26"/>
-        <image name="VENCalculatorIconHideKeyboard.png" width="25" height="26"/>
+        <image name="VENCalculatorIconHideKeyboard.png" width="30" height="30"/>
     </resources>
 </document>
