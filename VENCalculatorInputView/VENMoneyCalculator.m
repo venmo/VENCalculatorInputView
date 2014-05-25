@@ -18,8 +18,7 @@
     if (!expressionString) {
         return nil;
     }
-    NSString *expressionWithDecimalPoints = [expressionString stringByReplacingOccurrencesOfString:@"," withString:@"."];
-    NSString *floatString = [NSString stringWithFormat:@"1.0*%@", expressionWithDecimalPoints];
+    NSString *floatString = [NSString stringWithFormat:@"1.0*%@", expressionString];
     NSString *sanitizedString = [self replaceOperandsInString:floatString];
     NSExpression *expression;
     id result;
