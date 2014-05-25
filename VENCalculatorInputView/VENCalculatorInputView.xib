@@ -167,7 +167,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rF5-sT-WS8">
-                    <rect key="frame" x="256" y="54" width="64" height="108"/>
+                    <rect key="frame" x="256" y="54" width="64" height="162"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <accessibility key="accessibilityConfiguration" label="Clear"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
@@ -188,18 +188,6 @@
                     </state>
                     <connections>
                         <action selector="userDidTapBackspace:" destination="1" eventType="touchUpInside" id="Kyu-1V-QyI"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UKH-If-fea">
-                    <rect key="frame" x="256" y="162" width="64" height="54"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <accessibility key="accessibilityConfiguration" label="Hide keyboard"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
-                    <state key="normal" image="VENCalculatorIconHideKeyboard.png">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="userDidTapHideKeyboard:" destination="1" eventType="touchUpInside" id="QHS-3c-Ybz"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nS1-xf-Wd3">
@@ -260,7 +248,6 @@
                 <outletCollection property="operationButtonCollection" destination="xVG-Mb-OFf" id="vMh-VD-5cC"/>
                 <outletCollection property="operationButtonCollection" destination="rF5-sT-WS8" id="1aQ-ch-h3L"/>
                 <outletCollection property="operationButtonCollection" destination="nEm-qn-8Il" id="rnn-aI-1lJ"/>
-                <outletCollection property="operationButtonCollection" destination="UKH-If-fea" id="hKP-Qy-lYo"/>
                 <outletCollection property="numberButtonCollection" destination="eYd-gM-or0" id="WDY-ip-TXG"/>
                 <outletCollection property="numberButtonCollection" destination="Vjs-Bi-wiF" id="UBg-MC-fUE"/>
             </connections>
@@ -268,6 +255,5 @@
     </objects>
     <resources>
         <image name="VENCalculatorIconBackspace.png" width="25" height="26"/>
-        <image name="VENCalculatorIconHideKeyboard.png" width="30" height="30"/>
     </resources>
 </document>

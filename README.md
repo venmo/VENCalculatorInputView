@@ -6,12 +6,11 @@ This fork of VENCalculatorInputView has different keyboard with extra buttons (a
 ![alt text](https://cloud.githubusercontent.com/assets/747340/3074663/40a08782-e34c-11e3-8b80-b7f6d7c60385.png "Modified VENCalculatorInputView layout")
 
 * [Clear] - clears expression
-* [Equals] - evaluates expression
-* [Hide keyboard] - evaluates expression and hides keyboard
+* [Equals] - evaluates expression and hides keyboard
 
 There are extra corresponding ```<VENCalculatorInputViewDelegate>``` methods added as well.
 
-Note: Library has not been tested (but should work as far as I'm concerned) on iOS5 as the original [VENCalculatorInputView](https://github.com/venmo/VENCalculatorInputView). Minimum iOS version - 7.0
+Note: Library has not been tested (but should work as far as I'm concerned) on iOS5 as the original [VENCalculatorInputView](https://github.com/venmo/VENCalculatorInputView). Therefore for this fork expected iOS version - 7.0
 
 VENCalculatorInputView
 =========
