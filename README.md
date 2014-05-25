@@ -3,10 +3,10 @@ Extra buttons for VENCalculatorInputView
 
 This fork of VENCalculatorInputView has different keyboard with extra buttons (and delegate methods):
 
-![alt text](https://cloud.githubusercontent.com/assets/747340/3074663/40a08782-e34c-11e3-8b80-b7f6d7c60385.png "Modified VENCalculatorInputView layout")
+![Modified VENCalculatorInputView layout](https://cloud.githubusercontent.com/assets/747340/3076567/74a21eb2-e3ea-11e3-80c4-17eb9739118b.png "Modified VENCalculatorInputView layout")
 
-* [Clear] - clears expression
-* [Equals] - evaluates expression and hides keyboard
+* [Clear] - clears textfield
+* [Equals] - evaluate expression in textfield, update result and hide keyboard
 
 There are extra corresponding ```<VENCalculatorInputViewDelegate>``` methods added as well.
 
