@@ -63,7 +63,7 @@
         } else {
             self.text = subString;
         }
-    } else if ([lastCharacterString isEqualToString:[self decimalSeparator]]) {
+    } else if ([lastCharacterString isEqualToString:[self decimalSeparator]] && [self.text length] > 1) {
         NSString *secondToLastCharacterString = [self.text substringWithRange:NSMakeRange([self.text length] - 2, 1)];
         if ([secondToLastCharacterString isEqualToString:[self decimalSeparator]]) {
             self.text = subString;
