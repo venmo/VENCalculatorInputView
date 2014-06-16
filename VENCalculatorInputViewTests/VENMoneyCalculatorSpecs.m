@@ -72,6 +72,10 @@ describe(@"Evaluate expressions", ^{
         expect([moneyCalculator evaluateExpression:@"-0÷0"]).to.equal(@"0");
     });
 
+    it(@"should handle decimals without leading 0", ^{
+        expect([moneyCalculator evaluateExpression:@".95"]).to.equal(@"0.95");
+    });
+
 });
 
 
