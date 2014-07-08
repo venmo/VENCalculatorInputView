@@ -12,7 +12,7 @@
 		B6F22D0C18AC031100543816 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F22CFC18AC031100543816 /* Foundation.framework */; };
 		B6F22D1118AC031100543816 /* libVENCalculatorInputView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F22CF918AC031100543816 /* libVENCalculatorInputView.a */; };
 		B6F22D1718AC031100543816 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6F22D1518AC031100543816 /* InfoPlist.strings */; };
-		B6F22D2318AC039100543816 /* VENMoneyCalculatorSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F22D2218AC039100543816 /* VENMoneyCalculatorSpecs.m */; };
+		B6F22D2318AC039100543816 /* VENMoneyCalculatorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F22D2218AC039100543816 /* VENMoneyCalculatorSpec.m */; };
 		B6F22D2E18AC039F00543816 /* VENMoneyCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F22D2518AC039F00543816 /* VENMoneyCalculator.m */; };
 		B6F22D2F18AC039F00543816 /* VENCalculatorInputTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F22D2918AC039F00543816 /* VENCalculatorInputTextField.m */; };
 		B6F22D3018AC039F00543816 /* VENCalculatorInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F22D2C18AC039F00543816 /* VENCalculatorInputView.m */; };
@@ -54,7 +54,7 @@
 		B6F22D0918AC031100543816 /* VENCalculatorInputViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VENCalculatorInputViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F22D1418AC031100543816 /* VENCalculatorInputViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VENCalculatorInputViewTests-Info.plist"; sourceTree = "<group>"; };
 		B6F22D1618AC031100543816 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B6F22D2218AC039100543816 /* VENMoneyCalculatorSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VENMoneyCalculatorSpecs.m; sourceTree = "<group>"; };
+		B6F22D2218AC039100543816 /* VENMoneyCalculatorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VENMoneyCalculatorSpec.m; sourceTree = "<group>"; };
 		B6F22D2418AC039F00543816 /* VENMoneyCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VENMoneyCalculator.h; sourceTree = "<group>"; };
 		B6F22D2518AC039F00543816 /* VENMoneyCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VENMoneyCalculator.m; sourceTree = "<group>"; };
 		B6F22D2818AC039F00543816 /* VENCalculatorInputTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VENCalculatorInputTextField.h; sourceTree = "<group>"; };
@@ -154,7 +154,7 @@
 		B6F22D1218AC031100543816 /* VENCalculatorInputViewTests */ = {
 			isa = PBXGroup;
 			children = (
-				B6F22D2218AC039100543816 /* VENMoneyCalculatorSpecs.m */,
+				B6F22D2218AC039100543816 /* VENMoneyCalculatorSpec.m */,
 				B6FD6363196BB09D00D1913C /* NSString+ParsimmonSpec.m */,
 				B6F22D1318AC031100543816 /* Supporting Files */,
 			);
@@ -308,7 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6F22D2318AC039100543816 /* VENMoneyCalculatorSpecs.m in Sources */,
+				B6F22D2318AC039100543816 /* VENMoneyCalculatorSpec.m in Sources */,
 				B6FD6364196BB09D00D1913C /* NSString+ParsimmonSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
