@@ -2,9 +2,9 @@
 #import <Expecta/Expecta.h>
 #import <Specta/Specta.h>
 
-#import "NSString+Parsimmon.h"
+#import "NSString+VENCalculatorInputView.h"
 
-SpecBegin(NSString_Parsimmon)
+SpecBegin(NSString_VENCalculatorInputView)
 
 describe(@"stringByReplacingCharactersInSet:withString:", ^{
 

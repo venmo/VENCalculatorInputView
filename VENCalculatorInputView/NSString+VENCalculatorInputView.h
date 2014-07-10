@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 
-@interface NSString (Parsimmon)
+@interface NSString (VENCalculatorInputView)
 
 - (NSString *)stringByReplacingCharactersInSet:(NSCharacterSet *)characterSet
                                     withString:(NSString *)string;
