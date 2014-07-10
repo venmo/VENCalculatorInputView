@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F74D098196F15AA0040C816 /* UITextRange+VENCalculatorInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F74D097196F15AA0040C816 /* UITextRange+VENCalculatorInputView.m */; };
 		40BED60EE864401D8AFB2433 /* libPods-VENCalculatorInputViewTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 142758DF9FEC443BA2D635DE /* libPods-VENCalculatorInputViewTests.a */; };
 		B6F22CFD18AC031100543816 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F22CFC18AC031100543816 /* Foundation.framework */; };
 		B6F22D0C18AC031100543816 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F22CFC18AC031100543816 /* Foundation.framework */; };
@@ -47,6 +48,8 @@
 
 /* Begin PBXFileReference section */
 		142758DF9FEC443BA2D635DE /* libPods-VENCalculatorInputViewTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VENCalculatorInputViewTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F74D096196F15AA0040C816 /* UITextRange+VENCalculatorInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextRange+VENCalculatorInputView.h"; sourceTree = "<group>"; };
+		2F74D097196F15AA0040C816 /* UITextRange+VENCalculatorInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextRange+VENCalculatorInputView.m"; sourceTree = "<group>"; };
 		8ECCE86895A54E0F8FA38DA9 /* Pods-VENCalculatorInputViewTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VENCalculatorInputViewTests.xcconfig"; path = "Pods/Pods-VENCalculatorInputViewTests.xcconfig"; sourceTree = "<group>"; };
 		B6F22CF918AC031100543816 /* libVENCalculatorInputView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVENCalculatorInputView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F22CFC18AC031100543816 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -137,6 +140,8 @@
 				B6F22D2D18AC039F00543816 /* VENCalculatorInputView.xib */,
 				B6FD6360196BAB8700D1913C /* NSString+Parsimmon.h */,
 				B6FD6361196BAB8700D1913C /* NSString+Parsimmon.m */,
+				2F74D096196F15AA0040C816 /* UITextRange+VENCalculatorInputView.h */,
+				2F74D097196F15AA0040C816 /* UITextRange+VENCalculatorInputView.m */,
 				B6F22D3118AC03C700543816 /* Images */,
 				B6F22CFF18AC031100543816 /* Supporting Files */,
 			);
@@ -300,6 +305,7 @@
 				B6FD6362196BAB8700D1913C /* NSString+Parsimmon.m in Sources */,
 				B6F22D3018AC039F00543816 /* VENCalculatorInputView.m in Sources */,
 				B6F22D2E18AC039F00543816 /* VENMoneyCalculator.m in Sources */,
+				2F74D098196F15AA0040C816 /* UITextRange+VENCalculatorInputView.m in Sources */,
 				B6F22D2F18AC039F00543816 /* VENCalculatorInputTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
