@@ -1,34 +1,32 @@
-//
-//  UITextField+VENCalculatorInputViewSpec.m
-//  VENCalculatorInputView
-//
-//  Created by Neeraj Baid on 7/10/14.
-//  Copyright (c) 2014 Venmo. All rights reserved.
-//
+#define EXP_SHORTHAND
+#import <Expecta/Expecta.h>
+#import <Specta/Specta.h>
+#import <OCMock/OCMock.h>
 
-#import <XCTest/XCTest.h>
+#import "UITextField+VENCalculatorInputView.h"
 
-@interface UITextField_VENCalculatorInputViewSpec : XCTestCase
+SpecBegin(UITextRange_VENCalculatorInputView)
 
-@end
+describe(@"selectedNSRange", ^{
 
-@implementation UITextField_VENCalculatorInputViewSpec
+    it(@"should get UITextField's selectedText in an NSRange", ^{
+        id mockBeginningTextPosition = OCMClassMock([UITextPosition class]);
+        id mockSelectionStartTextPosition = OCMClassMock([UITextPosition class]);
+        id mockSelectionEndTextPosition = OCMClassMock([UITextPosition class]);
 
-- (void)setUp
-{
-    [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-}
+        id mockTextField = OCMClassMock([UITextField class]);
+        id mockSelectedTextRange = OCMClassMock([UITextRange class]);
 
-- (void)tearDown
-{
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
-}
+        OCMStub([mockTextField beginningOfDocument]).andReturn(mockBeginningTextPosition);
+        OCMStub([mockTextField selectedTextRange]).andReturn(mockSelectedTextRange);
+        OCMStub([(UITextRange *)mockSelectedTextRange start]).andReturn(mockSelectionStartTextPosition);
+        OCMStub([(UITextRange *)mockSelectedTextRange end]).andReturn(mockSelectionEndTextPosition);
 
-- (void)testExample
-{
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
-}
+        [[mockTextField expect] offsetFromPosition:mockBeginningTextPosition toPosition:mockSelectionStartTextPosition];
+        [[mockTextField expect] offsetFromPosition:mockSelectionStartTextPosition toPosition:mockSelectionEndTextPosition];
 
-@end
+        [mockTextField selectedNSRange];
+    });
+});
+
+SpecEnd
