@@ -1,5 +1,5 @@
 #import "VENMoneyCalculator.h"
-#import "NSString+Parsimmon.h"
+#import "NSString+VENCalculatorInputView.h"
 
 @interface VENMoneyCalculator ()
 @property (strong, nonatomic) NSNumberFormatter *numberFormatter;

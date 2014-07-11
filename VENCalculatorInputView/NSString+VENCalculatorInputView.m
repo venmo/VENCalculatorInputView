@@ -1,6 +1,6 @@
-#import "NSString+Parsimmon.h"
+#import "NSString+VENCalculatorInputView.h"
 
-@implementation NSString (Parsimmon)
+@implementation NSString (VENCalculatorInputView)
 
 - (NSString *)stringByReplacingCharactersInSet:(NSCharacterSet *)characterSet
                                     withString:(NSString *)string
