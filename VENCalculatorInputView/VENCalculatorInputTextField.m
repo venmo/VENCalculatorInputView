@@ -86,7 +86,6 @@
 - (void)calculatorInputView:(VENCalculatorInputView *)inputView didTapKey:(NSString *)key {
     if ([self.delegate respondsToSelector:@selector(textField:shouldChangeCharactersInRange:replacementString:)]) {
         NSRange range = [self selectedNSRange];
-        NSLog(@"selected range: %@", NSStringFromRange(range));
         if ([self.delegate textField:self shouldChangeCharactersInRange:range replacementString:key]) {
             [self insertText:key];
         }
