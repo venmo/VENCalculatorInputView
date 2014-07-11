@@ -1,5 +1,6 @@
 #import "VENCalculatorInputTextField.h"
 #import "VENMoneyCalculator.h"
+#import "UITextField+VENCalculatorInputView.h"
 
 @interface VENCalculatorInputTextField ()
 @property (strong, nonatomic) VENMoneyCalculator *moneyCalculator;
@@ -40,7 +41,7 @@
 
 - (void)setLocale:(NSLocale *)locale {
     _locale = locale;
-    VENCalculatorInputView *inputView = self.inputView;
+    VENCalculatorInputView *inputView = (VENCalculatorInputView *)self.inputView;
     inputView.locale = locale;
     self.moneyCalculator.locale = locale;
 }
@@ -83,7 +84,15 @@
 #pragma mark - VENCalculatorInputViewDelegate
 
 - (void)calculatorInputView:(VENCalculatorInputView *)inputView didTapKey:(NSString *)key {
-    [self insertText:key];
+    if ([self.delegate respondsToSelector:@selector(textField:shouldChangeCharactersInRange:replacementString:)]) {
+        NSRange range = [self selectedNSRange];
+        NSLog(@"selected range: %@", NSStringFromRange(range));
+        if ([self.delegate textField:self shouldChangeCharactersInRange:range replacementString:key]) {
+            [self insertText:key];
+        }
+    } else {
+        [self insertText:key];
+    }
 }
 
 - (void)calculatorInputViewDidTapBackspace:(VENCalculatorInputView *)calculatorInputView {
