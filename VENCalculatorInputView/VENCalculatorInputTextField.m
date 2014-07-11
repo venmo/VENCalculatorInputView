@@ -1,6 +1,6 @@
 #import "VENCalculatorInputTextField.h"
 #import "VENMoneyCalculator.h"
-#import "UITextRange+VENCalculatorInputView.h"
+#import "UITextField+VENCalculatorInputView.h"
 
 @interface VENCalculatorInputTextField ()
 @property (strong, nonatomic) VENMoneyCalculator *moneyCalculator;
@@ -85,7 +85,8 @@
 
 - (void)calculatorInputView:(VENCalculatorInputView *)inputView didTapKey:(NSString *)key {
     if ([self.delegate respondsToSelector:@selector(textField:shouldChangeCharactersInRange:replacementString:)]) {
-        NSRange range = [[self selectedTextRange] nsRangeFromTextRangeInTextField:self];
+        NSRange range = [self selectedNSRange];
+        NSLog(@"selected range: %@", NSStringFromRange(range));
         if ([self.delegate textField:self shouldChangeCharactersInRange:range replacementString:key]) {
             [self insertText:key];
         }
