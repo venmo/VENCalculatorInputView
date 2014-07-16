@@ -13,6 +13,14 @@
 
 @interface VENCalculatorInputView : UIView <UIInputViewAudioFeedback>
 
+/// Keyboard style for input view
+typedef NS_ENUM(NSInteger, VENCalculatorInputViewStyle) {
+    /// Default keyboard
+	VENCalculatorInputViewStyleDefault = 0,
+    /// Keyboard with Clear and Equals buttons
+	VENCalculatorInputViewStyleWithEquals = 1
+};
+
 @property (weak, nonatomic) id<VENCalculatorInputViewDelegate> delegate;
 
 /**-----------------------------------------------------------------------------
@@ -41,5 +49,12 @@
 
 @property (strong, nonatomic) UIColor *operationButtonBackgroundColor;
 @property (strong, nonatomic) UIColor *operationButtonBorderColor;
+
+/**
+ * Inits keyboard view with passed style
+ * @param Style of the keyboard
+ * @return Instance or nil.
+ */
+- (instancetype)initWithStyle:(VENCalculatorInputViewStyle)style;
 
 @end

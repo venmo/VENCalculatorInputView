@@ -1,6 +1,5 @@
 #import "VENCalculatorInputTextField.h"
 #import "VENMoneyCalculator.h"
-#import "UITextField+VENCalculatorInputView.h"
 
 @interface VENCalculatorInputTextField ()
 @property (strong, nonatomic) VENMoneyCalculator *moneyCalculator;
@@ -8,22 +7,30 @@
 
 @implementation VENCalculatorInputTextField
 
-- (id)initWithFrame:(CGRect)frame {
+- (instancetype)initWithFrame:(CGRect)frame keyboardStyle:(VENCalculatorInputViewStyle)style {
     self = [super initWithFrame:frame];
     if (self) {
-        [self setUpInit];
+        [self setUpInitWithStyle:style];
+    }
+    return self;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self setUpInitWithStyle:VENCalculatorInputViewStyleDefault];
     }
     return self;
 }
 
 - (void)awakeFromNib {
-    [self setUpInit];
+    [self setUpInitWithStyle:VENCalculatorInputViewStyleDefault];
 }
 
-- (void)setUpInit {
+- (void)setUpInitWithStyle:(VENCalculatorInputViewStyle)style {
     self.locale = [NSLocale currentLocale];
 
-    VENCalculatorInputView *inputView = [VENCalculatorInputView new];
+    VENCalculatorInputView *inputView = [[VENCalculatorInputView alloc] initWithStyle:style];
     inputView.delegate = self;
     inputView.locale = self.locale;
     self.inputView = inputView;
@@ -41,7 +48,7 @@
 
 - (void)setLocale:(NSLocale *)locale {
     _locale = locale;
-    VENCalculatorInputView *inputView = (VENCalculatorInputView *)self.inputView;
+    VENCalculatorInputView *inputView = (VENCalculatorInputView*)self.inputView;
     inputView.locale = locale;
     self.moneyCalculator.locale = locale;
 }
@@ -84,14 +91,7 @@
 #pragma mark - VENCalculatorInputViewDelegate
 
 - (void)calculatorInputView:(VENCalculatorInputView *)inputView didTapKey:(NSString *)key {
-    if ([self.delegate respondsToSelector:@selector(textField:shouldChangeCharactersInRange:replacementString:)]) {
-        NSRange range = [self selectedNSRange];
-        if ([self.delegate textField:self shouldChangeCharactersInRange:range replacementString:key]) {
-            [self insertText:key];
-        }
-    } else {
-        [self insertText:key];
-    }
+    [self insertText:key];
 }
 
 - (void)calculatorInputViewDidTapBackspace:(VENCalculatorInputView *)calculatorInputView {
