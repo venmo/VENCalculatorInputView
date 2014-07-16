@@ -52,6 +52,7 @@
 		2F74D09B196F533B0040C816 /* UITextField+VENCalculatorInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+VENCalculatorInputView.h"; sourceTree = "<group>"; };
 		2F74D09C196F533B0040C816 /* UITextField+VENCalculatorInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+VENCalculatorInputView.m"; sourceTree = "<group>"; };
 		2F74D09E196F53E20040C816 /* UITextField+VENCalculatorInputViewSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+VENCalculatorInputViewSpec.m"; sourceTree = "<group>"; };
+		68963A6719765AC100A81B93 /* VENCalculatorInputViewWithEqual.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VENCalculatorInputViewWithEqual.xib; sourceTree = "<group>"; };
 		8ECCE86895A54E0F8FA38DA9 /* Pods-VENCalculatorInputViewTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VENCalculatorInputViewTests.xcconfig"; path = "Pods/Pods-VENCalculatorInputViewTests.xcconfig"; sourceTree = "<group>"; };
 		B6F22CF918AC031100543816 /* libVENCalculatorInputView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVENCalculatorInputView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F22CFC18AC031100543816 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -140,6 +141,7 @@
 				B6F22D2B18AC039F00543816 /* VENCalculatorInputView.h */,
 				B6F22D2C18AC039F00543816 /* VENCalculatorInputView.m */,
 				B6F22D2D18AC039F00543816 /* VENCalculatorInputView.xib */,
+				68963A6719765AC100A81B93 /* VENCalculatorInputViewWithEqual.xib */,
 				2F74D09B196F533B0040C816 /* UITextField+VENCalculatorInputView.h */,
 				2F74D09C196F533B0040C816 /* UITextField+VENCalculatorInputView.m */,
 				B6FD6360196BAB8700D1913C /* NSString+VENCalculatorInputView.h */,
