@@ -1,4 +1,5 @@
 #import "VENMoneyCalculator.h"
+#import "NSString+VENCalculatorInputView.h"
 
 @interface VENMoneyCalculator ()
 @property (strong, nonatomic) NSNumberFormatter *numberFormatter;
@@ -19,7 +20,7 @@
         return nil;
     }
     NSString *floatString = [NSString stringWithFormat:@"1.0*%@", expressionString];
-    NSString *sanitizedString = [self replaceOperandsInString:floatString];
+    NSString *sanitizedString = [self sanitizedString:floatString];
     NSExpression *expression;
     id result;
     @try {
@@ -62,12 +63,20 @@
     return _numberFormatter;
 }
 
+- (NSString *)sanitizedString:(NSString *)string {
+    return [[self replaceOperandsInString:string] stringByReplacingCharactersInSet:[self illegalCharacters] withString:@""];
+}
+
 - (NSString *)replaceOperandsInString:(NSString *)string {
     NSString *subtractReplaced = [string stringByReplacingOccurrencesOfString:@"−" withString:@"-"];
     NSString *divideReplaced = [subtractReplaced stringByReplacingOccurrencesOfString:@"÷" withString:@"/"];
     NSString *multiplyReplaced = [divideReplaced stringByReplacingOccurrencesOfString:@"×" withString:@"*"];
 
     return [multiplyReplaced stringByReplacingOccurrencesOfString:[self decimalSeparator] withString:@"."];
+}
+
+- (NSCharacterSet *)illegalCharacters {
+    return [[NSCharacterSet characterSetWithCharactersInString:@"0123456789-/*.+"] invertedSet];
 }
 
 - (NSString *)decimalSeparator {
