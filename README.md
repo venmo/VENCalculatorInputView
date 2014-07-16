@@ -1,14 +1,19 @@
-Extra buttons for VENCalculatorInputView
+Alternate keyboard option for VENCalculatorInputView
 =========
 
-This fork of VENCalculatorInputView has different keyboard with extra buttons (and delegate methods):
+This fork of VENCalculatorInputView has option for alternate keyboard with extra buttons (and delegate methods):
 
 ![Modified VENCalculatorInputView layout](https://cloud.githubusercontent.com/assets/747340/3076567/74a21eb2-e3ea-11e3-80c4-17eb9739118b.png "Modified VENCalculatorInputView layout")
 
 * [Clear] - clears textfield
 * [Equals] - evaluate expression in textfield, update result and hide keyboard
 
-There are extra corresponding ```<VENCalculatorInputViewDelegate>``` methods added as well.
+To use 
+```obj-c
+VENCalculatorInputTextField *textField = [[VENCalculatorInputTextField alloc] initWithFrame:frame keyboardStyle:VENCalculatorInputViewStyleWithEquals];
+```
+
+There are extra corresponding ```<VENCalculatorInputViewDelegate>``` methods added as well (should be implemented in your delegate if you are using just input view).
 
 Note: Library has not been tested (but should work as far as I'm concerned) on iOS5 as the original [VENCalculatorInputView](https://github.com/venmo/VENCalculatorInputView). Therefore for this fork expected iOS version - 7.0
 
