@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -10,9 +10,8 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="x27-vp-6DR">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x27-vp-6DR">
                     <rect key="frame" x="0.0" y="0.0" width="64" height="54"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <accessibility key="accessibilityConfiguration" label="Divide"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                     <state key="normal" title="÷">
@@ -22,177 +21,8 @@
                         <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="2lI-PU-xC5"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fUR-3U-wcK">
-                    <rect key="frame" x="64" y="0.0" width="64" height="54"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <accessibility key="accessibilityConfiguration" label="One"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
-                    <state key="normal" title="1">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="wju-cY-KVJ"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JV6-sY-Ogr">
-                    <rect key="frame" x="64" y="54" width="64" height="54"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <accessibility key="accessibilityConfiguration" label="Four"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
-                    <state key="normal" title="4">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="vqD-gt-D5D"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jYZ-Lf-J5j">
-                    <rect key="frame" x="64" y="108" width="64" height="54"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <accessibility key="accessibilityConfiguration" label="Seven"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
-                    <state key="normal" title="7">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="YfT-3z-pVt"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eYd-gM-or0">
-                    <rect key="frame" x="128" y="162" width="64" height="54"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <accessibility key="accessibilityConfiguration" label="Decimal point"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
-                    <state key="normal" title=".">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="QWQ-qv-HHB"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Wf7-xV-pka">
-                    <rect key="frame" x="128" y="0.0" width="64" height="54"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <accessibility key="accessibilityConfiguration" label="Two"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
-                    <state key="normal" title="2">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="veB-xt-rnr"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BZC-sL-jHO">
-                    <rect key="frame" x="128" y="54" width="64" height="54"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <accessibility key="accessibilityConfiguration" label="Five"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
-                    <state key="normal" title="5">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="EyB-jX-8Ci"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="i9h-WF-taO">
-                    <rect key="frame" x="128" y="108" width="64" height="54"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <accessibility key="accessibilityConfiguration" label="Eight"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
-                    <state key="normal" title="8">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="W7z-SU-2Bb"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2Ty-om-JCT">
-                    <rect key="frame" x="64" y="162" width="64" height="54"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <accessibility key="accessibilityConfiguration" label="Zero"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
-                    <state key="normal" title="0">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="jh0-Bu-kbn"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="K9B-4z-Rq4">
-                    <rect key="frame" x="192" y="0.0" width="64" height="54"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <accessibility key="accessibilityConfiguration" label="Three"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
-                    <state key="normal" title="3">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="hHt-S1-qaK"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZMP-0C-Anz">
-                    <rect key="frame" x="192" y="54" width="64" height="54"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <accessibility key="accessibilityConfiguration" label="Six"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
-                    <state key="normal" title="6">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="2hq-ih-7qk"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WJe-DO-RoA">
-                    <rect key="frame" x="192" y="108" width="64" height="54"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <accessibility key="accessibilityConfiguration" label="Nine"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
-                    <state key="normal" title="9">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="nBV-ta-bQu"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nEm-qn-8Il">
-                    <rect key="frame" x="256" y="0.0" width="64" height="54"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <accessibility key="accessibilityConfiguration" label="Clear"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
-                    <state key="normal" title="C">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="userDidTapClear:" destination="1" eventType="touchUpInside" id="BfW-z4-LhI"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rF5-sT-WS8">
-                    <rect key="frame" x="256" y="54" width="64" height="162"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <accessibility key="accessibilityConfiguration" label="Equals"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
-                    <state key="normal" title="=">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="userDidTapEquals:" destination="1" eventType="touchUpInside" id="d6S-vH-vzk"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Vjs-Bi-wiF">
-                    <rect key="frame" x="192" y="162" width="64" height="54"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <accessibility key="accessibilityConfiguration" label="Backspace"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
-                    <state key="normal" image="VENCalculatorIconBackspace.png">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="userDidTapBackspace:" destination="1" eventType="touchUpInside" id="Kyu-1V-QyI"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nS1-xf-Wd3">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nS1-xf-Wd3">
                     <rect key="frame" x="0.0" y="54" width="64" height="54"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <accessibility key="accessibilityConfiguration" label="Multiply"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                     <state key="normal" title="×">
@@ -202,9 +32,8 @@
                         <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="9jH-Sx-3A5"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xVG-Mb-OFf">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVG-Mb-OFf">
                     <rect key="frame" x="0.0" y="108" width="64" height="54"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <accessibility key="accessibilityConfiguration" label="Subtract"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                     <state key="normal" title="−">
@@ -214,9 +43,8 @@
                         <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="Ri3-Vn-C6b"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WE3-xD-kgf">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WE3-xD-kgf">
                     <rect key="frame" x="0.0" y="162" width="64" height="54"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <accessibility key="accessibilityConfiguration" label="Add"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                     <state key="normal" title="+">
@@ -226,9 +54,242 @@
                         <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="8B7-FJ-aLh"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUR-3U-wcK">
+                    <rect key="frame" x="64" y="0.0" width="64" height="54"/>
+                    <accessibility key="accessibilityConfiguration" label="One"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                    <state key="normal" title="1">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="wju-cY-KVJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JV6-sY-Ogr">
+                    <rect key="frame" x="64" y="54" width="64" height="54"/>
+                    <accessibility key="accessibilityConfiguration" label="Four"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                    <state key="normal" title="4">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="vqD-gt-D5D"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYZ-Lf-J5j">
+                    <rect key="frame" x="64" y="108" width="64" height="54"/>
+                    <accessibility key="accessibilityConfiguration" label="Seven"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                    <state key="normal" title="7">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="YfT-3z-pVt"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ty-om-JCT">
+                    <rect key="frame" x="64" y="162" width="64" height="54"/>
+                    <accessibility key="accessibilityConfiguration" label="Zero"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                    <state key="normal" title="0">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="jh0-Bu-kbn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wf7-xV-pka">
+                    <rect key="frame" x="128" y="0.0" width="64" height="54"/>
+                    <accessibility key="accessibilityConfiguration" label="Two"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                    <state key="normal" title="2">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="veB-xt-rnr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZC-sL-jHO">
+                    <rect key="frame" x="128" y="54" width="64" height="54"/>
+                    <accessibility key="accessibilityConfiguration" label="Five"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                    <state key="normal" title="5">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="EyB-jX-8Ci"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9h-WF-taO">
+                    <rect key="frame" x="128" y="108" width="64" height="54"/>
+                    <accessibility key="accessibilityConfiguration" label="Eight"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                    <state key="normal" title="8">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="W7z-SU-2Bb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYd-gM-or0">
+                    <rect key="frame" x="128" y="162" width="64" height="54"/>
+                    <accessibility key="accessibilityConfiguration" label="Decimal point"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                    <state key="normal" title=".">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="QWQ-qv-HHB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9B-4z-Rq4">
+                    <rect key="frame" x="192" y="0.0" width="64" height="54"/>
+                    <accessibility key="accessibilityConfiguration" label="Three"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                    <state key="normal" title="3">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="hHt-S1-qaK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMP-0C-Anz">
+                    <rect key="frame" x="192" y="54" width="64" height="54"/>
+                    <accessibility key="accessibilityConfiguration" label="Six"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                    <state key="normal" title="6">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="2hq-ih-7qk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJe-DO-RoA">
+                    <rect key="frame" x="192" y="108" width="64" height="54"/>
+                    <accessibility key="accessibilityConfiguration" label="Nine"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                    <state key="normal" title="9">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="nBV-ta-bQu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vjs-Bi-wiF">
+                    <rect key="frame" x="192" y="162" width="64" height="54"/>
+                    <accessibility key="accessibilityConfiguration" label="Backspace"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                    <state key="normal" image="VENCalculatorIconBackspace.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="userDidTapBackspace:" destination="1" eventType="touchUpInside" id="Kyu-1V-QyI"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEm-qn-8Il">
+                    <rect key="frame" x="256" y="0.0" width="64" height="54"/>
+                    <accessibility key="accessibilityConfiguration" label="Clear"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                    <state key="normal" title="C">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="userDidTapClear:" destination="1" eventType="touchUpInside" id="BfW-z4-LhI"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rF5-sT-WS8">
+                    <rect key="frame" x="256" y="54" width="64" height="162"/>
+                    <accessibility key="accessibilityConfiguration" label="Equals"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                    <state key="normal" title="=">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="userDidTapEquals:" destination="1" eventType="touchUpInside" id="d6S-vH-vzk"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <constraints>
+                <constraint firstItem="fUR-3U-wcK" firstAttribute="top" secondItem="1" secondAttribute="top" id="04p-Xd-9Y4"/>
+                <constraint firstItem="2Ty-om-JCT" firstAttribute="leading" secondItem="WE3-xD-kgf" secondAttribute="trailing" id="0Gm-7g-Dhi"/>
+                <constraint firstItem="JV6-sY-Ogr" firstAttribute="width" secondItem="x27-vp-6DR" secondAttribute="width" id="1S2-Rd-F6B"/>
+                <constraint firstItem="x27-vp-6DR" firstAttribute="width" secondItem="nEm-qn-8Il" secondAttribute="width" id="1Vw-WV-qbM"/>
+                <constraint firstItem="BZC-sL-jHO" firstAttribute="top" secondItem="Wf7-xV-pka" secondAttribute="bottom" id="2A7-Gg-Ycq"/>
+                <constraint firstItem="x27-vp-6DR" firstAttribute="width" secondItem="WE3-xD-kgf" secondAttribute="width" id="4KS-Do-jay"/>
+                <constraint firstAttribute="bottom" secondItem="Vjs-Bi-wiF" secondAttribute="bottom" id="4vN-f3-4gZ"/>
+                <constraint firstItem="xVG-Mb-OFf" firstAttribute="top" secondItem="nS1-xf-Wd3" secondAttribute="bottom" id="6zb-Rl-Of1"/>
+                <constraint firstItem="WJe-DO-RoA" firstAttribute="top" secondItem="ZMP-0C-Anz" secondAttribute="bottom" id="8hT-T0-SU8"/>
+                <constraint firstItem="fUR-3U-wcK" firstAttribute="width" secondItem="x27-vp-6DR" secondAttribute="width" id="8r5-2n-JsP"/>
+                <constraint firstItem="WJe-DO-RoA" firstAttribute="width" secondItem="x27-vp-6DR" secondAttribute="width" id="AHC-gC-PeD"/>
+                <constraint firstItem="x27-vp-6DR" firstAttribute="width" secondItem="nS1-xf-Wd3" secondAttribute="width" id="Aa6-11-jn8"/>
+                <constraint firstItem="BZC-sL-jHO" firstAttribute="width" secondItem="x27-vp-6DR" secondAttribute="width" id="BeY-K5-Nto"/>
+                <constraint firstItem="fUR-3U-wcK" firstAttribute="height" secondItem="x27-vp-6DR" secondAttribute="height" id="CCd-Oe-6Ao"/>
+                <constraint firstItem="jYZ-Lf-J5j" firstAttribute="height" secondItem="x27-vp-6DR" secondAttribute="height" id="CiT-YZ-yMX"/>
+                <constraint firstItem="nEm-qn-8Il" firstAttribute="leading" secondItem="K9B-4z-Rq4" secondAttribute="trailing" id="E2p-5G-lYH"/>
+                <constraint firstItem="jYZ-Lf-J5j" firstAttribute="leading" secondItem="xVG-Mb-OFf" secondAttribute="trailing" id="EGo-RD-tBr"/>
+                <constraint firstAttribute="bottom" secondItem="eYd-gM-or0" secondAttribute="bottom" id="EST-dG-HKW"/>
+                <constraint firstItem="eYd-gM-or0" firstAttribute="width" secondItem="x27-vp-6DR" secondAttribute="width" id="HQH-h5-maK"/>
+                <constraint firstItem="x27-vp-6DR" firstAttribute="top" secondItem="1" secondAttribute="top" id="IhU-96-3js"/>
+                <constraint firstItem="ZMP-0C-Anz" firstAttribute="top" secondItem="K9B-4z-Rq4" secondAttribute="bottom" id="InH-4y-wtL"/>
+                <constraint firstItem="x27-vp-6DR" firstAttribute="height" secondItem="Vjs-Bi-wiF" secondAttribute="height" id="JRT-ro-KB6"/>
+                <constraint firstItem="x27-vp-6DR" firstAttribute="height" secondItem="xVG-Mb-OFf" secondAttribute="height" id="LNt-jt-4w9"/>
+                <constraint firstItem="nS1-xf-Wd3" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="OO4-vJ-ZQI"/>
+                <constraint firstItem="x27-vp-6DR" firstAttribute="height" secondItem="nS1-xf-Wd3" secondAttribute="height" id="Obf-jd-VDE"/>
+                <constraint firstItem="jYZ-Lf-J5j" firstAttribute="top" secondItem="JV6-sY-Ogr" secondAttribute="bottom" id="PTx-ei-WXq"/>
+                <constraint firstItem="x27-vp-6DR" firstAttribute="width" secondItem="Wf7-xV-pka" secondAttribute="width" id="PZr-DT-Mep"/>
+                <constraint firstItem="eYd-gM-or0" firstAttribute="leading" secondItem="2Ty-om-JCT" secondAttribute="trailing" id="Pxz-0x-OXY"/>
+                <constraint firstItem="eYd-gM-or0" firstAttribute="height" secondItem="x27-vp-6DR" secondAttribute="height" id="QWk-8Y-k5x"/>
+                <constraint firstItem="JV6-sY-Ogr" firstAttribute="top" secondItem="fUR-3U-wcK" secondAttribute="bottom" id="Qv8-Bf-oEc"/>
+                <constraint firstItem="fUR-3U-wcK" firstAttribute="leading" secondItem="x27-vp-6DR" secondAttribute="trailing" id="QvP-43-2pT"/>
+                <constraint firstItem="x27-vp-6DR" firstAttribute="height" secondItem="WE3-xD-kgf" secondAttribute="height" id="R2I-LO-OpY"/>
+                <constraint firstItem="x27-vp-6DR" firstAttribute="height" secondItem="Wf7-xV-pka" secondAttribute="height" id="TRL-8U-1Vc"/>
+                <constraint firstItem="rF5-sT-WS8" firstAttribute="leading" secondItem="ZMP-0C-Anz" secondAttribute="trailing" id="UwB-5T-NQ2"/>
+                <constraint firstItem="2Ty-om-JCT" firstAttribute="width" secondItem="x27-vp-6DR" secondAttribute="width" id="VaD-bD-f3W"/>
+                <constraint firstItem="x27-vp-6DR" firstAttribute="width" secondItem="Vjs-Bi-wiF" secondAttribute="width" id="WBg-Y5-mIN"/>
+                <constraint firstItem="K9B-4z-Rq4" firstAttribute="top" secondItem="1" secondAttribute="top" id="X4G-nJ-51v"/>
+                <constraint firstItem="x27-vp-6DR" firstAttribute="width" secondItem="ZMP-0C-Anz" secondAttribute="width" id="XJk-us-bbY"/>
+                <constraint firstAttribute="bottom" secondItem="eYd-gM-or0" secondAttribute="bottom" id="Ym4-pf-39X"/>
+                <constraint firstItem="x27-vp-6DR" firstAttribute="height" secondItem="K9B-4z-Rq4" secondAttribute="height" id="apq-Ps-164"/>
+                <constraint firstItem="rF5-sT-WS8" firstAttribute="top" secondItem="nEm-qn-8Il" secondAttribute="bottom" id="arC-xR-75F"/>
+                <constraint firstItem="i9h-WF-taO" firstAttribute="leading" secondItem="jYZ-Lf-J5j" secondAttribute="trailing" id="att-FY-MfD"/>
+                <constraint firstItem="rF5-sT-WS8" firstAttribute="leading" secondItem="WJe-DO-RoA" secondAttribute="trailing" id="bfv-gR-APv"/>
+                <constraint firstItem="jYZ-Lf-J5j" firstAttribute="width" secondItem="x27-vp-6DR" secondAttribute="width" id="bp6-TU-tlL"/>
+                <constraint firstItem="BZC-sL-jHO" firstAttribute="leading" secondItem="JV6-sY-Ogr" secondAttribute="trailing" id="bur-ug-yY1"/>
+                <constraint firstItem="2Ty-om-JCT" firstAttribute="height" secondItem="x27-vp-6DR" secondAttribute="height" id="ccA-2j-cEh"/>
+                <constraint firstItem="i9h-WF-taO" firstAttribute="top" secondItem="BZC-sL-jHO" secondAttribute="bottom" id="eC6-GK-2ot"/>
+                <constraint firstItem="WE3-xD-kgf" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="eCe-q9-Vg8"/>
+                <constraint firstItem="2Ty-om-JCT" firstAttribute="top" secondItem="jYZ-Lf-J5j" secondAttribute="bottom" id="fM4-mp-Vt3"/>
+                <constraint firstItem="x27-vp-6DR" firstAttribute="width" secondItem="rF5-sT-WS8" secondAttribute="width" id="gd1-S1-IDw"/>
+                <constraint firstItem="WE3-xD-kgf" firstAttribute="top" secondItem="xVG-Mb-OFf" secondAttribute="bottom" id="gzT-x1-TaG"/>
+                <constraint firstItem="i9h-WF-taO" firstAttribute="height" secondItem="x27-vp-6DR" secondAttribute="height" id="h5x-N3-gYZ"/>
+                <constraint firstItem="BZC-sL-jHO" firstAttribute="height" secondItem="x27-vp-6DR" secondAttribute="height" id="iSL-ct-SL1"/>
+                <constraint firstItem="nS1-xf-Wd3" firstAttribute="top" secondItem="x27-vp-6DR" secondAttribute="bottom" id="jVv-9q-PYX"/>
+                <constraint firstItem="i9h-WF-taO" firstAttribute="width" secondItem="x27-vp-6DR" secondAttribute="width" id="jcK-7R-BIV"/>
+                <constraint firstItem="Wf7-xV-pka" firstAttribute="top" secondItem="1" secondAttribute="top" id="jtz-hb-IJ7"/>
+                <constraint firstItem="JV6-sY-Ogr" firstAttribute="leading" secondItem="nS1-xf-Wd3" secondAttribute="trailing" id="ksj-Dw-EcB"/>
+                <constraint firstItem="x27-vp-6DR" firstAttribute="width" secondItem="K9B-4z-Rq4" secondAttribute="width" id="l19-Qy-VKo"/>
+                <constraint firstItem="xVG-Mb-OFf" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="mHD-0R-Orj"/>
+                <constraint firstAttribute="bottom" secondItem="rF5-sT-WS8" secondAttribute="bottom" id="mUa-hQ-uGG"/>
+                <constraint firstAttribute="bottom" secondItem="WE3-xD-kgf" secondAttribute="bottom" id="mal-cx-Mxg"/>
+                <constraint firstItem="x27-vp-6DR" firstAttribute="height" secondItem="ZMP-0C-Anz" secondAttribute="height" id="mjc-vi-qk6"/>
+                <constraint firstAttribute="bottom" secondItem="2Ty-om-JCT" secondAttribute="bottom" id="pCc-IR-XW7"/>
+                <constraint firstItem="WJe-DO-RoA" firstAttribute="height" secondItem="x27-vp-6DR" secondAttribute="height" id="pgn-t7-Gvm"/>
+                <constraint firstItem="JV6-sY-Ogr" firstAttribute="height" secondItem="x27-vp-6DR" secondAttribute="height" id="r56-pv-2Pq"/>
+                <constraint firstAttribute="trailing" secondItem="nEm-qn-8Il" secondAttribute="trailing" id="rBO-Ka-67n"/>
+                <constraint firstItem="eYd-gM-or0" firstAttribute="top" secondItem="i9h-WF-taO" secondAttribute="bottom" id="rif-Y8-hEe"/>
+                <constraint firstItem="WJe-DO-RoA" firstAttribute="leading" secondItem="i9h-WF-taO" secondAttribute="trailing" id="tOc-QN-A3C"/>
+                <constraint firstItem="x27-vp-6DR" firstAttribute="height" secondItem="nEm-qn-8Il" secondAttribute="height" id="uUV-AK-acL"/>
+                <constraint firstItem="nEm-qn-8Il" firstAttribute="top" secondItem="1" secondAttribute="top" id="uYy-yA-iYk"/>
+                <constraint firstItem="Vjs-Bi-wiF" firstAttribute="leading" secondItem="eYd-gM-or0" secondAttribute="trailing" id="uea-0M-Xrd"/>
+                <constraint firstItem="rF5-sT-WS8" firstAttribute="leading" secondItem="Vjs-Bi-wiF" secondAttribute="trailing" id="ut8-Xa-Rh6"/>
+                <constraint firstItem="ZMP-0C-Anz" firstAttribute="leading" secondItem="BZC-sL-jHO" secondAttribute="trailing" id="vM4-cv-D7n"/>
+                <constraint firstItem="x27-vp-6DR" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="vXj-Gm-6bi"/>
+                <constraint firstItem="Wf7-xV-pka" firstAttribute="leading" secondItem="fUR-3U-wcK" secondAttribute="trailing" id="w02-PM-J0u"/>
+                <constraint firstItem="Vjs-Bi-wiF" firstAttribute="top" secondItem="WJe-DO-RoA" secondAttribute="bottom" id="yRW-BB-M8D"/>
+                <constraint firstItem="x27-vp-6DR" firstAttribute="width" secondItem="xVG-Mb-OFf" secondAttribute="width" id="ych-hE-zDX"/>
+                <constraint firstItem="K9B-4z-Rq4" firstAttribute="leading" secondItem="Wf7-xV-pka" secondAttribute="trailing" id="zar-mh-Xct"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="decimalButton" destination="eYd-gM-or0" id="Lng-xU-k41"/>
@@ -256,4 +317,9 @@
     <resources>
         <image name="VENCalculatorIconBackspace.png" width="25" height="26"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>
