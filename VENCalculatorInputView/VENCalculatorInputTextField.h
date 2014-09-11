@@ -11,6 +11,13 @@
 
 
 /**
+Style of the keyboard.
+Can be set as runtime attribute in Interface Builder.
+*/
+@property VENCalculatorInputViewStyle style;
+
+
+/**
  Default initializer.
  Inits with VENCalculatorInputViewStyleDefault.
  */

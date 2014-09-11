@@ -25,11 +25,13 @@
 }
 
 - (void)awakeFromNib {
-    [self setUpInitWithStyle:VENCalculatorInputViewStyleDefault];
+    // style can with value from runtime attribute in Interface Builder
+    [self setUpInitWithStyle:self.style];
 }
 
 - (void)setUpInitWithStyle:(VENCalculatorInputViewStyle)style {
     self.locale = [NSLocale currentLocale];
+    self.style = style;
 
     VENCalculatorInputView *inputView = [[VENCalculatorInputView alloc] initWithStyle:style];
     inputView.delegate = self;
