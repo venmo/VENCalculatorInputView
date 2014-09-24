@@ -8,22 +8,32 @@
 
 @implementation VENCalculatorInputTextField
 
-- (id)initWithFrame:(CGRect)frame {
+- (instancetype)initWithFrame:(CGRect)frame keyboardStyle:(VENCalculatorInputViewStyle)style {
     self = [super initWithFrame:frame];
     if (self) {
-        [self setUpInit];
+        [self setUpInitWithStyle:style];
+    }
+    return self;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self setUpInitWithStyle:VENCalculatorInputViewStyleDefault];
     }
     return self;
 }
 
 - (void)awakeFromNib {
-    [self setUpInit];
+    // style can with value from runtime attribute in Interface Builder
+    [self setUpInitWithStyle:self.style];
 }
 
-- (void)setUpInit {
+- (void)setUpInitWithStyle:(VENCalculatorInputViewStyle)style {
     self.locale = [NSLocale currentLocale];
+    self.style = style;
 
-    VENCalculatorInputView *inputView = [VENCalculatorInputView new];
+    VENCalculatorInputView *inputView = [[VENCalculatorInputView alloc] initWithStyle:style];
     inputView.delegate = self;
     inputView.locale = self.locale;
     self.inputView = inputView;
@@ -64,7 +74,7 @@
         } else {
             self.text = subString;
         }
-    } else if ([lastCharacterString isEqualToString:[self decimalSeparator]]) {
+    } else if ([lastCharacterString isEqualToString:[self decimalSeparator]] && [self.text length] > 1) {
         NSString *secondToLastCharacterString = [self.text substringWithRange:NSMakeRange([self.text length] - 2, 1)];
         if ([secondToLastCharacterString isEqualToString:[self decimalSeparator]]) {
             self.text = subString;
@@ -96,6 +106,15 @@
 
 - (void)calculatorInputViewDidTapBackspace:(VENCalculatorInputView *)calculatorInputView {
     [self deleteBackward];
+}
+
+- (void)calculatorInputViewDidTapEquals:(VENCalculatorInputView *)calculatorInputView {
+    [self venCalculatorTextFieldDidEndEditing];
+    [self endEditing:YES];
+}
+
+- (void)calculatorInputViewDidTapClear:(VENCalculatorInputView *)calculatorInputView {
+    self.text = @"";
 }
 
 

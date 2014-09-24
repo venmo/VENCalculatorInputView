@@ -10,29 +10,53 @@
 
 @implementation VENCalculatorInputView
 
-- (id)initWithFrame:(CGRect)frame {
-    self = [[[NSBundle mainBundle] loadNibNamed:@"VENCalculatorInputView" owner:self options:nil] firstObject];
+- (instancetype)initWithStyle:(VENCalculatorInputViewStyle)style {
+    switch (style) {
+        case VENCalculatorInputViewStyleDefault:
+            return [self initWithNibNamed:@"VENCalculatorInputView"];
+            break;
+
+        case VENCalculatorInputViewStyleWithEquals:
+            return [self initWithNibNamed:@"VENCalculatorInputViewWithEqual"];
+            break;
+    }
+}
+
+- (instancetype)initWithNibNamed:(NSString*)nibName {
+    self = [[[NSBundle mainBundle] loadNibNamed:nibName owner:self options:nil] firstObject];
     if (self) {
-        // Set default locale
-        self.locale = [NSLocale currentLocale];
-
-        // Set customizable properties
-        [self setNumberButtonBackgroundColor:[UIColor colorWithWhite:0.98828 alpha:1]];
-        [self setNumberButtonBorderColor:[UIColor colorWithRed:193/255.0f green:195/255.0f blue:199/255.0f alpha:1]];
-        [self setOperationButtonBackgroundColor:[UIColor colorWithRed:193/255.0f green:196/255.0f blue:200/255.0f alpha:1]];
-        [self setOperationButtonBorderColor:[UIColor colorWithRed:172/255.0f green:174/255.0f blue:177/255.0f alpha:1]];
-        [self setButtonHighlightedColor:[UIColor grayColor]];
-        [self setButtonTitleColor:[UIColor darkTextColor]];
-
-        // Set default properties
-        for (UIButton *numberButton in self.numberButtonCollection) {
-            [self setupButton:numberButton];
-        }
-        for (UIButton *operationButton in self.operationButtonCollection) {
-            [self setupButton:operationButton];
-        }
+        [self setupInit];
     }
     return self;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [[[NSBundle mainBundle] loadNibNamed:@"VENCalculatorInputView" owner:self options:nil] firstObject];
+    if (self) {
+        [self setupInit];
+    }
+    return self;
+}
+
+- (void)setupInit {
+    // Set default locale
+    self.locale = [NSLocale currentLocale];
+
+    // Set customizable properties
+    [self setNumberButtonBackgroundColor:[UIColor colorWithWhite:0.98828 alpha:1]];
+    [self setNumberButtonBorderColor:[UIColor colorWithRed:193/255.0f green:195/255.0f blue:199/255.0f alpha:1]];
+    [self setOperationButtonBackgroundColor:[UIColor colorWithRed:193/255.0f green:196/255.0f blue:200/255.0f alpha:1]];
+    [self setOperationButtonBorderColor:[UIColor colorWithRed:172/255.0f green:174/255.0f blue:177/255.0f alpha:1]];
+    [self setButtonHighlightedColor:[UIColor grayColor]];
+    [self setButtonTitleColor:[UIColor darkTextColor]];
+
+    // Set default properties
+    for (UIButton *numberButton in self.numberButtonCollection) {
+        [self setupButton:numberButton];
+    }
+    for (UIButton *operationButton in self.operationButtonCollection) {
+        [self setupButton:operationButton];
+    }
 }
 
 - (void)setLocale:(NSLocale *)locale {
@@ -49,6 +73,20 @@
     [[UIDevice currentDevice] playInputClick];
     if ([self.delegate respondsToSelector:@selector(calculatorInputViewDidTapBackspace:)]) {
         [self.delegate calculatorInputViewDidTapBackspace:self];
+    }
+}
+
+- (IBAction)userDidTapClear:(UIButton *)sender {
+    [[UIDevice currentDevice] playInputClick];
+    if ([self.delegate respondsToSelector:@selector(calculatorInputViewDidTapClear:)]) {
+        [self.delegate calculatorInputViewDidTapClear:self];
+    }
+}
+
+- (IBAction)userDidTapEquals:(UIButton *)sender {
+    [[UIDevice currentDevice] playInputClick];
+    if ([self.delegate respondsToSelector:@selector(calculatorInputViewDidTapEquals:)]) {
+        [self.delegate calculatorInputViewDidTapEquals:self];
     }
 }
 
