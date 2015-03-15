@@ -32,7 +32,6 @@
     moneyCalculator.locale = self.locale;
     self.moneyCalculator = moneyCalculator;
 
-    [self addTarget:self action:@selector(venCalculatorTextFieldDidChange) forControlEvents:UIControlEventEditingChanged];
     [self addTarget:self action:@selector(venCalculatorTextFieldDidEndEditing) forControlEvents:UIControlEventEditingDidEnd];
 }
 
@@ -48,29 +47,6 @@
 
 
 #pragma mark - UITextField
-
-- (void)venCalculatorTextFieldDidChange {
-    if (![self.text length]) return;
-
-    NSString *lastCharacterString = [self.text substringFromIndex:[self.text length] - 1];
-    NSString *subString = [self.text substringToIndex:self.text.length - 1];
-    if ([lastCharacterString isEqualToString:@"+"] ||
-        [lastCharacterString isEqualToString:@"−"] ||
-        [lastCharacterString isEqualToString:@"×"] ||
-        [lastCharacterString isEqualToString:@"÷"]) {
-        NSString *evaluatedString = [self.moneyCalculator evaluateExpression:subString];
-        if (evaluatedString) {
-            self.text = [NSString stringWithFormat:@"%@%@", evaluatedString, lastCharacterString];
-        } else {
-            self.text = subString;
-        }
-    } else if ([lastCharacterString isEqualToString:[self decimalSeparator]]) {
-        NSString *secondToLastCharacterString = [self.text substringWithRange:NSMakeRange([self.text length] - 2, 1)];
-        if ([secondToLastCharacterString isEqualToString:[self decimalSeparator]]) {
-            self.text = subString;
-        }
-    }
-}
 
 - (void)venCalculatorTextFieldDidEndEditing {
     NSString *textToEvaluate = [self trimExpressionString:self.text];
@@ -91,6 +67,23 @@
         }
     } else {
         [self insertText:key];
+        NSString *subString = [self.text substringToIndex:self.text.length - 1];
+        if ([key isEqualToString:@"+"] ||
+            [key isEqualToString:@"−"] ||
+            [key isEqualToString:@"×"] ||
+            [key isEqualToString:@"÷"]) {
+            NSString *evaluatedString = [self.moneyCalculator evaluateExpression:[self trimExpressionString:subString]];
+            if (evaluatedString) {
+                self.text = [NSString stringWithFormat:@"%@%@", evaluatedString, key];
+            } else {
+                self.text = subString;
+            }
+        } else if ([key isEqualToString:[self decimalSeparator]]) {
+            NSString *secondToLastCharacterString = [self.text substringWithRange:NSMakeRange([self.text length] - 2, 1)];
+            if ([secondToLastCharacterString isEqualToString:[self decimalSeparator]]) {
+                self.text = subString;
+            }
+        }
     }
 }
 
@@ -107,17 +100,21 @@
  @return The trimmed expression string
  */
 - (NSString *)trimExpressionString:(NSString *)expressionString {
-    if ([self.text length] > 0) {
-        NSString *lastCharacterString = [self.text substringFromIndex:[self.text length] - 1];
+    NSString *txt = self.text;
+    while ([txt length] > 0) {
+        NSString *lastCharacterString = [txt substringFromIndex:[txt length] - 1];
         if ([lastCharacterString isEqualToString:@"+"] ||
             [lastCharacterString isEqualToString:@"−"] ||
             [lastCharacterString isEqualToString:@"×"] ||
             [lastCharacterString isEqualToString:@"÷"] ||
-            [lastCharacterString isEqualToString:[self decimalSeparator]]) {
-            return [self.text substringToIndex:self.text.length - 1];
+            [lastCharacterString isEqualToString:self.decimalSeparator]) {
+            txt = [txt substringToIndex:txt.length - 1];
+        }
+        else {
+            break;
         }
     }
-    return expressionString;
+    return txt;
 }
 
 - (NSString *)decimalSeparator {
