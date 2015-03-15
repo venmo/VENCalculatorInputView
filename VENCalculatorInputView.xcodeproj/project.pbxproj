@@ -52,7 +52,7 @@
 		2F74D09B196F533B0040C816 /* UITextField+VENCalculatorInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+VENCalculatorInputView.h"; sourceTree = "<group>"; };
 		2F74D09C196F533B0040C816 /* UITextField+VENCalculatorInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+VENCalculatorInputView.m"; sourceTree = "<group>"; };
 		2F74D09E196F53E20040C816 /* UITextField+VENCalculatorInputViewSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+VENCalculatorInputViewSpec.m"; sourceTree = "<group>"; };
-		8ECCE86895A54E0F8FA38DA9 /* Pods-VENCalculatorInputViewTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VENCalculatorInputViewTests.xcconfig"; path = "Pods/Pods-VENCalculatorInputViewTests.xcconfig"; sourceTree = "<group>"; };
+		382246DCE4C0E18FFC29538F /* Pods-VENCalculatorInputViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VENCalculatorInputViewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VENCalculatorInputViewTests/Pods-VENCalculatorInputViewTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B6F22CF918AC031100543816 /* libVENCalculatorInputView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVENCalculatorInputView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F22CFC18AC031100543816 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B6F22D0018AC031100543816 /* VENCalculatorInputView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VENCalculatorInputView-Prefix.pch"; sourceTree = "<group>"; };
@@ -74,6 +74,7 @@
 		B6FD6360196BAB8700D1913C /* NSString+VENCalculatorInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+VENCalculatorInputView.h"; sourceTree = "<group>"; };
 		B6FD6361196BAB8700D1913C /* NSString+VENCalculatorInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+VENCalculatorInputView.m"; sourceTree = "<group>"; };
 		B6FD6363196BB09D00D1913C /* NSString+VENCalculatorInputViewSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+VENCalculatorInputViewSpec.m"; sourceTree = "<group>"; };
+		BA38E94872D6B1E128555B04 /* Pods-VENCalculatorInputViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VENCalculatorInputViewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VENCalculatorInputViewTests/Pods-VENCalculatorInputViewTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +100,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		188C84F12C216EDAE3E7DA39 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				382246DCE4C0E18FFC29538F /* Pods-VENCalculatorInputViewTests.debug.xcconfig */,
+				BA38E94872D6B1E128555B04 /* Pods-VENCalculatorInputViewTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B6F22CF018AC031000543816 = {
 			isa = PBXGroup;
 			children = (
@@ -106,7 +116,7 @@
 				B6F22D1218AC031100543816 /* VENCalculatorInputViewTests */,
 				B6F22CFB18AC031100543816 /* Frameworks */,
 				B6F22CFA18AC031100543816 /* Products */,
-				8ECCE86895A54E0F8FA38DA9 /* Pods-VENCalculatorInputViewTests.xcconfig */,
+				188C84F12C216EDAE3E7DA39 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -280,7 +290,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-VENCalculatorInputViewTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VENCalculatorInputViewTests/Pods-VENCalculatorInputViewTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A953CD3FA4524205B403029C /* Check Pods Manifest.lock */ = {
@@ -441,7 +451,7 @@
 		};
 		B6F22D2018AC031100543816 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8ECCE86895A54E0F8FA38DA9 /* Pods-VENCalculatorInputViewTests.xcconfig */;
+			baseConfigurationReference = 382246DCE4C0E18FFC29538F /* Pods-VENCalculatorInputViewTests.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -463,7 +473,7 @@
 		};
 		B6F22D2118AC031100543816 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8ECCE86895A54E0F8FA38DA9 /* Pods-VENCalculatorInputViewTests.xcconfig */;
+			baseConfigurationReference = BA38E94872D6B1E128555B04 /* Pods-VENCalculatorInputViewTests.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
