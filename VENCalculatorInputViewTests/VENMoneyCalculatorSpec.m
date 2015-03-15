@@ -94,4 +94,30 @@ describe(@"Handle other locale", ^{
 
 });
 
+describe(@"Handle Deutsch, which use . as grouping seperator", ^{
+    __block VENMoneyCalculator *moneyCalculator;
+
+    beforeAll(^{
+        moneyCalculator = [VENMoneyCalculator new];
+        moneyCalculator.locale = [NSLocale localeWithLocaleIdentifier:@"de_DE"];
+    });
+
+    it(@"should handle division", ^{
+        expect([moneyCalculator evaluateExpression:@"2/2"]).to.equal(@"1");
+        expect([moneyCalculator evaluateExpression:@"100/4"]).to.equal(@"25");
+        expect([moneyCalculator evaluateExpression:@"1/2"]).to.equal(@"0,50");
+    });
+
+    it(@"should handle ×", ^{
+        expect([moneyCalculator evaluateExpression:@"100×1,2"]).to.equal(@"120");
+        expect([moneyCalculator evaluateExpression:@"1000 × 0,8"]).to.equal(@"800");
+    });
+
+    it(@"should handle big numbers", ^{
+        expect([moneyCalculator evaluateExpression:@"1.035,01+40"]).to.equal(@"1.075,01");
+        expect([moneyCalculator evaluateExpression:@"1.040,01-1.035"]).to.equal(@"5,01");
+    });
+
+});
+
 SpecEnd

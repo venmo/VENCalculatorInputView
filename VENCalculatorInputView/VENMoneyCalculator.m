@@ -19,12 +19,12 @@
     if (!expressionString) {
         return nil;
     }
-    NSString *floatString = [NSString stringWithFormat:@"1.0*%@", expressionString];
-    NSString *sanitizedString = [self sanitizedString:floatString];
+    NSString *sanitizedString = [self sanitizedString:expressionString];
+    NSString *floatString = [NSString stringWithFormat:@"1.0*%@", sanitizedString];
     NSExpression *expression;
     id result;
     @try {
-        expression = [NSExpression expressionWithFormat:sanitizedString];
+        expression = [NSExpression expressionWithFormat:floatString];
         result = [expression expressionValueWithObject:nil context:nil];
     }
     @catch (NSException *exception) {
@@ -56,15 +56,17 @@
 - (NSNumberFormatter *)numberFormatter {
     if (!_numberFormatter) {
         _numberFormatter = [NSNumberFormatter new];
+        [_numberFormatter setLocale:self.locale];
         [_numberFormatter setNumberStyle:NSNumberFormatterCurrencyStyle];
         [_numberFormatter setCurrencySymbol:@""];
-        [_numberFormatter setCurrencyDecimalSeparator:[self decimalSeparator]];
     }
     return _numberFormatter;
 }
 
 - (NSString *)sanitizedString:(NSString *)string {
-    return [[self replaceOperandsInString:string] stringByReplacingCharactersInSet:[self illegalCharacters] withString:@""];
+    NSString *groupingSeperator = [self.locale objectForKey:NSLocaleGroupingSeparator];
+    NSString *withoutGroupingSeperator = [string stringByReplacingOccurrencesOfString:groupingSeperator withString:@""];
+    return [[self replaceOperandsInString:withoutGroupingSeperator] stringByReplacingCharactersInSet:[self illegalCharacters] withString:@""];
 }
 
 - (NSString *)replaceOperandsInString:(NSString *)string {
