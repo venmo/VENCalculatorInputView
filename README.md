@@ -56,7 +56,7 @@ Finally, implement the delegate method that handles the backspace key:
 
 Try it!
 
-You can read more about custom keyboards in [Apple's documentation](https://developer.apple.com/library/ios/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/InputViews/InputViews.html).
+You can read more about custom keyboards in [Apple’s documentation](https://developer.apple.com/library/ios/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/InputViews/InputViews.html).
 
 ### Using the calculator text field (optimized for money calculation)
 
@@ -70,11 +70,11 @@ Different regions use different symbols as their decimal separator (e.g. ```.```
 Testing
 ------
 
-We've written some tests. You can run them by opening the project in Xcode and hitting `Command-U`.
+We’ve written some tests. You can run them by opening the project in Xcode and hitting `Command-U`.
 
 Contributing
 ------------
 
-We'd love to see your ideas for improving this library! The best way to contribute is by submitting a pull request. We'll do our best to respond to your patch as soon as possible. You can also submit a [new GitHub issue](https://github.com/venmo/VENCalculatorInputView/issues/new) if you find bugs or have questions. :octocat:
+We’d love to see your ideas for improving this library! The best way to contribute is by submitting a pull request. We’ll do our best to respond to your patch as soon as possible. You can also submit a [new GitHub issue](https://github.com/venmo/VENCalculatorInputView/issues/new) if you find bugs or have questions. :octocat:
 
 Please make sure to follow our general coding style and add test coverage for new features!
