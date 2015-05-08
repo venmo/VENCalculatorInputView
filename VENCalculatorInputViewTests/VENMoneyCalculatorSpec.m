@@ -1,6 +1,7 @@
 #define EXP_SHORTHAND
 #import <Expecta/Expecta.h>
 #import <Specta/Specta.h>
+#import <OCMock/OCMock.h>
 
 #import "VENMoneyCalculator.h"
 
@@ -118,6 +119,34 @@ describe(@"Handle Deutsch, which use . as grouping seperator", ^{
         expect([moneyCalculator evaluateExpression:@"1.040,01-1.035"]).to.equal(@"5,01");
     });
 
+});
+
+describe(@"locale", ^{
+    __block VENMoneyCalculator *moneyCalculator;
+    __block id mockLocale;
+
+    beforeAll(^{
+        mockLocale = [OCMockObject mockForClass:[NSLocale class]];
+        [[[mockLocale stub] andReturn:[NSLocale localeWithLocaleIdentifier:@"vi_VN"]] currentLocale];
+        moneyCalculator = [VENMoneyCalculator new];
+    });
+
+    afterAll(^{
+        [mockLocale stopMocking];
+    });
+
+    it(@"should use the current locale by default (Vietname in this case)", ^{
+        expect([moneyCalculator evaluateExpression:@"1,90"]).to.equal(@"2");
+        expect([moneyCalculator evaluateExpression:@"1,30"]).to.equal(@"1");
+        expect([moneyCalculator evaluateExpression:@"0,90"]).to.equal(@"1");
+    });
+
+    it(@"should use the specified locale if set", ^{
+        moneyCalculator.locale = [NSLocale localeWithLocaleIdentifier:@"en_US"];
+        expect([moneyCalculator evaluateExpression:@"1.9"]).to.equal(@"1.90");
+        expect([moneyCalculator evaluateExpression:@"1.30"]).to.equal(@"1.30");
+        expect([moneyCalculator evaluateExpression:@"0.90"]).to.equal(@"0.90");
+    });
 });
 
 SpecEnd
