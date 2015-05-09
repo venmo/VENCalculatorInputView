@@ -50,6 +50,11 @@
     }
 }
 
+- (void)setLocale:(NSLocale *)locale {
+    _locale = locale;
+    self.numberFormatter.locale = locale;
+}
+
 
 #pragma mark - Private
 
