@@ -6,8 +6,9 @@ VENCalculatorInputView
 VENCalculatorInputView is the calculator keyboard that is used in the [Venmo](https://venmo.com/) iOS app.
 Available for iOS 6 and beyond. Enjoy.
 
-![alt text](http://i.imgur.com/VWgymjH.gif "VENCalculatorInputView demo")
-
+<p align="center">
+<img src="http://i.imgur.com/VWgymjH.gif" alt="VENCalculatorInputView demo"/>
+</p>
 Installation
 ----
 
@@ -34,9 +35,9 @@ This will have ```VENCalculatorInputView``` display when ```myTextField``` becom
 
 #### 2. Implement the ```<VENCalculatorInputViewDelegate>``` methods.
 
-First, have a class implement the ```<VENCalculatorInputViewDelegate>``` protocol and set ```myTextField.inputView.delegate``` to an instance of that class.
+Have a class implement the ```<VENCalculatorInputViewDelegate>``` protocol and set ```myTextField.inputView.delegate``` to an instance of that class.
 
-Next, implement the delegate method that handles keyboard input:
+Implement the delegate method that handles keyboard input:
 
 ```obj-c
 - (void)calculatorInputView:(VENCalculatorInputView *)inputView didTapKey:(NSString *)key {
@@ -45,7 +46,7 @@ Next, implement the delegate method that handles keyboard input:
 }
 ```
 
-Finally, implement the delegate method that handles the backspace key:
+Implement the delegate method that handles the backspace key:
 
 ```obj-c
 - (void)calculatorInputViewDidTapBackspace:(VENCalculatorInputView *)calculatorInputView {
