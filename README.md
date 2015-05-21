@@ -20,9 +20,13 @@ pod 'VENCalculatorInputView', '~> 1.5'
 
 Sample Usage
 ----
-You can choose to use just ```VENCalculatorInputView``` (only the keyboard) and define your own behavior or use ```VENCalculatorInputTextField``` (keyboard + text field with money calculation built in).
+You can choose to use ```VENCalculatorInputView``` and define your own calculation behavior or use ```VENCalculatorInputTextField``` for both keyboard and calculation.
 
-### Using just the calculator keyboard
+### Use the calculator text field (recommended)
+
+All you need to do is use ```VENCalculatorInputTextField``` instead of ```UITextField``` and treat it like a normal text field. It will automagically handle the input and make calculations. Take a look at out our [VENCalculatorInputViewSample](https://github.com/venmo/VENCalculatorInputView/tree/master/VENCalculatorInputViewSample) project to see how easy it is.
+
+### Use only the calculator keyboard
 
 #### 1. Set the input view.
 Find the ```UITextField``` or ```UITextView``` that you want to display the keyboard and set its ```inputView``` to an instance of ```VENCalculatorInputView```.
@@ -55,13 +59,7 @@ Implement the delegate method that handles the backspace key:
 }
 ```
 
-Try it!
-
 You can read more about custom keyboards in [Apple’s documentation](https://developer.apple.com/library/ios/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/InputViews/InputViews.html).
-
-### Using the calculator text field (optimized for money calculation)
-
-All you need to do is use ```VENCalculatorInputTextField``` instead of ```UITextField``` and use it like normal text field. It will automagically handle the input and make calculations. Take a look at out our ```VENCalculatorInputViewSample``` project.
 
 Localization
 ------
@@ -71,7 +69,7 @@ Different regions use different symbols as their decimal separator (e.g. ```.```
 Testing
 ------
 
-We’ve written some tests. You can run them by opening the project in Xcode and hitting `Command-U`.
+Run example tests in this repo by opening the project in Xcode and hitting `Command-U`.
 
 Contributing
 ------------
