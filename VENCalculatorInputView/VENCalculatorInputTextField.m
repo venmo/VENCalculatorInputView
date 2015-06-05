@@ -62,27 +62,27 @@
 - (void)calculatorInputView:(VENCalculatorInputView *)inputView didTapKey:(NSString *)key {
     if ([self.delegate respondsToSelector:@selector(textField:shouldChangeCharactersInRange:replacementString:)]) {
         NSRange range = [self selectedNSRange];
-        if ([self.delegate textField:self shouldChangeCharactersInRange:range replacementString:key]) {
-            [self insertText:key];
+        if (![self.delegate textField:self shouldChangeCharactersInRange:range replacementString:key]) {
+            return;
         }
-    } else {
-        [self insertText:key];
-        NSString *subString = [self.text substringToIndex:self.text.length - 1];
-        if ([key isEqualToString:@"+"] ||
-            [key isEqualToString:@"−"] ||
-            [key isEqualToString:@"×"] ||
-            [key isEqualToString:@"÷"]) {
-            NSString *evaluatedString = [self.moneyCalculator evaluateExpression:[self trimExpressionString:subString]];
-            if (evaluatedString) {
-                self.text = [NSString stringWithFormat:@"%@%@", evaluatedString, key];
-            } else {
-                self.text = subString;
-            }
-        } else if ([key isEqualToString:[self decimalSeparator]]) {
-            NSString *secondToLastCharacterString = [self.text substringWithRange:NSMakeRange([self.text length] - 2, 1)];
-            if ([secondToLastCharacterString isEqualToString:[self decimalSeparator]]) {
-                self.text = subString;
-            }
+    }
+
+    [self insertText:key];
+    NSString *subString = [self.text substringToIndex:self.text.length - 1];
+    if ([key isEqualToString:@"+"] ||
+        [key isEqualToString:@"−"] ||
+        [key isEqualToString:@"×"] ||
+        [key isEqualToString:@"÷"]) {
+        NSString *evaluatedString = [self.moneyCalculator evaluateExpression:[self trimExpressionString:subString]];
+        if (evaluatedString) {
+            self.text = [NSString stringWithFormat:@"%@%@", evaluatedString, key];
+        } else {
+            self.text = subString;
+        }
+    } else if ([key isEqualToString:[self decimalSeparator]]) {
+        NSString *secondToLastCharacterString = [self.text substringWithRange:NSMakeRange([self.text length] - 2, 1)];
+        if ([secondToLastCharacterString isEqualToString:[self decimalSeparator]]) {
+            self.text = subString;
         }
     }
 }
