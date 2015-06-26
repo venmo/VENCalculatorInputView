@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AA4581B1B33ED8400708FFE /* VENCalculatorIconBackspace@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AA4581A1B33ED8400708FFE /* VENCalculatorIconBackspace@3x.png */; };
 		2F74D09D196F533B0040C816 /* UITextField+VENCalculatorInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F74D09C196F533B0040C816 /* UITextField+VENCalculatorInputView.m */; };
 		2F74D09F196F53E20040C816 /* UITextField+VENCalculatorInputViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F74D09E196F53E20040C816 /* UITextField+VENCalculatorInputViewSpec.m */; };
 		40BED60EE864401D8AFB2433 /* libPods-VENCalculatorInputViewTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 142758DF9FEC443BA2D635DE /* libPods-VENCalculatorInputViewTests.a */; };
@@ -49,6 +50,7 @@
 
 /* Begin PBXFileReference section */
 		142758DF9FEC443BA2D635DE /* libPods-VENCalculatorInputViewTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VENCalculatorInputViewTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AA4581A1B33ED8400708FFE /* VENCalculatorIconBackspace@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "VENCalculatorIconBackspace@3x.png"; sourceTree = "<group>"; };
 		2F74D09B196F533B0040C816 /* UITextField+VENCalculatorInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+VENCalculatorInputView.h"; sourceTree = "<group>"; };
 		2F74D09C196F533B0040C816 /* UITextField+VENCalculatorInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+VENCalculatorInputView.m"; sourceTree = "<group>"; };
 		2F74D09E196F53E20040C816 /* UITextField+VENCalculatorInputViewSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+VENCalculatorInputViewSpec.m"; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 			children = (
 				B6F22D3218AC03C700543816 /* VENCalculatorIconBackspace.png */,
 				B6F22D3318AC03C700543816 /* VENCalculatorIconBackspace@2x.png */,
+				1AA4581A1B33ED8400708FFE /* VENCalculatorIconBackspace@3x.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AA4581B1B33ED8400708FFE /* VENCalculatorIconBackspace@3x.png in Resources */,
 				B6F22D3418AC03C700543816 /* VENCalculatorIconBackspace.png in Resources */,
 				B6F22D1718AC031100543816 /* InfoPlist.strings in Resources */,
 				B6F22D3518AC03C700543816 /* VENCalculatorIconBackspace@2x.png in Resources */,
