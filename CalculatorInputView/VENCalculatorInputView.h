@@ -1,5 +1,11 @@
 #import <UIKit/UIKit.h>
 
+//! Project version number for CalculatorInputView.
+FOUNDATION_EXPORT double CalculatorInputViewVersionNumber;
+
+//! Project version string for CalculatorInputView.
+FOUNDATION_EXPORT const unsigned char CalculatorInputViewVersionString[];
+
 @class VENCalculatorInputView;
 @protocol VENCalculatorInputViewDelegate <NSObject>
 
@@ -41,3 +47,6 @@
 @property (strong, nonatomic) UIColor *operationButtonBorderColor;
 
 @end
+
+
+#import <CalculatorInputView/VENCalculatorInputView.h>

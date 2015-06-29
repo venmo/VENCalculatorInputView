@@ -1,6 +1,8 @@
 #import "VENMoneyCalculator.h"
 #import "NSString+VENCalculatorInputView.h"
 
+@import CoreGraphics;
+
 @interface VENMoneyCalculator ()
 @property (strong, nonatomic) NSNumberFormatter *numberFormatter;
 @end
