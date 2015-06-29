@@ -2,22 +2,22 @@
 #import <Expecta/Expecta.h>
 #import <Specta/Specta.h>
 
-#import "NSString+VENCalculatorInputView.h"
+#import "NSString+CalculatorInputView.h"
 
-SpecBegin(NSString_VENCalculatorInputView)
+SpecBegin(NSString_CalculatorInputView)
 
-describe(@"stringByReplacingCharactersInSet:withString:", ^{
+describe(@"ven_stringByReplacingCharactersInSet:withString:", ^{
 
     it(@"should handle whitespace characters", ^{
         NSString *s = @"foo     bar\n           ";
-        NSString *result = [s stringByReplacingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet] withString:@""];
+        NSString *result = [s ven_stringByReplacingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet] withString:@""];
         expect(result).to.equal(@"foobar");
     });
 
     it(@"should handle custom NSCharacterSet", ^{
         NSString *s = @"1+1(&^!@#+1foobar";
         NSCharacterSet *characterSet = [[NSCharacterSet characterSetWithCharactersInString:@"0123456789-/*.+"] invertedSet];
-        NSString *result = [s stringByReplacingCharactersInSet:characterSet withString:@""];
+        NSString *result = [s ven_stringByReplacingCharactersInSet:characterSet withString:@""];
         expect(result).to.equal(@"1+1+1");
     });
 });

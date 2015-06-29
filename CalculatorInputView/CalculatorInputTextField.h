@@ -1,7 +1,8 @@
-#import <UIKit/UIKit.h>
-#import "VENCalculatorInputView.h"
+@import UIKit;
 
-@interface VENCalculatorInputTextField : UITextField <VENCalculatorInputViewDelegate>
+#import "CalculatorInputView.h"
+
+@interface CalculatorInputTextField : UITextField <CalculatorInputViewDelegate>
 
 /**
  The locale to use for the decimal separator.

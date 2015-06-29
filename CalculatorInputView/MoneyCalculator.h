@@ -1,6 +1,6 @@
-#import <Foundation/Foundation.h>
+@import Foundation;
 
-@interface VENMoneyCalculator : NSObject
+@interface MoneyCalculator : NSObject
 
 @property (strong, nonatomic) NSLocale *locale;
 

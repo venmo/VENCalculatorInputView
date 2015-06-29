@@ -1,6 +1,6 @@
-#import "VENCalculatorInputView.h"
+#import "CalculatorInputView.h"
 
-@interface VENCalculatorInputView ()
+@interface CalculatorInputView ()
 
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *numberButtonCollection;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *operationButtonCollection;
@@ -8,10 +8,10 @@
 
 @end
 
-@implementation VENCalculatorInputView
+@implementation CalculatorInputView
 
 - (id)initWithFrame:(CGRect)frame {
-    self = [[[NSBundle bundleForClass:[self class]]  loadNibNamed:@"VENCalculatorInputView" owner:self options:nil] firstObject];
+    self = [[[NSBundle bundleForClass:[self class]]  loadNibNamed:@"CalculatorInputView" owner:self options:nil] firstObject];
     if (self) {
         // Set default locale
         self.locale = [NSLocale currentLocale];

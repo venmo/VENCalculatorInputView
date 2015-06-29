@@ -1,13 +1,13 @@
-#import "VENMoneyCalculator.h"
-#import "NSString+VENCalculatorInputView.h"
+#import "MoneyCalculator.h"
+#import "NSString+CalculatorInputView.h"
 
 @import CoreGraphics;
 
-@interface VENMoneyCalculator ()
+@interface MoneyCalculator ()
 @property (strong, nonatomic) NSNumberFormatter *numberFormatter;
 @end
 
-@implementation VENMoneyCalculator
+@implementation MoneyCalculator
 
 - (instancetype)init {
     self = [super init];
@@ -73,7 +73,7 @@
 - (NSString *)sanitizedString:(NSString *)string {
     NSString *groupingSeperator = [self.locale objectForKey:NSLocaleGroupingSeparator];
     NSString *withoutGroupingSeperator = [string stringByReplacingOccurrencesOfString:groupingSeperator withString:@""];
-    return [[self replaceOperandsInString:withoutGroupingSeperator] stringByReplacingCharactersInSet:[self illegalCharacters] withString:@""];
+    return [[self replaceOperandsInString:withoutGroupingSeperator] ven_stringByReplacingCharactersInSet:[self illegalCharacters] withString:@""];
 }
 
 - (NSString *)replaceOperandsInString:(NSString *)string {

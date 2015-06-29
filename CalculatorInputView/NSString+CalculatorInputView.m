@@ -1,8 +1,8 @@
-#import "NSString+VENCalculatorInputView.h"
+#import "NSString+CalculatorInputView.h"
 
-@implementation NSString (VENCalculatorInputView)
+@implementation NSString (CalculatorInputView)
 
-- (NSString *)stringByReplacingCharactersInSet:(NSCharacterSet *)characterSet
+- (NSString *)ven_stringByReplacingCharactersInSet:(NSCharacterSet *)characterSet
                                     withString:(NSString *)string
 {
     return [[self componentsSeparatedByCharactersInSet:characterSet] componentsJoinedByString:string];

@@ -1,4 +1,4 @@
-#import <UIKit/UIKit.h>
+@import UIKit;
 
 //! Project version number for CalculatorInputView.
 FOUNDATION_EXPORT double CalculatorInputViewVersionNumber;
@@ -6,18 +6,18 @@ FOUNDATION_EXPORT double CalculatorInputViewVersionNumber;
 //! Project version string for CalculatorInputView.
 FOUNDATION_EXPORT const unsigned char CalculatorInputViewVersionString[];
 
-@class VENCalculatorInputView;
-@protocol VENCalculatorInputViewDelegate <NSObject>
+@class CalculatorInputView;
+@protocol CalculatorInputViewDelegate <NSObject>
 
 @optional
-- (void)calculatorInputView:(VENCalculatorInputView *)inputView didTapKey:(NSString *)key;
-- (void)calculatorInputViewDidTapBackspace:(VENCalculatorInputView *)calculatorInputView;
+- (void)calculatorInputView:(CalculatorInputView *)inputView didTapKey:(NSString *)key;
+- (void)calculatorInputViewDidTapBackspace:(CalculatorInputView *)calculatorInputView;
 
 @end
 
-@interface VENCalculatorInputView : UIView <UIInputViewAudioFeedback>
+@interface CalculatorInputView : UIView <UIInputViewAudioFeedback>
 
-@property (weak, nonatomic) id<VENCalculatorInputViewDelegate> delegate;
+@property (weak, nonatomic) id<CalculatorInputViewDelegate> delegate;
 
 /**-----------------------------------------------------------------------------
  * @name Localization
@@ -49,4 +49,4 @@ FOUNDATION_EXPORT const unsigned char CalculatorInputViewVersionString[];
 @end
 
 
-#import <CalculatorInputView/VENCalculatorInputView.h>
+#import <CalculatorInputView/CalculatorInputTextField.h>

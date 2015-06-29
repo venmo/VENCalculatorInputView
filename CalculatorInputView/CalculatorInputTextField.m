@@ -1,12 +1,12 @@
-#import "VENCalculatorInputTextField.h"
-#import "VENMoneyCalculator.h"
-#import "UITextField+VENCalculatorInputView.h"
+#import "CalculatorInputTextField.h"
+#import "MoneyCalculator.h"
+#import "UITextField+CalculatorInputView.h"
 
-@interface VENCalculatorInputTextField ()
-@property (strong, nonatomic) VENMoneyCalculator *moneyCalculator;
+@interface CalculatorInputTextField ()
+@property (strong, nonatomic) MoneyCalculator *moneyCalculator;
 @end
 
-@implementation VENCalculatorInputTextField
+@implementation CalculatorInputTextField
 
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
@@ -23,12 +23,12 @@
 - (void)setUpInit {
     self.locale = [NSLocale currentLocale];
 
-    VENCalculatorInputView *inputView = [VENCalculatorInputView new];
+    CalculatorInputView *inputView = [CalculatorInputView new];
     inputView.delegate = self;
     inputView.locale = self.locale;
     self.inputView = inputView;
 
-    VENMoneyCalculator *moneyCalculator = [VENMoneyCalculator new];
+    MoneyCalculator *moneyCalculator = [MoneyCalculator new];
     moneyCalculator.locale = self.locale;
     self.moneyCalculator = moneyCalculator;
 
@@ -40,7 +40,7 @@
 
 - (void)setLocale:(NSLocale *)locale {
     _locale = locale;
-    VENCalculatorInputView *inputView = (VENCalculatorInputView *)self.inputView;
+    CalculatorInputView *inputView = (CalculatorInputView *)self.inputView;
     inputView.locale = locale;
     self.moneyCalculator.locale = locale;
 }
@@ -57,11 +57,11 @@
 }
 
 
-#pragma mark - VENCalculatorInputViewDelegate
+#pragma mark - CalculatorInputViewDelegate
 
-- (void)calculatorInputView:(VENCalculatorInputView *)inputView didTapKey:(NSString *)key {
+- (void)calculatorInputView:(CalculatorInputView *)inputView didTapKey:(NSString *)key {
     if ([self.delegate respondsToSelector:@selector(textField:shouldChangeCharactersInRange:replacementString:)]) {
-        NSRange range = [self selectedNSRange];
+        NSRange range = [self ven_selectedNSRange];
         if (![self.delegate textField:self shouldChangeCharactersInRange:range replacementString:key]) {
             return;
         }
@@ -87,7 +87,7 @@
     }
 }
 
-- (void)calculatorInputViewDidTapBackspace:(VENCalculatorInputView *)calculatorInputView {
+- (void)calculatorInputViewDidTapBackspace:(CalculatorInputView *)calculatorInputView {
     [self deleteBackward];
 }
 

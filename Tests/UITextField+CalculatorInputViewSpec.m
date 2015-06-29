@@ -3,11 +3,11 @@
 #import <Specta/Specta.h>
 #import <OCMock/OCMock.h>
 
-#import "UITextField+VENCalculatorInputView.h"
+#import "UITextField+CalculatorInputView.h"
 
-SpecBegin(UITextRange_VENCalculatorInputView)
+SpecBegin(UITextRange_CalculatorInputView)
 
-describe(@"selectedNSRange", ^{
+describe(@"ven_selectedNSRange", ^{
 
     it(@"should get UITextField's selectedText in an NSRange", ^{
         id mockBeginningTextPosition = OCMClassMock([UITextPosition class]);
@@ -25,7 +25,7 @@ describe(@"selectedNSRange", ^{
         [[mockTextField expect] offsetFromPosition:mockBeginningTextPosition toPosition:mockSelectionStartTextPosition];
         [[mockTextField expect] offsetFromPosition:mockSelectionStartTextPosition toPosition:mockSelectionEndTextPosition];
 
-        [mockTextField selectedNSRange];
+        [mockTextField ven_selectedNSRange];
     });
 });
 

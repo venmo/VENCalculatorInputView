@@ -1,8 +1,8 @@
-#import "UITextField+VENCalculatorInputView.h"
+#import "UITextField+CalculatorInputView.h"
 
-@implementation UITextField (VENCalculatorInputView)
+@implementation UITextField (CalculatorInputView)
 
-- (NSRange)selectedNSRange
+- (NSRange)ven_selectedNSRange
 {
     UITextPosition *beginning = self.beginningOfDocument;
 
