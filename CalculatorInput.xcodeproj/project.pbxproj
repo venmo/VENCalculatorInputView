@@ -10,7 +10,7 @@
 		361C4E951B421E7B00AB5D98 /* CalculatorInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 361C4E831B421E7B00AB5D98 /* CalculatorInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		361C4E961B421E7B00AB5D98 /* CalculatorInputTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 361C4E841B421E7B00AB5D98 /* CalculatorInputTextField.h */; };
 		361C4E971B421E7B00AB5D98 /* CalculatorInputTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 361C4E851B421E7B00AB5D98 /* CalculatorInputTextField.m */; };
-		361C4E981B421E7B00AB5D98 /* CalculatorInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 361C4E861B421E7B00AB5D98 /* CalculatorInputView.h */; };
+		361C4E981B421E7B00AB5D98 /* CalculatorInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 361C4E861B421E7B00AB5D98 /* CalculatorInputView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		361C4E991B421E7B00AB5D98 /* CalculatorInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 361C4E871B421E7B00AB5D98 /* CalculatorInputView.m */; };
 		361C4E9A1B421E7B00AB5D98 /* MoneyCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 361C4E881B421E7B00AB5D98 /* MoneyCalculator.h */; };
 		361C4E9B1B421E7B00AB5D98 /* MoneyCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 361C4E891B421E7B00AB5D98 /* MoneyCalculator.m */; };
