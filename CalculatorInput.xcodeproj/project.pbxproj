@@ -7,21 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		367628641B420FF80081488E /* CalculatorInputView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367628591B420FF80081488E /* CalculatorInputView.framework */; };
-		3676288C1B4210520081488E /* NSString+CalculatorInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 367628781B4210520081488E /* NSString+CalculatorInputView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3676288D1B4210520081488E /* NSString+CalculatorInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 367628791B4210520081488E /* NSString+CalculatorInputView.m */; };
-		3676288E1B4210520081488E /* UITextField+CalculatorInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3676287A1B4210520081488E /* UITextField+CalculatorInputView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3676288F1B4210520081488E /* UITextField+CalculatorInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3676287B1B4210520081488E /* UITextField+CalculatorInputView.m */; };
-		367628901B4210520081488E /* CalculatorInputTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 3676287C1B4210520081488E /* CalculatorInputTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		367628911B4210520081488E /* CalculatorInputTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3676287D1B4210520081488E /* CalculatorInputTextField.m */; };
-		367628931B4210520081488E /* CalculatorInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3676287F1B4210520081488E /* CalculatorInputView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		367628941B4210520081488E /* CalculatorInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 367628801B4210520081488E /* CalculatorInputView.m */; };
-		367628961B4210520081488E /* MoneyCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 367628821B4210520081488E /* MoneyCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		367628971B4210520081488E /* MoneyCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 367628831B4210520081488E /* MoneyCalculator.m */; };
-		367628AB1B4211200081488E /* VENCalculatorIconBackspace.png in Resources */ = {isa = PBXBuildFile; fileRef = 367628A61B4211200081488E /* VENCalculatorIconBackspace.png */; };
-		367628AC1B4211200081488E /* VENCalculatorIconBackspace@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 367628A71B4211200081488E /* VENCalculatorIconBackspace@2x.png */; };
-		367628AD1B4211200081488E /* VENCalculatorIconBackspace@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 367628A81B4211200081488E /* VENCalculatorIconBackspace@3x.png */; };
-		367628AF1B4211200081488E /* CalculatorInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 367628AA1B4211200081488E /* CalculatorInputView.xib */; };
+		361C4E951B421E7B00AB5D98 /* CalculatorInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 361C4E831B421E7B00AB5D98 /* CalculatorInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		361C4E961B421E7B00AB5D98 /* CalculatorInputTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 361C4E841B421E7B00AB5D98 /* CalculatorInputTextField.h */; };
+		361C4E971B421E7B00AB5D98 /* CalculatorInputTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 361C4E851B421E7B00AB5D98 /* CalculatorInputTextField.m */; };
+		361C4E981B421E7B00AB5D98 /* CalculatorInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 361C4E861B421E7B00AB5D98 /* CalculatorInputView.h */; };
+		361C4E991B421E7B00AB5D98 /* CalculatorInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 361C4E871B421E7B00AB5D98 /* CalculatorInputView.m */; };
+		361C4E9A1B421E7B00AB5D98 /* MoneyCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 361C4E881B421E7B00AB5D98 /* MoneyCalculator.h */; };
+		361C4E9B1B421E7B00AB5D98 /* MoneyCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 361C4E891B421E7B00AB5D98 /* MoneyCalculator.m */; };
+		361C4E9C1B421E7B00AB5D98 /* NSString+CalculatorInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 361C4E8A1B421E7B00AB5D98 /* NSString+CalculatorInputView.h */; };
+		361C4E9D1B421E7B00AB5D98 /* NSString+CalculatorInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 361C4E8B1B421E7B00AB5D98 /* NSString+CalculatorInputView.m */; };
+		361C4E9E1B421E7B00AB5D98 /* CalculatorInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 361C4E8D1B421E7B00AB5D98 /* CalculatorInputView.xib */; };
+		361C4E9F1B421E7B00AB5D98 /* VENCalculatorIconBackspace.png in Resources */ = {isa = PBXBuildFile; fileRef = 361C4E8F1B421E7B00AB5D98 /* VENCalculatorIconBackspace.png */; };
+		361C4EA01B421E7B00AB5D98 /* VENCalculatorIconBackspace@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 361C4E901B421E7B00AB5D98 /* VENCalculatorIconBackspace@2x.png */; };
+		361C4EA11B421E7B00AB5D98 /* VENCalculatorIconBackspace@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 361C4E911B421E7B00AB5D98 /* VENCalculatorIconBackspace@3x.png */; };
+		361C4EA21B421E7B00AB5D98 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 361C4E921B421E7B00AB5D98 /* Info.plist */; };
+		361C4EA31B421E7B00AB5D98 /* UITextField+CalculatorInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 361C4E931B421E7B00AB5D98 /* UITextField+CalculatorInputView.h */; };
+		361C4EA41B421E7B00AB5D98 /* UITextField+CalculatorInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 361C4E941B421E7B00AB5D98 /* UITextField+CalculatorInputView.m */; };
+		367628641B420FF80081488E /* CalculatorInput.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367628591B420FF80081488E /* CalculatorInput.framework */; };
 		367628B21B4211BD0081488E /* MoneyCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367628881B4210520081488E /* MoneyCalculatorTests.swift */; };
 		B6676DD51B42159C00A93204 /* StringExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367628861B4210520081488E /* StringExtensionTests.swift */; };
 /* End PBXBuildFile section */
@@ -37,26 +39,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		367628591B420FF80081488E /* CalculatorInputView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CalculatorInputView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		367628631B420FF80081488E /* CalculatorInputViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorInputViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		367628781B4210520081488E /* NSString+CalculatorInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CalculatorInputView.h"; sourceTree = "<group>"; };
-		367628791B4210520081488E /* NSString+CalculatorInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CalculatorInputView.m"; sourceTree = "<group>"; };
-		3676287A1B4210520081488E /* UITextField+CalculatorInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+CalculatorInputView.h"; sourceTree = "<group>"; };
-		3676287B1B4210520081488E /* UITextField+CalculatorInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+CalculatorInputView.m"; sourceTree = "<group>"; };
-		3676287C1B4210520081488E /* CalculatorInputTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorInputTextField.h; sourceTree = "<group>"; };
-		3676287D1B4210520081488E /* CalculatorInputTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorInputTextField.m; sourceTree = "<group>"; };
-		3676287F1B4210520081488E /* CalculatorInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorInputView.h; sourceTree = "<group>"; };
-		367628801B4210520081488E /* CalculatorInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorInputView.m; sourceTree = "<group>"; };
-		367628821B4210520081488E /* MoneyCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoneyCalculator.h; sourceTree = "<group>"; };
-		367628831B4210520081488E /* MoneyCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneyCalculator.m; sourceTree = "<group>"; };
+		361C4E831B421E7B00AB5D98 /* CalculatorInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorInput.h; sourceTree = "<group>"; };
+		361C4E841B421E7B00AB5D98 /* CalculatorInputTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorInputTextField.h; sourceTree = "<group>"; };
+		361C4E851B421E7B00AB5D98 /* CalculatorInputTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorInputTextField.m; sourceTree = "<group>"; };
+		361C4E861B421E7B00AB5D98 /* CalculatorInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorInputView.h; sourceTree = "<group>"; };
+		361C4E871B421E7B00AB5D98 /* CalculatorInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorInputView.m; sourceTree = "<group>"; };
+		361C4E881B421E7B00AB5D98 /* MoneyCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoneyCalculator.h; sourceTree = "<group>"; };
+		361C4E891B421E7B00AB5D98 /* MoneyCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneyCalculator.m; sourceTree = "<group>"; };
+		361C4E8A1B421E7B00AB5D98 /* NSString+CalculatorInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CalculatorInputView.h"; sourceTree = "<group>"; };
+		361C4E8B1B421E7B00AB5D98 /* NSString+CalculatorInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CalculatorInputView.m"; sourceTree = "<group>"; };
+		361C4E8D1B421E7B00AB5D98 /* CalculatorInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalculatorInputView.xib; sourceTree = "<group>"; };
+		361C4E8F1B421E7B00AB5D98 /* VENCalculatorIconBackspace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VENCalculatorIconBackspace.png; sourceTree = "<group>"; };
+		361C4E901B421E7B00AB5D98 /* VENCalculatorIconBackspace@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "VENCalculatorIconBackspace@2x.png"; sourceTree = "<group>"; };
+		361C4E911B421E7B00AB5D98 /* VENCalculatorIconBackspace@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "VENCalculatorIconBackspace@3x.png"; sourceTree = "<group>"; };
+		361C4E921B421E7B00AB5D98 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		361C4E931B421E7B00AB5D98 /* UITextField+CalculatorInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+CalculatorInputView.h"; sourceTree = "<group>"; };
+		361C4E941B421E7B00AB5D98 /* UITextField+CalculatorInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+CalculatorInputView.m"; sourceTree = "<group>"; };
+		367628591B420FF80081488E /* CalculatorInput.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CalculatorInput.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		367628631B420FF80081488E /* CalculatorInput.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorInput.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		367628851B4210520081488E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		367628861B4210520081488E /* StringExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensionTests.swift; sourceTree = "<group>"; };
 		367628881B4210520081488E /* MoneyCalculatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyCalculatorTests.swift; sourceTree = "<group>"; };
-		367628A61B4211200081488E /* VENCalculatorIconBackspace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VENCalculatorIconBackspace.png; sourceTree = "<group>"; };
-		367628A71B4211200081488E /* VENCalculatorIconBackspace@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "VENCalculatorIconBackspace@2x.png"; sourceTree = "<group>"; };
-		367628A81B4211200081488E /* VENCalculatorIconBackspace@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "VENCalculatorIconBackspace@3x.png"; sourceTree = "<group>"; };
-		367628A91B4211200081488E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		367628AA1B4211200081488E /* CalculatorInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalculatorInputView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,17 +74,56 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				367628641B420FF80081488E /* CalculatorInputView.framework in Frameworks */,
+				367628641B420FF80081488E /* CalculatorInput.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		361C4E821B421E7B00AB5D98 /* CalculatorInput */ = {
+			isa = PBXGroup;
+			children = (
+				361C4E831B421E7B00AB5D98 /* CalculatorInput.h */,
+				361C4E861B421E7B00AB5D98 /* CalculatorInputView.h */,
+				361C4E871B421E7B00AB5D98 /* CalculatorInputView.m */,
+				361C4E841B421E7B00AB5D98 /* CalculatorInputTextField.h */,
+				361C4E851B421E7B00AB5D98 /* CalculatorInputTextField.m */,
+				361C4E881B421E7B00AB5D98 /* MoneyCalculator.h */,
+				361C4E891B421E7B00AB5D98 /* MoneyCalculator.m */,
+				361C4E8A1B421E7B00AB5D98 /* NSString+CalculatorInputView.h */,
+				361C4E8B1B421E7B00AB5D98 /* NSString+CalculatorInputView.m */,
+				361C4E931B421E7B00AB5D98 /* UITextField+CalculatorInputView.h */,
+				361C4E941B421E7B00AB5D98 /* UITextField+CalculatorInputView.m */,
+				361C4E8C1B421E7B00AB5D98 /* Resources */,
+			);
+			path = CalculatorInput;
+			sourceTree = "<group>";
+		};
+		361C4E8C1B421E7B00AB5D98 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				361C4E8D1B421E7B00AB5D98 /* CalculatorInputView.xib */,
+				361C4E8E1B421E7B00AB5D98 /* Images */,
+				361C4E921B421E7B00AB5D98 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		361C4E8E1B421E7B00AB5D98 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				361C4E8F1B421E7B00AB5D98 /* VENCalculatorIconBackspace.png */,
+				361C4E901B421E7B00AB5D98 /* VENCalculatorIconBackspace@2x.png */,
+				361C4E911B421E7B00AB5D98 /* VENCalculatorIconBackspace@3x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		3676284F1B420FF80081488E = {
 			isa = PBXGroup;
 			children = (
-				367628731B4210520081488E /* CalculatorInputView */,
+				361C4E821B421E7B00AB5D98 /* CalculatorInput */,
 				367628841B4210520081488E /* Tests */,
 				3676285A1B420FF80081488E /* Products */,
 			);
@@ -90,20 +132,10 @@
 		3676285A1B420FF80081488E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				367628591B420FF80081488E /* CalculatorInputView.framework */,
-				367628631B420FF80081488E /* CalculatorInputViewTests.xctest */,
+				367628591B420FF80081488E /* CalculatorInput.framework */,
+				367628631B420FF80081488E /* CalculatorInput.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		367628731B4210520081488E /* CalculatorInputView */ = {
-			isa = PBXGroup;
-			children = (
-				367628A21B4210DE0081488E /* Public */,
-				367628A01B4210D20081488E /* Extensions */,
-				367628A41B4211200081488E /* Resources */,
-			);
-			path = CalculatorInputView;
 			sourceTree = "<group>";
 		};
 		367628841B4210520081488E /* Tests */ = {
@@ -116,50 +148,6 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
-		367628A01B4210D20081488E /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				367628781B4210520081488E /* NSString+CalculatorInputView.h */,
-				367628791B4210520081488E /* NSString+CalculatorInputView.m */,
-				3676287A1B4210520081488E /* UITextField+CalculatorInputView.h */,
-				3676287B1B4210520081488E /* UITextField+CalculatorInputView.m */,
-			);
-			name = Extensions;
-			sourceTree = "<group>";
-		};
-		367628A21B4210DE0081488E /* Public */ = {
-			isa = PBXGroup;
-			children = (
-				3676287F1B4210520081488E /* CalculatorInputView.h */,
-				367628801B4210520081488E /* CalculatorInputView.m */,
-				3676287C1B4210520081488E /* CalculatorInputTextField.h */,
-				3676287D1B4210520081488E /* CalculatorInputTextField.m */,
-				367628821B4210520081488E /* MoneyCalculator.h */,
-				367628831B4210520081488E /* MoneyCalculator.m */,
-			);
-			name = Public;
-			sourceTree = "<group>";
-		};
-		367628A41B4211200081488E /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				367628A51B4211200081488E /* Images */,
-				367628A91B4211200081488E /* Info.plist */,
-				367628AA1B4211200081488E /* CalculatorInputView.xib */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		367628A51B4211200081488E /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				367628A61B4211200081488E /* VENCalculatorIconBackspace.png */,
-				367628A71B4211200081488E /* VENCalculatorIconBackspace@2x.png */,
-				367628A81B4211200081488E /* VENCalculatorIconBackspace@3x.png */,
-			);
-			path = Images;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -167,20 +155,21 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3676288E1B4210520081488E /* UITextField+CalculatorInputView.h in Headers */,
-				3676288C1B4210520081488E /* NSString+CalculatorInputView.h in Headers */,
-				367628901B4210520081488E /* CalculatorInputTextField.h in Headers */,
-				367628931B4210520081488E /* CalculatorInputView.h in Headers */,
-				367628961B4210520081488E /* MoneyCalculator.h in Headers */,
+				361C4E9C1B421E7B00AB5D98 /* NSString+CalculatorInputView.h in Headers */,
+				361C4E951B421E7B00AB5D98 /* CalculatorInput.h in Headers */,
+				361C4EA31B421E7B00AB5D98 /* UITextField+CalculatorInputView.h in Headers */,
+				361C4E9A1B421E7B00AB5D98 /* MoneyCalculator.h in Headers */,
+				361C4E961B421E7B00AB5D98 /* CalculatorInputTextField.h in Headers */,
+				361C4E981B421E7B00AB5D98 /* CalculatorInputView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		367628581B420FF80081488E /* CalculatorInputView */ = {
+		367628581B420FF80081488E /* CalculatorInput */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3676286D1B420FF80081488E /* Build configuration list for PBXNativeTarget "CalculatorInputView" */;
+			buildConfigurationList = 3676286D1B420FF80081488E /* Build configuration list for PBXNativeTarget "CalculatorInput" */;
 			buildPhases = (
 				367628541B420FF80081488E /* Sources */,
 				367628551B420FF80081488E /* Frameworks */,
@@ -191,14 +180,14 @@
 			);
 			dependencies = (
 			);
-			name = CalculatorInputView;
+			name = CalculatorInput;
 			productName = CalculatorInputView;
-			productReference = 367628591B420FF80081488E /* CalculatorInputView.framework */;
+			productReference = 367628591B420FF80081488E /* CalculatorInput.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		367628621B420FF80081488E /* CalculatorInputViewTests */ = {
+		367628621B420FF80081488E /* CalculatorInputTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 367628701B420FF80081488E /* Build configuration list for PBXNativeTarget "CalculatorInputViewTests" */;
+			buildConfigurationList = 367628701B420FF80081488E /* Build configuration list for PBXNativeTarget "CalculatorInputTests" */;
 			buildPhases = (
 				3676285F1B420FF80081488E /* Sources */,
 				367628601B420FF80081488E /* Frameworks */,
@@ -209,9 +198,9 @@
 			dependencies = (
 				367628661B420FF80081488E /* PBXTargetDependency */,
 			);
-			name = CalculatorInputViewTests;
+			name = CalculatorInputTests;
 			productName = CalculatorInputViewTests;
-			productReference = 367628631B420FF80081488E /* CalculatorInputViewTests.xctest */;
+			productReference = 367628631B420FF80081488E /* CalculatorInput.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -231,7 +220,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 367628531B420FF80081488E /* Build configuration list for PBXProject "CalculatorInputView" */;
+			buildConfigurationList = 367628531B420FF80081488E /* Build configuration list for PBXProject "CalculatorInput" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -243,8 +232,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				367628581B420FF80081488E /* CalculatorInputView */,
-				367628621B420FF80081488E /* CalculatorInputViewTests */,
+				367628581B420FF80081488E /* CalculatorInput */,
+				367628621B420FF80081488E /* CalculatorInputTests */,
 			);
 		};
 /* End PBXProject section */
@@ -254,10 +243,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				367628AB1B4211200081488E /* VENCalculatorIconBackspace.png in Resources */,
-				367628AF1B4211200081488E /* CalculatorInputView.xib in Resources */,
-				367628AC1B4211200081488E /* VENCalculatorIconBackspace@2x.png in Resources */,
-				367628AD1B4211200081488E /* VENCalculatorIconBackspace@3x.png in Resources */,
+				361C4EA11B421E7B00AB5D98 /* VENCalculatorIconBackspace@3x.png in Resources */,
+				361C4E9F1B421E7B00AB5D98 /* VENCalculatorIconBackspace.png in Resources */,
+				361C4E9E1B421E7B00AB5D98 /* CalculatorInputView.xib in Resources */,
+				361C4EA21B421E7B00AB5D98 /* Info.plist in Resources */,
+				361C4EA01B421E7B00AB5D98 /* VENCalculatorIconBackspace@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,11 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3676288D1B4210520081488E /* NSString+CalculatorInputView.m in Sources */,
-				367628941B4210520081488E /* CalculatorInputView.m in Sources */,
-				3676288F1B4210520081488E /* UITextField+CalculatorInputView.m in Sources */,
-				367628971B4210520081488E /* MoneyCalculator.m in Sources */,
-				367628911B4210520081488E /* CalculatorInputTextField.m in Sources */,
+				361C4E971B421E7B00AB5D98 /* CalculatorInputTextField.m in Sources */,
+				361C4E9D1B421E7B00AB5D98 /* NSString+CalculatorInputView.m in Sources */,
+				361C4E991B421E7B00AB5D98 /* CalculatorInputView.m in Sources */,
+				361C4EA41B421E7B00AB5D98 /* UITextField+CalculatorInputView.m in Sources */,
+				361C4E9B1B421E7B00AB5D98 /* MoneyCalculator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +287,7 @@
 /* Begin PBXTargetDependency section */
 		367628661B420FF80081488E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 367628581B420FF80081488E /* CalculatorInputView */;
+			target = 367628581B420FF80081488E /* CalculatorInput */;
 			targetProxy = 367628651B420FF80081488E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -399,11 +389,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/CalculatorInputView/Resources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/CalculatorInput/Resources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.venmo.CalculatorInputView;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CalculatorInput;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -416,11 +406,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/CalculatorInputView/Resources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/CalculatorInput/Resources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.venmo.CalculatorInputView;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CalculatorInput;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -431,7 +421,7 @@
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.venmo.CalculatorInputViewTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CalculatorInput;
 			};
 			name = Debug;
 		};
@@ -441,14 +431,14 @@
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.venmo.CalculatorInputViewTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CalculatorInput;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		367628531B420FF80081488E /* Build configuration list for PBXProject "CalculatorInputView" */ = {
+		367628531B420FF80081488E /* Build configuration list for PBXProject "CalculatorInput" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3676286B1B420FF80081488E /* Debug */,
@@ -457,7 +447,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3676286D1B420FF80081488E /* Build configuration list for PBXNativeTarget "CalculatorInputView" */ = {
+		3676286D1B420FF80081488E /* Build configuration list for PBXNativeTarget "CalculatorInput" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3676286E1B420FF80081488E /* Debug */,
@@ -466,7 +456,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		367628701B420FF80081488E /* Build configuration list for PBXNativeTarget "CalculatorInputViewTests" */ = {
+		367628701B420FF80081488E /* Build configuration list for PBXNativeTarget "CalculatorInputTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				367628711B420FF80081488E /* Debug */,

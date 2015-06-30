@@ -11,7 +11,7 @@
 @implementation CalculatorInputView
 
 - (id)initWithFrame:(CGRect)frame {
-    self = [[[NSBundle bundleForClass:[self class]]  loadNibNamed:@"CalculatorInputView" owner:self options:nil] firstObject];
+    self = [[[NSBundle bundleForClass:[self class]] loadNibNamed:@"CalculatorInputView" owner:self options:nil] firstObject];
     if (self) {
         // Set default locale
         self.locale = [NSLocale currentLocale];

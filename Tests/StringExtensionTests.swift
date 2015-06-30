@@ -1,6 +1,6 @@
 import XCTest
 import Foundation
-import CalculatorInputView
+import CalculatorInput
 
 class StringExtensionTests: XCTestCase {
     func testWhitespace() {

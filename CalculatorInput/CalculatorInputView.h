@@ -1,11 +1,5 @@
 @import UIKit;
 
-//! Project version number for CalculatorInputView.
-FOUNDATION_EXPORT double CalculatorInputViewVersionNumber;
-
-//! Project version string for CalculatorInputView.
-FOUNDATION_EXPORT const unsigned char CalculatorInputViewVersionString[];
-
 @class CalculatorInputView;
 @protocol CalculatorInputViewDelegate <NSObject>
 
@@ -47,9 +41,3 @@ FOUNDATION_EXPORT const unsigned char CalculatorInputViewVersionString[];
 @property (nonatomic) UIColor *operationButtonBorderColor;
 
 @end
-
-
-#import <CalculatorInputView/CalculatorInputTextField.h>
-#import <CalculatorInputView/MoneyCalculator.h>
-#import <CalculatorInputView/NSString+CalculatorInputView.h>
-#import <CalculatorInputView/UITextField+CalculatorInputView.h>

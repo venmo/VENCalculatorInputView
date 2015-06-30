@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "367628581B420FF80081488E"
-               BuildableName = "CalculatorInputView.framework"
-               BlueprintName = "CalculatorInputView"
-               ReferencedContainer = "container:CalculatorInputView.xcodeproj">
+               BuildableName = "CalculatorInput.framework"
+               BlueprintName = "CalculatorInput"
+               ReferencedContainer = "container:CalculatorInput.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "367628621B420FF80081488E"
-               BuildableName = "CalculatorInputViewTests.xctest"
-               BlueprintName = "CalculatorInputViewTests"
-               ReferencedContainer = "container:CalculatorInputView.xcodeproj">
+               BuildableName = "CalculatorInput.xctest"
+               BlueprintName = "CalculatorInputTests"
+               ReferencedContainer = "container:CalculatorInput.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "367628581B420FF80081488E"
-            BuildableName = "CalculatorInputView.framework"
-            BlueprintName = "CalculatorInputView"
-            ReferencedContainer = "container:CalculatorInputView.xcodeproj">
+            BuildableName = "CalculatorInput.framework"
+            BlueprintName = "CalculatorInput"
+            ReferencedContainer = "container:CalculatorInput.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -65,9 +65,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "367628581B420FF80081488E"
-            BuildableName = "CalculatorInputView.framework"
-            BlueprintName = "CalculatorInputView"
-            ReferencedContainer = "container:CalculatorInputView.xcodeproj">
+            BuildableName = "CalculatorInput.framework"
+            BlueprintName = "CalculatorInput"
+            ReferencedContainer = "container:CalculatorInput.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -83,9 +83,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "367628581B420FF80081488E"
-            BuildableName = "CalculatorInputView.framework"
-            BlueprintName = "CalculatorInputView"
-            ReferencedContainer = "container:CalculatorInputView.xcodeproj">
+            BuildableName = "CalculatorInput.framework"
+            BlueprintName = "CalculatorInput"
+            ReferencedContainer = "container:CalculatorInput.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
