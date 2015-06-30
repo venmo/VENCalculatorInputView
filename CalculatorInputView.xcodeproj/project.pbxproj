@@ -10,7 +10,7 @@
 		367628641B420FF80081488E /* CalculatorInputView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367628591B420FF80081488E /* CalculatorInputView.framework */; };
 		3676288C1B4210520081488E /* NSString+CalculatorInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 367628781B4210520081488E /* NSString+CalculatorInputView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3676288D1B4210520081488E /* NSString+CalculatorInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 367628791B4210520081488E /* NSString+CalculatorInputView.m */; };
-		3676288E1B4210520081488E /* UITextField+CalculatorInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3676287A1B4210520081488E /* UITextField+CalculatorInputView.h */; };
+		3676288E1B4210520081488E /* UITextField+CalculatorInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3676287A1B4210520081488E /* UITextField+CalculatorInputView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3676288F1B4210520081488E /* UITextField+CalculatorInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3676287B1B4210520081488E /* UITextField+CalculatorInputView.m */; };
 		367628901B4210520081488E /* CalculatorInputTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 3676287C1B4210520081488E /* CalculatorInputTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		367628911B4210520081488E /* CalculatorInputTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3676287D1B4210520081488E /* CalculatorInputTextField.m */; };
@@ -51,7 +51,6 @@
 		367628831B4210520081488E /* MoneyCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneyCalculator.m; sourceTree = "<group>"; };
 		367628851B4210520081488E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		367628861B4210520081488E /* StringExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensionTests.swift; sourceTree = "<group>"; };
-		367628871B4210520081488E /* UITextField+CalculatorInputViewSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+CalculatorInputViewSpec.m"; sourceTree = "<group>"; };
 		367628881B4210520081488E /* MoneyCalculatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyCalculatorTests.swift; sourceTree = "<group>"; };
 		367628A61B4211200081488E /* VENCalculatorIconBackspace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VENCalculatorIconBackspace.png; sourceTree = "<group>"; };
 		367628A71B4211200081488E /* VENCalculatorIconBackspace@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "VENCalculatorIconBackspace@2x.png"; sourceTree = "<group>"; };
@@ -101,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				367628A21B4210DE0081488E /* Public */,
-				367628A11B4210D70081488E /* Private */,
 				367628A01B4210D20081488E /* Extensions */,
 				367628A41B4211200081488E /* Resources */,
 			);
@@ -113,7 +111,6 @@
 			children = (
 				367628851B4210520081488E /* Info.plist */,
 				367628861B4210520081488E /* StringExtensionTests.swift */,
-				367628871B4210520081488E /* UITextField+CalculatorInputViewSpec.m */,
 				367628881B4210520081488E /* MoneyCalculatorTests.swift */,
 			);
 			path = Tests;
@@ -128,13 +125,6 @@
 				3676287B1B4210520081488E /* UITextField+CalculatorInputView.m */,
 			);
 			name = Extensions;
-			sourceTree = "<group>";
-		};
-		367628A11B4210D70081488E /* Private */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Private;
 			sourceTree = "<group>";
 		};
 		367628A21B4210DE0081488E /* Public */ = {
