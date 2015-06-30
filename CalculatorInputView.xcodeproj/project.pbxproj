@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		367628641B420FF80081488E /* CalculatorInputView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367628591B420FF80081488E /* CalculatorInputView.framework */; };
-		3676288C1B4210520081488E /* NSString+CalculatorInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 367628781B4210520081488E /* NSString+CalculatorInputView.h */; };
+		3676288C1B4210520081488E /* NSString+CalculatorInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 367628781B4210520081488E /* NSString+CalculatorInputView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3676288D1B4210520081488E /* NSString+CalculatorInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 367628791B4210520081488E /* NSString+CalculatorInputView.m */; };
 		3676288E1B4210520081488E /* UITextField+CalculatorInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3676287A1B4210520081488E /* UITextField+CalculatorInputView.h */; };
 		3676288F1B4210520081488E /* UITextField+CalculatorInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3676287B1B4210520081488E /* UITextField+CalculatorInputView.m */; };
@@ -23,6 +23,7 @@
 		367628AD1B4211200081488E /* VENCalculatorIconBackspace@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 367628A81B4211200081488E /* VENCalculatorIconBackspace@3x.png */; };
 		367628AF1B4211200081488E /* CalculatorInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 367628AA1B4211200081488E /* CalculatorInputView.xib */; };
 		367628B21B4211BD0081488E /* MoneyCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367628881B4210520081488E /* MoneyCalculatorTests.swift */; };
+		B6676DD51B42159C00A93204 /* StringExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367628861B4210520081488E /* StringExtensionTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +50,7 @@
 		367628821B4210520081488E /* MoneyCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoneyCalculator.h; sourceTree = "<group>"; };
 		367628831B4210520081488E /* MoneyCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneyCalculator.m; sourceTree = "<group>"; };
 		367628851B4210520081488E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		367628861B4210520081488E /* NSString+CalculatorInputViewSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CalculatorInputViewSpec.m"; sourceTree = "<group>"; };
+		367628861B4210520081488E /* StringExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensionTests.swift; sourceTree = "<group>"; };
 		367628871B4210520081488E /* UITextField+CalculatorInputViewSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+CalculatorInputViewSpec.m"; sourceTree = "<group>"; };
 		367628881B4210520081488E /* MoneyCalculatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyCalculatorTests.swift; sourceTree = "<group>"; };
 		367628A61B4211200081488E /* VENCalculatorIconBackspace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VENCalculatorIconBackspace.png; sourceTree = "<group>"; };
@@ -111,7 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				367628851B4210520081488E /* Info.plist */,
-				367628861B4210520081488E /* NSString+CalculatorInputViewSpec.m */,
+				367628861B4210520081488E /* StringExtensionTests.swift */,
 				367628871B4210520081488E /* UITextField+CalculatorInputViewSpec.m */,
 				367628881B4210520081488E /* MoneyCalculatorTests.swift */,
 			);
@@ -296,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6676DD51B42159C00A93204 /* StringExtensionTests.swift in Sources */,
 				367628B21B4211BD0081488E /* MoneyCalculatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
