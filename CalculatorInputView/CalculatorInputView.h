@@ -28,7 +28,7 @@ FOUNDATION_EXPORT const unsigned char CalculatorInputViewVersionString[];
  The locale to use for the decimal separator.
  Defaults to locale for current device.
  */
-@property (strong, nonatomic) NSLocale *locale;
+@property (nonatomic) NSLocale *locale;
 
 
 /**-----------------------------------------------------------------------------
@@ -36,17 +36,18 @@ FOUNDATION_EXPORT const unsigned char CalculatorInputViewVersionString[];
  * -----------------------------------------------------------------------------
  */
 
-@property (strong, nonatomic) UIColor *buttonTitleColor;
-@property (strong, nonatomic) UIFont  *buttonTitleFont;
-@property (strong, nonatomic) UIColor *buttonHighlightedColor;
+@property (nonatomic) UIColor *buttonTitleColor;
+@property (nonatomic) UIFont *buttonTitleFont;
+@property (nonatomic) UIColor *buttonHighlightedColor;
 
-@property (strong, nonatomic) UIColor *numberButtonBackgroundColor;
-@property (strong, nonatomic) UIColor *numberButtonBorderColor;
+@property (nonatomic) UIColor *numberButtonBackgroundColor;
+@property (nonatomic) UIColor *numberButtonBorderColor;
 
-@property (strong, nonatomic) UIColor *operationButtonBackgroundColor;
-@property (strong, nonatomic) UIColor *operationButtonBorderColor;
+@property (nonatomic) UIColor *operationButtonBackgroundColor;
+@property (nonatomic) UIColor *operationButtonBorderColor;
 
 @end
 
 
 #import <CalculatorInputView/CalculatorInputTextField.h>
+#import <CalculatorInputView/MoneyCalculator.h>

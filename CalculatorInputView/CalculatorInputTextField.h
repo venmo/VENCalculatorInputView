@@ -8,6 +8,6 @@
  The locale to use for the decimal separator.
  Defaults to locale for current device.
  */
-@property (strong, nonatomic) NSLocale *locale;
+@property (nonatomic) NSLocale *locale;
 
 @end

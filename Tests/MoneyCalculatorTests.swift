@@ -1,22 +1,26 @@
 import XCTest
-@testable import CalculatorInputView
+import Foundation
+import CalculatorInputView
 
 class MoneyCalculatorTests: XCTestCase {
-    let calculator = MoneyCalculator()
-//        moneyCalculator = [MoneyCalculator new];
-//        moneyCalculator.locale = [NSLocale localeWithLocaleIdentifier:@"en_US"];
-//
-//    it(@"should handle addition", ^{
-//        expect([moneyCalculator evaluateExpression:@"1+1"]).to.equal(@"2");
-//        expect([moneyCalculator evaluateExpression:@"1 + 1"]).to.equal(@"2");
-//        expect([moneyCalculator evaluateExpression:@"1 + 1000"]).to.equal(@"1001");
-//    });
-//
-//    it(@"should handle subtraction", ^{
-//        expect([moneyCalculator evaluateExpression:@"1-1"]).to.equal(@"0");
-//        expect([moneyCalculator evaluateExpression:@"10000-1"]).to.equal(@"9999");
-//        expect([moneyCalculator evaluateExpression:@"0 - 100"]).to.equal(@"-100");
-//    });
+    let calculator: MoneyCalculator = {
+        let calc = MoneyCalculator()
+        calc.locale = NSLocale(localeIdentifier: "en_US")
+        return calc
+    }()
+
+
+    func testAddition() {
+        XCTAssertEqual("2", calculator.evaluateExpression("1+1"))
+        XCTAssertEqual("2", calculator.evaluateExpression("1 + 1"))
+        XCTAssertEqual("1001", calculator.evaluateExpression("1 + 1000"))
+    }
+
+    func testSubtraction() {
+        XCTAssertEqual("0", calculator.evaluateExpression("1-1"))
+        XCTAssertEqual("9999", calculator.evaluateExpression("10000-1"))
+        XCTAssertEqual("-100", calculator.evaluateExpression("0 - 100"))
+    }
 //
 //    it(@"should handle multiplication", ^{
 //        expect([moneyCalculator evaluateExpression:@"2*2"]).to.equal(@"4");

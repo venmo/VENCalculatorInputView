@@ -16,7 +16,7 @@
 		367628911B4210520081488E /* CalculatorInputTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3676287D1B4210520081488E /* CalculatorInputTextField.m */; };
 		367628931B4210520081488E /* CalculatorInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3676287F1B4210520081488E /* CalculatorInputView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		367628941B4210520081488E /* CalculatorInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 367628801B4210520081488E /* CalculatorInputView.m */; };
-		367628961B4210520081488E /* MoneyCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 367628821B4210520081488E /* MoneyCalculator.h */; };
+		367628961B4210520081488E /* MoneyCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 367628821B4210520081488E /* MoneyCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		367628971B4210520081488E /* MoneyCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 367628831B4210520081488E /* MoneyCalculator.m */; };
 		367628AB1B4211200081488E /* VENCalculatorIconBackspace.png in Resources */ = {isa = PBXBuildFile; fileRef = 367628A61B4211200081488E /* VENCalculatorIconBackspace.png */; };
 		367628AC1B4211200081488E /* VENCalculatorIconBackspace@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 367628A71B4211200081488E /* VENCalculatorIconBackspace@2x.png */; };
@@ -132,8 +132,6 @@
 		367628A11B4210D70081488E /* Private */ = {
 			isa = PBXGroup;
 			children = (
-				367628821B4210520081488E /* MoneyCalculator.h */,
-				367628831B4210520081488E /* MoneyCalculator.m */,
 			);
 			name = Private;
 			sourceTree = "<group>";
@@ -145,6 +143,8 @@
 				367628801B4210520081488E /* CalculatorInputView.m */,
 				3676287C1B4210520081488E /* CalculatorInputTextField.h */,
 				3676287D1B4210520081488E /* CalculatorInputTextField.m */,
+				367628821B4210520081488E /* MoneyCalculator.h */,
+				367628831B4210520081488E /* MoneyCalculator.m */,
 			);
 			name = Public;
 			sourceTree = "<group>";
