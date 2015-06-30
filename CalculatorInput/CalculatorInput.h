@@ -1,10 +1,10 @@
 @import Foundation;
 
 //! Project version number for CalculatorInputView.
-FOUNDATION_EXPORT double CalculatorInputViewVersionNumber;
+FOUNDATION_EXPORT double CalculatorInputVersionNumber;
 
 //! Project version string for CalculatorInputView.
-FOUNDATION_EXPORT const unsigned char CalculatorInputViewVersionString[];
+FOUNDATION_EXPORT const unsigned char CalculatorInputVersionString[];
 
 #import <CalculatorInputView/CalculatorInputView.h>
 #import <CalculatorInputView/CalculatorInputTextField.h>
