@@ -392,7 +392,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/CalculatorInput/Resources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.venmo.CalculatorInputView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.venmo.CalculatorInput;
 				PRODUCT_NAME = CalculatorInput;
 				SKIP_INSTALL = YES;
 			};
@@ -409,7 +409,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/CalculatorInput/Resources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.venmo.CalculatorInputView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.venmo.CalculatorInput;
 				PRODUCT_NAME = CalculatorInput;
 				SKIP_INSTALL = YES;
 			};
