@@ -59,6 +59,11 @@ class MoneyCalculatorTests: XCTestCase {
         XCTAssertEqual("0", calculator.evaluateExpression("-2÷0")!)
         XCTAssertEqual("0", calculator.evaluateExpression("-0÷0")!)
     }
+
+    func testAllowNegativeNumbers() {
+        XCTAssertEqual("1", calculator.evaluateExpression("2-1")!)
+        XCTAssertEqual("0", calculator.evaluateExpression("0-100", allowNegativeResult: false)!)
+    }
 }
 
 

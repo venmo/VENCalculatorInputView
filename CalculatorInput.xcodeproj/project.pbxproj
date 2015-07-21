@@ -20,12 +20,11 @@
 		361C4E9F1B421E7B00AB5D98 /* VENCalculatorIconBackspace.png in Resources */ = {isa = PBXBuildFile; fileRef = 361C4E8F1B421E7B00AB5D98 /* VENCalculatorIconBackspace.png */; };
 		361C4EA01B421E7B00AB5D98 /* VENCalculatorIconBackspace@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 361C4E901B421E7B00AB5D98 /* VENCalculatorIconBackspace@2x.png */; };
 		361C4EA11B421E7B00AB5D98 /* VENCalculatorIconBackspace@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 361C4E911B421E7B00AB5D98 /* VENCalculatorIconBackspace@3x.png */; };
-		361C4EA21B421E7B00AB5D98 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 361C4E921B421E7B00AB5D98 /* Info.plist */; };
 		361C4EA31B421E7B00AB5D98 /* UITextField+CalculatorInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 361C4E931B421E7B00AB5D98 /* UITextField+CalculatorInputView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		361C4EA41B421E7B00AB5D98 /* UITextField+CalculatorInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 361C4E941B421E7B00AB5D98 /* UITextField+CalculatorInputView.m */; };
-		367628641B420FF80081488E /* CalculatorInput.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367628591B420FF80081488E /* CalculatorInput.framework */; };
 		367628B21B4211BD0081488E /* MoneyCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367628881B4210520081488E /* MoneyCalculatorTests.swift */; };
 		B6676DD51B42159C00A93204 /* StringExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367628861B4210520081488E /* StringExtensionTests.swift */; };
+		B6FA4E011B5EEF9300859131 /* CalculatorInput.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367628591B420FF80081488E /* CalculatorInput.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				367628641B420FF80081488E /* CalculatorInput.framework in Frameworks */,
+				B6FA4E011B5EEF9300859131 /* CalculatorInput.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,7 +245,6 @@
 				361C4EA11B421E7B00AB5D98 /* VENCalculatorIconBackspace@3x.png in Resources */,
 				361C4E9F1B421E7B00AB5D98 /* VENCalculatorIconBackspace.png in Resources */,
 				361C4E9E1B421E7B00AB5D98 /* CalculatorInputView.xib in Resources */,
-				361C4EA21B421E7B00AB5D98 /* Info.plist in Resources */,
 				361C4EA01B421E7B00AB5D98 /* VENCalculatorIconBackspace@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

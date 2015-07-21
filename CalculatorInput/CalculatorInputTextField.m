@@ -27,6 +27,7 @@
     inputView.delegate = self;
     inputView.locale = self.locale;
     self.inputView = inputView;
+    self.prefix = @"";
 
     MoneyCalculator *moneyCalculator = [MoneyCalculator new];
     moneyCalculator.locale = self.locale;
@@ -50,10 +51,11 @@
 
 - (void)venCalculatorTextFieldDidEndEditing {
     NSString *textToEvaluate = [self trimExpressionString:self.text];
-    NSString *evaluatedString = [self.moneyCalculator evaluateExpression:textToEvaluate];
+    NSString *evaluatedString = [self.moneyCalculator evaluateExpression:textToEvaluate allowNegativeResult:NO];
     if (evaluatedString) {
         self.text = evaluatedString;
     }
+    [self addPrefix];
 }
 
 
@@ -85,6 +87,7 @@
             self.text = subString;
         }
     }
+    [self addPrefix];
 }
 
 - (void)calculatorInputViewDidTapBackspace:(CalculatorInputView *)calculatorInputView {
@@ -119,6 +122,12 @@
 
 - (NSString *)decimalSeparator {
     return [self.locale objectForKey:NSLocaleDecimalSeparator];
+}
+
+- (void)addPrefix {
+    if (self.text.length > 0 && ![self.text hasPrefix:self.prefix]) {
+        self.text = [self.prefix stringByAppendingString:self.text];
+    }
 }
 
 @end

@@ -18,6 +18,10 @@
 }
 
 - (NSString *)evaluateExpression:(NSString *)expressionString {
+    return [self evaluateExpression:expressionString allowNegativeResult:YES];
+}
+
+- (NSString *)evaluateExpression:(NSString *)expressionString allowNegativeResult:(BOOL)allowNegativeResult {
     if (!expressionString) {
         return nil;
     }
@@ -39,7 +43,9 @@
     if ([result isKindOfClass:[NSNumber class]]) {
         NSInteger integerExpression = [(NSNumber *)result integerValue];
         CGFloat floatExpression = [(NSNumber *)result floatValue];
-        if (integerExpression == floatExpression) {
+        if (!allowNegativeResult && floatExpression < 0) {
+            return @"0";
+        } else if (integerExpression == floatExpression) {
             return [(NSNumber *)result stringValue];
         } else if (floatExpression >= CGFLOAT_MAX || floatExpression <= CGFLOAT_MIN || isnan(floatExpression)) {
             return @"0";
