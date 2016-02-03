@@ -80,6 +80,9 @@
             self.text = subString;
         }
     } else if ([key isEqualToString:[self decimalSeparator]]) {
+        if (self.text.length == 1) {
+          self.text = [NSString stringWithFormat:@"0%@",[self decimalSeparator]];
+        }
         NSString *secondToLastCharacterString = [self.text substringWithRange:NSMakeRange([self.text length] - 2, 1)];
         if ([secondToLastCharacterString isEqualToString:[self decimalSeparator]]) {
             self.text = subString;
