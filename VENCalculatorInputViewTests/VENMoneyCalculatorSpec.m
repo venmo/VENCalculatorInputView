@@ -70,6 +70,15 @@ describe(@"Evaluate expressions", ^{
         expect([moneyCalculator evaluateExpression:@"-2÷0"]).to.equal(@"0");
         expect([moneyCalculator evaluateExpression:@"-0÷0"]).to.equal(@"0");
     });
+    
+    it(@"should handle long number", ^{
+        expect([moneyCalculator evaluateExpression:@"123456*2"]).to.equal(@"246912");
+        expect([moneyCalculator evaluateExpression:@"1234567*2"]).to.equal(@"2469134");
+        expect([moneyCalculator evaluateExpression:@"12345678*2"]).to.equal(@"24691356");
+        expect([moneyCalculator evaluateExpression:@"123456789*2"]).to.equal(@"246913578");
+        expect([moneyCalculator evaluateExpression:@"1234567890*2"]).to.equal(@"2469135780");
+        expect([moneyCalculator evaluateExpression:@"123456789*100"]).to.equal(@"12345678900");
+    });
 
 });
 
