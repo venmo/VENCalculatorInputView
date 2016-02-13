@@ -36,7 +36,7 @@
     }
     if ([result isKindOfClass:[NSNumber class]]) {
         NSInteger integerExpression = [(NSNumber *)result integerValue];
-        CGFloat floatExpression = [(NSNumber *)result floatValue];
+        CGFloat floatExpression = [(NSNumber *)result doubleValue];
         if (integerExpression == floatExpression) {
             return [(NSNumber *)result stringValue];
         } else if (floatExpression >= CGFLOAT_MAX || floatExpression <= CGFLOAT_MIN || isnan(floatExpression)) {
