@@ -10,8 +10,14 @@
 
 @implementation VENCalculatorInputView
 
-- (id)initWithFrame:(CGRect)frame {
-    self = [[[NSBundle bundleForClass:[self class]]  loadNibNamed:@"VENCalculatorInputView" owner:self options:nil] firstObject];
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)bundleOrNil {
+    if (!nibNameOrNil) {
+        nibNameOrNil = @"VENCalculatorInputView";
+    }
+    if (!bundleOrNil) {
+        [NSBundle bundleForClass:[self class]];
+    }
+    self = [[bundleOrNil  loadNibNamed: nibNameOrNil owner:self options:nil] firstObject];
     if (self) {
         // Set default locale
         self.locale = [NSLocale currentLocale];
