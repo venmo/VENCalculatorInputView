@@ -84,6 +84,17 @@
         if ([secondToLastCharacterString isEqualToString:[self decimalSeparator]]) {
             self.text = subString;
         }
+        if([subString rangeOfString:@"+"].location != NSNotFound ||
+           [subString rangeOfString:@"−"].location != NSNotFound ||
+           [subString rangeOfString:@"×"].location != NSNotFound ||
+           [subString rangeOfString:@"÷"].location != NSNotFound
+           ){
+            if([[subString componentsSeparatedByString:[self decimalSeparator]] count] > 2){
+             self.text = subString;
+            }
+        }else if ([subString rangeOfString:[self decimalSeparator]].location != NSNotFound){
+            self.text = subString;
+        }
     }
 }
 
