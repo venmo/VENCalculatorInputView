@@ -21,4 +21,15 @@
  */
 @property (assign, nonatomic) BOOL allowNegativeNumbers;
 
+
+/**
+ Get the current evaluated string, even if you're still editing.
+ */
+@property (nonatomic, readonly) NSString *currentEvaluatedString;
+
+/**
+ Get the current evaluated string, with proposed changes.
+ */
+-(NSString *)currentEvaluatedStringWithChangedCharactersInRange:(NSRange)range replacementString:(NSString *)replacementString;
+
 @end

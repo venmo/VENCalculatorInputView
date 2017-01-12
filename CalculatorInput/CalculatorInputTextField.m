@@ -46,12 +46,32 @@
     self.moneyCalculator.locale = locale;
 }
 
+-(NSString *)evaluateString:(NSString *)text{
+    NSString *textToEvaluate = [self trimExpressionString:text];
+    NSString *evaluatedString = [self.moneyCalculator evaluateExpression:textToEvaluate allowNegativeResult:NO];
+    return evaluatedString;
+}
+
+- (NSString *)currentEvaluatedString {
+    if(self.text.length == 0){
+        return self.text;
+    }else{
+        return [self evaluateString:self.text];
+    }
+}
+-(NSString *)currentEvaluatedStringWithChangedCharactersInRange:(NSRange)range replacementString:(NSString *)replacementString{
+    NSString *updatedText = [self.text stringByReplacingCharactersInRange:range withString:replacementString];
+    if(updatedText.length == 0){
+        return updatedText;
+    }else{
+        return [self evaluateString:updatedText];
+    }
+}
 
 #pragma mark - UITextField
 
 - (void)venCalculatorTextFieldDidEndEditing {
-    NSString *textToEvaluate = [self trimExpressionString:self.text];
-    NSString *evaluatedString = [self.moneyCalculator evaluateExpression:textToEvaluate allowNegativeResult:NO];
+    NSString *evaluatedString = [self currentEvaluatedString];
     if (evaluatedString) {
         self.text = evaluatedString;
     }
@@ -103,7 +123,7 @@
  @return The trimmed expression string
  */
 - (NSString *)trimExpressionString:(NSString *)expressionString {
-    NSString *txt = self.text;
+    NSString *txt = expressionString;
     while ([txt length] > 0) {
         NSString *lastCharacterString = [txt substringFromIndex:[txt length] - 1];
         if ([lastCharacterString isEqualToString:@"+"] ||
