@@ -54,7 +54,7 @@
 
 - (NSString *)currentEvaluatedString {
     if(self.text.length == 0){
-        return self.text;
+        return @"";
     }else{
         return [self evaluateString:self.text];
     }
@@ -112,6 +112,10 @@
 
 - (void)calculatorInputViewDidTapBackspace:(CalculatorInputView *)calculatorInputView {
     [self deleteBackward];
+
+    if ([self.text isEqualToString:self.prefix]) {
+        [self deleteBackward];
+    }
 }
 
 
