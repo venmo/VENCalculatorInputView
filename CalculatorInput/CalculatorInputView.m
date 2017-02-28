@@ -10,6 +10,8 @@
 
 @implementation CalculatorInputView
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wobjc-designated-initializers"
 - (id)initWithFrame:(CGRect)frame {
     self = [[[NSBundle bundleForClass:[self class]] loadNibNamed:@"CalculatorInputView" owner:self options:nil] firstObject];
     if (self) {
@@ -34,6 +36,7 @@
     }
     return self;
 }
+#pragma clang diagnostic pop
 
 - (void)setLocale:(NSLocale *)locale {
     _locale = locale;
