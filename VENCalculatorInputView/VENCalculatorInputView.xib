@@ -13,10 +13,10 @@
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x27-vp-6DR">
                     <rect key="frame" x="0.0" y="0.0" width="59" height="54"/>
-                    <accessibility key="accessibilityConfiguration" label="Divide"/>
+                    <accessibility key="accessibilityConfiguration" identifier="VENCalculatorInputView.divideButton" label="Divide"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                     <state key="normal" title="÷">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="2lI-PU-xC5"/>
@@ -24,10 +24,10 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUR-3U-wcK">
                     <rect key="frame" x="59" y="0.0" width="87" height="54"/>
-                    <accessibility key="accessibilityConfiguration" label="One"/>
+                    <accessibility key="accessibilityConfiguration" identifier="VENCalculatorInputView.oneButton" label="One"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                     <state key="normal" title="1">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="wju-cY-KVJ"/>
@@ -35,10 +35,10 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JV6-sY-Ogr">
                     <rect key="frame" x="59" y="54" width="87" height="54"/>
-                    <accessibility key="accessibilityConfiguration" label="Four"/>
+                    <accessibility key="accessibilityConfiguration" identifier="VENCalculatorInputView.fourButton" label="Four"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                     <state key="normal" title="4">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="vqD-gt-D5D"/>
@@ -46,10 +46,10 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYZ-Lf-J5j">
                     <rect key="frame" x="59" y="108" width="87" height="54"/>
-                    <accessibility key="accessibilityConfiguration" label="Seven"/>
+                    <accessibility key="accessibilityConfiguration" identifier="VENCalculatorInputView.sevenButton" label="Seven"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                     <state key="normal" title="7">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="YfT-3z-pVt"/>
@@ -57,10 +57,10 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYd-gM-or0">
                     <rect key="frame" x="59" y="162" width="87" height="54"/>
-                    <accessibility key="accessibilityConfiguration" label="Decimal point"/>
+                    <accessibility key="accessibilityConfiguration" identifier="VENCalculatorInputView.decimalButton" label="Decimal point"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                     <state key="normal" title=".">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="QWQ-qv-HHB"/>
@@ -68,10 +68,10 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wf7-xV-pka">
                     <rect key="frame" x="146" y="0.0" width="87" height="54"/>
-                    <accessibility key="accessibilityConfiguration" label="Two"/>
+                    <accessibility key="accessibilityConfiguration" identifier="VENCalculatorInputView.twoButton" label="Two"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                     <state key="normal" title="2">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="veB-xt-rnr"/>
@@ -79,10 +79,10 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZC-sL-jHO">
                     <rect key="frame" x="146" y="54" width="87" height="54"/>
-                    <accessibility key="accessibilityConfiguration" label="Five"/>
+                    <accessibility key="accessibilityConfiguration" identifier="VENCalculatorInputView.fiveButton" label="Five"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                     <state key="normal" title="5">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="EyB-jX-8Ci"/>
@@ -90,10 +90,10 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9h-WF-taO">
                     <rect key="frame" x="146" y="108" width="87" height="54"/>
-                    <accessibility key="accessibilityConfiguration" label="Eight"/>
+                    <accessibility key="accessibilityConfiguration" identifier="VENCalculatorInputView.eightButton" label="Eight"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                     <state key="normal" title="8">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="W7z-SU-2Bb"/>
@@ -101,10 +101,10 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ty-om-JCT">
                     <rect key="frame" x="146" y="162" width="87" height="54"/>
-                    <accessibility key="accessibilityConfiguration" label="Zero"/>
+                    <accessibility key="accessibilityConfiguration" identifier="VENCalculatorInputView.zeroButton" label="Zero"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                     <state key="normal" title="0">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="jh0-Bu-kbn"/>
@@ -112,10 +112,10 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9B-4z-Rq4">
                     <rect key="frame" x="233" y="0.0" width="87" height="54"/>
-                    <accessibility key="accessibilityConfiguration" label="Three"/>
+                    <accessibility key="accessibilityConfiguration" identifier="VENCalculatorInputView.threeButton" label="Three"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                     <state key="normal" title="3">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="hHt-S1-qaK"/>
@@ -123,10 +123,10 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMP-0C-Anz">
                     <rect key="frame" x="233" y="54" width="87" height="54"/>
-                    <accessibility key="accessibilityConfiguration" label="Six"/>
+                    <accessibility key="accessibilityConfiguration" identifier="VENCalculatorInputView.sixButton" label="Six"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                     <state key="normal" title="6">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="2hq-ih-7qk"/>
@@ -134,10 +134,10 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vjs-Bi-wiF">
                     <rect key="frame" x="233" y="162" width="87" height="54"/>
-                    <accessibility key="accessibilityConfiguration" label="Backspace"/>
+                    <accessibility key="accessibilityConfiguration" identifier="VENCalculatorInputView.backspaceButton" label="Backspace"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                     <state key="normal" image="VENCalculatorIconBackspace.png">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="userDidTapBackspace:" destination="1" eventType="touchUpInside" id="Kyu-1V-QyI"/>
@@ -145,10 +145,10 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nS1-xf-Wd3">
                     <rect key="frame" x="0.0" y="54" width="59" height="54"/>
-                    <accessibility key="accessibilityConfiguration" label="Multiply"/>
+                    <accessibility key="accessibilityConfiguration" identifier="VENCalculatorInputView.multiplyButton" label="Multiply"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                     <state key="normal" title="×">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="9jH-Sx-3A5"/>
@@ -156,10 +156,10 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVG-Mb-OFf">
                     <rect key="frame" x="0.0" y="108" width="59" height="54"/>
-                    <accessibility key="accessibilityConfiguration" label="Subtract"/>
+                    <accessibility key="accessibilityConfiguration" identifier="VENCalculatorInputView.subtractButton" label="Subtract"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                     <state key="normal" title="−">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="Ri3-Vn-C6b"/>
@@ -167,10 +167,10 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WE3-xD-kgf">
                     <rect key="frame" x="0.0" y="162" width="59" height="54"/>
-                    <accessibility key="accessibilityConfiguration" label="Add"/>
+                    <accessibility key="accessibilityConfiguration" identifier="VENCalculatorInputView.addButton" label="Add"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                     <state key="normal" title="+">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="8B7-FJ-aLh"/>
@@ -178,17 +178,17 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJe-DO-RoA">
                     <rect key="frame" x="233" y="108" width="87" height="54"/>
-                    <accessibility key="accessibilityConfiguration" label="Nine"/>
+                    <accessibility key="accessibilityConfiguration" identifier="VENCalculatorInputView.nineButton" label="Nine"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                     <state key="normal" title="9">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="nBV-ta-bQu"/>
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="K9B-4z-Rq4" firstAttribute="top" secondItem="1" secondAttribute="top" id="0aG-0V-nbU"/>
                 <constraint firstItem="x27-vp-6DR" firstAttribute="top" secondItem="1" secondAttribute="top" id="0hI-dQ-Yua"/>
