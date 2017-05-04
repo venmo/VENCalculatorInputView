@@ -10,39 +10,39 @@ class MoneyCalculatorTests: XCTestCase {
     }()
 
     func testAddition() {
-        XCTAssertEqual("2", calculator.evaluateExpression("1+1")!)
-        XCTAssertEqual("2", calculator.evaluateExpression("1 + 1")!)
-        XCTAssertEqual("1001", calculator.evaluateExpression("1 + 1000")!)
+        XCTAssertEqual("2.00", calculator.evaluateExpression("1+1")!)
+        XCTAssertEqual("2.00", calculator.evaluateExpression("1 + 1")!)
+        XCTAssertEqual("1,001.00", calculator.evaluateExpression("1 + 1000")!)
     }
 
     func testSubtraction() {
-        XCTAssertEqual("0", calculator.evaluateExpression("1-1")!)
-        XCTAssertEqual("9999", calculator.evaluateExpression("10000-1")!)
-        XCTAssertEqual("-100", calculator.evaluateExpression("0 - 100")!)
+        XCTAssertEqual("0.00", calculator.evaluateExpression("1-1")!)
+        XCTAssertEqual("9,999.00", calculator.evaluateExpression("10000-1")!)
+        XCTAssertEqual("-100.00", calculator.evaluateExpression("0 - 100")!)
 
         // Longer dash
-        XCTAssertEqual("0", calculator.evaluateExpression("1−1")!)
-        XCTAssertEqual("9999", calculator.evaluateExpression("10000−1")!)
-        XCTAssertEqual("-100", calculator.evaluateExpression("0 − 100")!)
+        XCTAssertEqual("0.00", calculator.evaluateExpression("1−1")!)
+        XCTAssertEqual("9,999.00", calculator.evaluateExpression("10000−1")!)
+        XCTAssertEqual("-100.00", calculator.evaluateExpression("0 − 100")!)
     }
 
     func testMultiplication() {
-        XCTAssertEqual("4", calculator.evaluateExpression("2*2")!)
-        XCTAssertEqual("120", calculator.evaluateExpression("100*1.2")!)
-        XCTAssertEqual("800", calculator.evaluateExpression("1000 * 0.8")!)
+        XCTAssertEqual("4.00", calculator.evaluateExpression("2*2")!)
+        XCTAssertEqual("120.00", calculator.evaluateExpression("100*1.2")!)
+        XCTAssertEqual("800.00", calculator.evaluateExpression("1000 * 0.8")!)
 
-        XCTAssertEqual("4", calculator.evaluateExpression("2×2")!)
-        XCTAssertEqual("120", calculator.evaluateExpression("100×1.2")!)
-        XCTAssertEqual("800", calculator.evaluateExpression("1000 × 0.8")!)
+        XCTAssertEqual("4.00", calculator.evaluateExpression("2×2")!)
+        XCTAssertEqual("120.00", calculator.evaluateExpression("100×1.2")!)
+        XCTAssertEqual("800.00", calculator.evaluateExpression("1000 × 0.8")!)
     }
 
     func testDivision() {
-        XCTAssertEqual("1", calculator.evaluateExpression("2/2")!)
-        XCTAssertEqual("25", calculator.evaluateExpression("100/4")!)
+        XCTAssertEqual("1.00", calculator.evaluateExpression("2/2")!)
+        XCTAssertEqual("25.00", calculator.evaluateExpression("100/4")!)
         XCTAssertEqual("0.50", calculator.evaluateExpression("1/2")!)
 
-        XCTAssertEqual("1", calculator.evaluateExpression("2÷2")!)
-        XCTAssertEqual("25", calculator.evaluateExpression("100÷4")!)
+        XCTAssertEqual("1.00", calculator.evaluateExpression("2÷2")!)
+        XCTAssertEqual("25.00", calculator.evaluateExpression("100÷4")!)
         XCTAssertEqual("0.50", calculator.evaluateExpression("1÷2")!)
     }
 
@@ -54,15 +54,15 @@ class MoneyCalculatorTests: XCTestCase {
     }
 
     func testDivisionByZero() {
-        XCTAssertEqual("0", calculator.evaluateExpression("2÷0")!)
-        XCTAssertEqual("0", calculator.evaluateExpression("0÷0")!)
-        XCTAssertEqual("0", calculator.evaluateExpression("-2÷0")!)
-        XCTAssertEqual("0", calculator.evaluateExpression("-0÷0")!)
+        XCTAssertEqual("0.00", calculator.evaluateExpression("2÷0")!)
+        XCTAssertEqual("0.00", calculator.evaluateExpression("0÷0")!)
+        XCTAssertEqual("0.00", calculator.evaluateExpression("-2÷0")!)
+        XCTAssertEqual("0.00", calculator.evaluateExpression("-0÷0")!)
     }
 
     func testAllowNegativeNumbers() {
-        XCTAssertEqual("1", calculator.evaluateExpression("2-1")!)
-        XCTAssertEqual("0", calculator.evaluateExpression("0-100", allowNegativeResult: false)!)
+        XCTAssertEqual("1.00", calculator.evaluateExpression("2-1")!)
+        XCTAssertEqual("0.00", calculator.evaluateExpression("0-100", allowNegativeResult: false)!)
     }
 
     func testDecimalRounding() {
@@ -80,8 +80,8 @@ class MoneyCalculatorFrenchTests: XCTestCase {
     }()
 
     func testMultiplication() {
-        XCTAssertEqual("120", calculator.evaluateExpression("100*1,2")!)
-        XCTAssertEqual("800", calculator.evaluateExpression("1000 * 0,8")!)
+        XCTAssertEqual("120,00", calculator.evaluateExpression("100*1,2")!)
+        XCTAssertEqual("800,00", calculator.evaluateExpression("1000 * 0,8")!)
     }
 
     func testDivision() {
@@ -98,8 +98,8 @@ class MoneyCalculatorGermanTests: XCTestCase {
     }()
 
     func testMultiplication() {
-        XCTAssertEqual("120", calculator.evaluateExpression("100*1,2")!)
-        XCTAssertEqual("800", calculator.evaluateExpression("1000 * 0,8")!)
+        XCTAssertEqual("120,00", calculator.evaluateExpression("100*1,2")!)
+        XCTAssertEqual("800,00", calculator.evaluateExpression("1000 * 0,8")!)
     }
 
     func testDivision() {
@@ -116,10 +116,11 @@ class MoneyCalculatorGermanTests: XCTestCase {
 class MoneyCalculatorVietnameTests: XCTestCase {
     func testVietnamese() {
         let calculator = MoneyCalculator()
+        calculator.locale = Locale(identifier: "vi_VN")
         XCTAssertEqual("2", calculator.evaluateExpression("1,90")!)
         XCTAssertEqual("1", calculator.evaluateExpression("1,30")!)
         XCTAssertEqual("1", calculator.evaluateExpression("0,90")!)
-        calculator.locale = Locale(identifier: "vi_VN")
+        XCTAssertEqual("1.000", calculator.evaluateExpression("100+900")!)
     }
 
     func testUS() {
