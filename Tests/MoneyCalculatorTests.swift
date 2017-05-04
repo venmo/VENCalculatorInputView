@@ -64,6 +64,11 @@ class MoneyCalculatorTests: XCTestCase {
         XCTAssertEqual("1", calculator.evaluateExpression("2-1")!)
         XCTAssertEqual("0", calculator.evaluateExpression("0-100", allowNegativeResult: false)!)
     }
+
+    func testDecimalRounding() {
+        XCTAssertEqual("1.44", calculator.evaluateExpression("1.445"))
+        XCTAssertEqual("2.44", calculator.evaluateExpression("2.445"))
+    }
 }
 
 
