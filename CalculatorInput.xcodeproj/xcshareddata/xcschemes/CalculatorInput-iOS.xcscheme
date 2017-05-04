@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "367628621B420FF80081488E"
-               BuildableName = "CalculatorInput.xctest"
+               BuildableName = "CalculatorInputTests.xctest"
                BlueprintName = "CalculatorInputTests"
                ReferencedContainer = "container:CalculatorInput.xcodeproj">
             </BuildableReference>

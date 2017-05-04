@@ -55,7 +55,7 @@
 		361C4E931B421E7B00AB5D98 /* UITextField+CalculatorInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+CalculatorInputView.h"; sourceTree = "<group>"; };
 		361C4E941B421E7B00AB5D98 /* UITextField+CalculatorInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+CalculatorInputView.m"; sourceTree = "<group>"; };
 		367628591B420FF80081488E /* CalculatorInput.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CalculatorInput.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		367628631B420FF80081488E /* CalculatorInput.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorInput.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		367628631B420FF80081488E /* CalculatorInputTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorInputTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		367628851B4210520081488E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		367628861B4210520081488E /* StringExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensionTests.swift; sourceTree = "<group>"; };
 		367628881B4210520081488E /* MoneyCalculatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyCalculatorTests.swift; sourceTree = "<group>"; };
@@ -132,7 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				367628591B420FF80081488E /* CalculatorInput.framework */,
-				367628631B420FF80081488E /* CalculatorInput.xctest */,
+				367628631B420FF80081488E /* CalculatorInputTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -199,7 +199,7 @@
 			);
 			name = CalculatorInputTests;
 			productName = CalculatorInputViewTests;
-			productReference = 367628631B420FF80081488E /* CalculatorInput.xctest */;
+			productReference = 367628631B420FF80081488E /* CalculatorInputTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -430,7 +430,7 @@
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.venmo.CalculatorInputViewTests;
-				PRODUCT_NAME = CalculatorInput;
+				PRODUCT_NAME = CalculatorInputTests;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -442,7 +442,7 @@
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.venmo.CalculatorInputViewTests;
-				PRODUCT_NAME = CalculatorInput;
+				PRODUCT_NAME = CalculatorInputTests;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

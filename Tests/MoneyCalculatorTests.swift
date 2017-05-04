@@ -5,7 +5,7 @@ import CalculatorInput
 class MoneyCalculatorTests: XCTestCase {
     let calculator: MoneyCalculator = {
         let calc = MoneyCalculator()
-        calc.locale = NSLocale(localeIdentifier: "en_US")
+        calc.locale = Locale(identifier: "en_US")
         return calc
     }()
 
@@ -70,7 +70,7 @@ class MoneyCalculatorTests: XCTestCase {
 class MoneyCalculatorFrenchTests: XCTestCase {
     let calculator: MoneyCalculator = {
         let calc = MoneyCalculator()
-        calc.locale = NSLocale(localeIdentifier: "fr_FR")
+        calc.locale = Locale(identifier: "fr_FR")
         return calc
     }()
 
@@ -88,7 +88,7 @@ class MoneyCalculatorFrenchTests: XCTestCase {
 class MoneyCalculatorGermanTests: XCTestCase {
     let calculator: MoneyCalculator = {
         let calc = MoneyCalculator()
-        calc.locale = NSLocale(localeIdentifier: "de_DE")
+        calc.locale = Locale(identifier: "de_DE")
         return calc
     }()
 
@@ -111,15 +111,15 @@ class MoneyCalculatorGermanTests: XCTestCase {
 class MoneyCalculatorVietnameTests: XCTestCase {
     func testVietnamese() {
         let calculator = MoneyCalculator()
-        calculator.locale = NSLocale(localeIdentifier: "vi_VN")
         XCTAssertEqual("2", calculator.evaluateExpression("1,90")!)
         XCTAssertEqual("1", calculator.evaluateExpression("1,30")!)
         XCTAssertEqual("1", calculator.evaluateExpression("0,90")!)
+        calculator.locale = Locale(identifier: "vi_VN")
     }
 
     func testUS() {
         let calculator = MoneyCalculator()
-        calculator.locale = NSLocale(localeIdentifier: "en_US")
+        calculator.locale = Locale(identifier: "en_US")
         XCTAssertEqual("1.90", calculator.evaluateExpression("1.90")!)
         XCTAssertEqual("1.30", calculator.evaluateExpression("1.30")!)
         XCTAssertEqual("0.90", calculator.evaluateExpression("0.90")!)
