@@ -17,6 +17,7 @@
 }
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
     [self setUpInit];
 }
 
