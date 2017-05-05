@@ -40,17 +40,21 @@
             [exception raise];
         }
     }
-    if (![result isKindOfClass:[NSNumber class]]) {
-        return nil;
-    }
-    
-    NSNumber *number = (NSNumber *)result;
-    NSDecimalNumber *decimalNumber = [[NSDecimalNumber alloc] initWithDecimal:number.decimalValue];
-    
-    if ([self decimalNumberIsValid:decimalNumber allowNegativeValues:allowNegativeResult]) {
-        return [self formattedDecimalNumber:decimalNumber];
+    if ([result isKindOfClass:[NSNumber class]]) {
+        NSInteger integerExpression = [(NSNumber *)result integerValue];
+        CGFloat floatExpression = [(NSNumber *)result floatValue];
+        if (!allowNegativeResult && floatExpression < 0) {
+            return @"0";
+        } else if (integerExpression == floatExpression) {
+            return [(NSNumber *)result stringValue];
+        } else if (floatExpression >= CGFLOAT_MAX || floatExpression <= CGFLOAT_MIN || isnan(floatExpression)) {
+            return @"0";
+        } else {
+            NSString *moneyFormattedNumber = [[self numberFormatter] stringFromNumber:@(floatExpression)];
+            return [moneyFormattedNumber stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+        }
     } else {
-        return [self formattedDecimalNumber:[NSDecimalNumber zero]];
+        return nil;
     }
 }
 
@@ -84,28 +88,6 @@
     NSString *multiplyReplaced = [divideReplaced stringByReplacingOccurrencesOfString:@"×" withString:@"*"];
 
     return [multiplyReplaced stringByReplacingOccurrencesOfString:[self decimalSeparator] withString:@"."];
-}
-
-- (NSString *)formattedDecimalNumber:(NSDecimalNumber *)decimalNumber {
-    NSCharacterSet *set = [NSCharacterSet whitespaceAndNewlineCharacterSet];
-    return [[[self numberFormatter] stringFromNumber:decimalNumber] stringByTrimmingCharactersInSet:set];
-}
-
-- (BOOL)decimalNumberIsValid:(NSDecimalNumber *)decimalNumber allowNegativeValues:(BOOL)allowNegativeValues {
-    if ([decimalNumber isEqual:[NSDecimalNumber notANumber]]) {
-        return NO;
-    }
-
-    if ([decimalNumber compare:[NSDecimalNumber zero]] == NSOrderedAscending && !allowNegativeValues) {
-        return NO;
-    }
-
-    if ([decimalNumber compare:[NSDecimalNumber minimumDecimalNumber]] == NSOrderedAscending
-        || [decimalNumber compare:[NSDecimalNumber maximumDecimalNumber]] == NSOrderedDescending) {
-        return NO;
-    }
-
-    return YES;
 }
 
 - (NSCharacterSet *)illegalCharacters {
