@@ -9,6 +9,7 @@
 
 @end
 
+IB_DESIGNABLE
 @interface CalculatorInputView : UIView <UIInputViewAudioFeedback>
 
 @property (weak, nonatomic) id<CalculatorInputViewDelegate> delegate;

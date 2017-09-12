@@ -16,11 +16,13 @@
         // Set default locale
         self.locale = [NSLocale currentLocale];
 
+        [self setBackgroundColor:[UIColor colorWithRed:210/255.0f green:213/255.0f blue:219/255.0f alpha:1]];
+
         // Set customizable properties
         [self setNumberButtonBackgroundColor:[UIColor colorWithWhite:0.98828 alpha:1]];
-        [self setNumberButtonBorderColor:[UIColor colorWithRed:193/255.0f green:195/255.0f blue:199/255.0f alpha:1]];
-        [self setOperationButtonBackgroundColor:[UIColor colorWithRed:193/255.0f green:196/255.0f blue:200/255.0f alpha:1]];
-        [self setOperationButtonBorderColor:[UIColor colorWithRed:172/255.0f green:174/255.0f blue:177/255.0f alpha:1]];
+        [self setNumberButtonBorderColor:UIColor.clearColor];
+        [self setOperationButtonBackgroundColor:[UIColor colorWithRed:171/255.0f green:179/255.0f blue:190/255.0f alpha:1]];
+        [self setOperationButtonBorderColor:UIColor.clearColor];
         [self setButtonHighlightedColor:[UIColor grayColor]];
         [self setButtonTitleColor:[UIColor darkTextColor]];
 
@@ -43,6 +45,22 @@
 
 - (void)setupButton:(UIButton *)button {
     button.layer.borderWidth = 0.25f;
+    button.layer.cornerRadius = 5;
+    button.layer.shadowColor = [UIColor colorWithRed:136/255.0f green:139/255.0f blue:142/255.0f alpha:1].CGColor;
+    button.layer.shadowRadius = 0;
+    button.layer.shadowOpacity = 1.0f;
+    button.layer.shadowOffset = CGSizeMake(0, 1.0f);
+
+    [button addTarget:self action:@selector(buttonTouchDown:) forControlEvents:UIControlEventTouchDown];
+    [button addTarget:self action:@selector(buttonTouchUp:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)buttonTouchDown:(UIButton *)button {
+    button.layer.masksToBounds = YES;
+}
+
+- (void)buttonTouchUp:(UIButton *)button {
+    button.layer.masksToBounds = NO;
 }
 
 - (IBAction)userDidTapBackspace:(UIButton *)sender {
