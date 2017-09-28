@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -233,9 +234,9 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstAttribute="bottomMargin" secondItem="m5y-aX-zzD" secondAttribute="bottom" constant="6" id="AQf-4d-FdM"/>
+                <constraint firstItem="m5y-aX-zzD" firstAttribute="top" secondItem="1" secondAttribute="topMargin" constant="6" id="G4G-eG-swl"/>
                 <constraint firstItem="m5y-aX-zzD" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="6" id="JIq-vf-SGQ"/>
-                <constraint firstAttribute="bottom" secondItem="m5y-aX-zzD" secondAttribute="bottom" constant="6" id="WK5-Tz-IZK"/>
-                <constraint firstItem="m5y-aX-zzD" firstAttribute="top" secondItem="1" secondAttribute="top" constant="6" id="iVW-Zg-B1b"/>
                 <constraint firstAttribute="trailing" secondItem="m5y-aX-zzD" secondAttribute="trailing" constant="6" id="k4y-tu-XDx"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -264,9 +265,4 @@
     <resources>
         <image name="VENCalculatorIconBackspace.png" width="22" height="16"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
-    </simulatedMetricsContainer>
 </document>
