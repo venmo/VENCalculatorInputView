@@ -63,6 +63,7 @@
         _numberFormatter = [NSNumberFormatter new];
         [_numberFormatter setLocale:self.locale];
         [_numberFormatter setNumberStyle:NSNumberFormatterCurrencyStyle];
+        [_numberFormatter setMaximumFractionDigits:2];
         [_numberFormatter setCurrencySymbol:@""];
     }
     return _numberFormatter;
