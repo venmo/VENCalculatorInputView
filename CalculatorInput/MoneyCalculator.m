@@ -63,6 +63,11 @@
     self.numberFormatter.locale = locale;
 }
 
+- (void)setCurrencyCode:(NSString *)currencyCode {
+    _currencyCode = currencyCode;
+    self.numberFormatter.currencyCode = currencyCode;
+}
+
 
 #pragma mark - Private
 

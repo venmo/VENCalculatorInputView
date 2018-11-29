@@ -3,6 +3,7 @@
 @interface MoneyCalculator : NSObject
 
 @property (nonatomic, nonnull) NSLocale *locale;
+@property (nonatomic, nullable) NSString *currencyCode;
 
 /**
  * Evaluates a mathematical expression containing +, −, ×, and ÷.
