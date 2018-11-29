@@ -1,5 +1,5 @@
 PODS:
-  - CalculatorInput (2.0.0)
+  - CalculatorInput (2.0.1)
 
 DEPENDENCIES:
   - CalculatorInput (from `./../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "./../"
 
 SPEC CHECKSUMS:
-  CalculatorInput: 14c769b211ffd00f738480dfcfdfde0f799fb918
+  CalculatorInput: 802c2e12e63fcea77a72ad4c2abad08bae474fd4
 
 PODFILE CHECKSUM: f16bda7794a2c94054ff4ef57d6a0de35b188443
 
