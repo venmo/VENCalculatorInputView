@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'CalculatorInput'
-  s.version      = '2.0.0'
+  s.version      = '2.0.1'
   s.summary      = 'Venmo-style calculator keyboard for iOS'
   s.description  = 'A pretty calculator keyboard for iOS. Use it as a standalone keyboard or use our CalculatorInputTextField.'
 

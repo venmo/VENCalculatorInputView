@@ -1,14 +1,16 @@
 PODS:
-  - VENCalculatorInputView (1.5.4)
+  - CalculatorInput (2.0.0)
 
 DEPENDENCIES:
-  - VENCalculatorInputView (from `./../`)
+  - CalculatorInput (from `./../`)
 
 EXTERNAL SOURCES:
-  VENCalculatorInputView:
-    :path: ./../
+  CalculatorInput:
+    :path: "./../"
 
 SPEC CHECKSUMS:
-  VENCalculatorInputView: 988fa681ba6bb9b1f067842493bb622e80cc8da2
+  CalculatorInput: 14c769b211ffd00f738480dfcfdfde0f799fb918
 
-COCOAPODS: 0.37.2
+PODFILE CHECKSUM: f16bda7794a2c94054ff4ef57d6a0de35b188443
+
+COCOAPODS: 1.6.0.beta.2

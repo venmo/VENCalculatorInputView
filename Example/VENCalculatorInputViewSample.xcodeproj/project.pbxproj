@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2CBB59849A1C47F0BF1325E8 /* libPods-VENCalculatorInputViewSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E99D08981FEF415990879498 /* libPods-VENCalculatorInputViewSample.a */; };
+		8B01496E015C73046CE9CED1 /* libPods-VENCalculatorInputViewSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF65C3E8C78F8131D7D74352 /* libPods-VENCalculatorInputViewSample.a */; };
 		B64A634B18AAB0990091A465 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64A634A18AAB0990091A465 /* Foundation.framework */; };
 		B64A634D18AAB0990091A465 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64A634C18AAB0990091A465 /* CoreGraphics.framework */; };
 		B64A634F18AAB0990091A465 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64A634E18AAB0990091A465 /* UIKit.framework */; };
@@ -35,7 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		220CB6253C40657765F007F6 /* Pods-VENCalculatorInputViewSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VENCalculatorInputViewSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VENCalculatorInputViewSample/Pods-VENCalculatorInputViewSample.debug.xcconfig"; sourceTree = "<group>"; };
+		81FF87D1AFA041B2252EF035 /* Pods-VENCalculatorInputViewSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VENCalculatorInputViewSample.debug.xcconfig"; path = "Target Support Files/Pods-VENCalculatorInputViewSample/Pods-VENCalculatorInputViewSample.debug.xcconfig"; sourceTree = "<group>"; };
+		AE5DD8AB9871EB08B64E36E6 /* Pods-VENCalculatorInputViewSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VENCalculatorInputViewSample.release.xcconfig"; path = "Target Support Files/Pods-VENCalculatorInputViewSample/Pods-VENCalculatorInputViewSample.release.xcconfig"; sourceTree = "<group>"; };
 		B64A634718AAB0990091A465 /* VENCalculatorInputViewSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VENCalculatorInputViewSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B64A634A18AAB0990091A465 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B64A634C18AAB0990091A465 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,8 +56,7 @@
 		B64A637118AAB0990091A465 /* VENCalculatorInputViewSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VENCalculatorInputViewSampleTests-Info.plist"; sourceTree = "<group>"; };
 		B64A637318AAB09A0091A465 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B64A637518AAB09A0091A465 /* VENCalculatorInputViewSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VENCalculatorInputViewSampleTests.m; sourceTree = "<group>"; };
-		C38F1368BB419BF5E1EC2072 /* Pods-VENCalculatorInputViewSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VENCalculatorInputViewSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-VENCalculatorInputViewSample/Pods-VENCalculatorInputViewSample.release.xcconfig"; sourceTree = "<group>"; };
-		E99D08981FEF415990879498 /* libPods-VENCalculatorInputViewSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VENCalculatorInputViewSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF65C3E8C78F8131D7D74352 /* libPods-VENCalculatorInputViewSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VENCalculatorInputViewSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +67,7 @@
 				B64A634D18AAB0990091A465 /* CoreGraphics.framework in Frameworks */,
 				B64A634F18AAB0990091A465 /* UIKit.framework in Frameworks */,
 				B64A634B18AAB0990091A465 /* Foundation.framework in Frameworks */,
-				2CBB59849A1C47F0BF1325E8 /* libPods-VENCalculatorInputViewSample.a in Frameworks */,
+				8B01496E015C73046CE9CED1 /* libPods-VENCalculatorInputViewSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,13 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		79FD9B5A446B4FD6EEB36C5D /* Pods */ = {
+		33CAFBB61A59055FA690D532 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				220CB6253C40657765F007F6 /* Pods-VENCalculatorInputViewSample.debug.xcconfig */,
-				C38F1368BB419BF5E1EC2072 /* Pods-VENCalculatorInputViewSample.release.xcconfig */,
+				81FF87D1AFA041B2252EF035 /* Pods-VENCalculatorInputViewSample.debug.xcconfig */,
+				AE5DD8AB9871EB08B64E36E6 /* Pods-VENCalculatorInputViewSample.release.xcconfig */,
 			);
 			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		B64A633E18AAB0990091A465 = {
@@ -100,7 +101,7 @@
 				B64A636F18AAB0990091A465 /* VENCalculatorInputViewSampleTests */,
 				B64A634918AAB0990091A465 /* Frameworks */,
 				B64A634818AAB0990091A465 /* Products */,
-				79FD9B5A446B4FD6EEB36C5D /* Pods */,
+				33CAFBB61A59055FA690D532 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,7 +121,7 @@
 				B64A634C18AAB0990091A465 /* CoreGraphics.framework */,
 				B64A634E18AAB0990091A465 /* UIKit.framework */,
 				B64A636918AAB0990091A465 /* XCTest.framework */,
-				E99D08981FEF415990879498 /* libPods-VENCalculatorInputViewSample.a */,
+				EF65C3E8C78F8131D7D74352 /* libPods-VENCalculatorInputViewSample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -175,11 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B64A637918AAB09A0091A465 /* Build configuration list for PBXNativeTarget "VENCalculatorInputViewSample" */;
 			buildPhases = (
-				2D2AA7AEAC7741FCB800E285 /* Check Pods Manifest.lock */,
+				4DB5531B2BE1A80C20CC168A /* [CP] Check Pods Manifest.lock */,
 				B64A634318AAB0990091A465 /* Sources */,
 				B64A634418AAB0990091A465 /* Frameworks */,
 				B64A634518AAB0990091A465 /* Resources */,
-				09EF00F391EA4C63878E7489 /* Copy Pods Resources */,
+				522A82B5E74F3D813827137F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,34 +265,54 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		09EF00F391EA4C63878E7489 /* Copy Pods Resources */ = {
+		4DB5531B2BE1A80C20CC168A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VENCalculatorInputViewSample-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VENCalculatorInputViewSample/Pods-VENCalculatorInputViewSample-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2D2AA7AEAC7741FCB800E285 /* Check Pods Manifest.lock */ = {
+		522A82B5E74F3D813827137F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VENCalculatorInputViewSample/Pods-VENCalculatorInputViewSample-resources.sh",
+				"${PODS_ROOT}/../../CalculatorInput/Resources/CalculatorInputView.xib",
+				"${PODS_ROOT}/../../CalculatorInput/Resources/Images/VENCalculatorIconBackspace.png",
+				"${PODS_ROOT}/../../CalculatorInput/Resources/Images/VENCalculatorIconBackspace@2x.png",
+				"${PODS_ROOT}/../../CalculatorInput/Resources/Images/VENCalculatorIconBackspace@3x.png",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CalculatorInputView.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VENCalculatorIconBackspace.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VENCalculatorIconBackspace@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VENCalculatorIconBackspace@3x.png",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VENCalculatorInputViewSample/Pods-VENCalculatorInputViewSample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -427,7 +448,7 @@
 		};
 		B64A637A18AAB09A0091A465 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 220CB6253C40657765F007F6 /* Pods-VENCalculatorInputViewSample.debug.xcconfig */;
+			baseConfigurationReference = 81FF87D1AFA041B2252EF035 /* Pods-VENCalculatorInputViewSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -441,7 +462,7 @@
 		};
 		B64A637B18AAB09A0091A465 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C38F1368BB419BF5E1EC2072 /* Pods-VENCalculatorInputViewSample.release.xcconfig */;
+			baseConfigurationReference = AE5DD8AB9871EB08B64E36E6 /* Pods-VENCalculatorInputViewSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
