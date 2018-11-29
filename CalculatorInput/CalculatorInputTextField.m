@@ -47,6 +47,12 @@
     self.moneyCalculator.locale = locale;
 }
 
+- (void)setCurrencyCode:(NSString *)currencyCode {
+
+    _currencyCode = currencyCode;
+    self.moneyCalculator.currencyCode = currencyCode;
+}
+
 -(NSString *)evaluateString:(NSString *)text{
     NSString *textToEvaluate = [self trimExpressionString:text];
     NSString *evaluatedString = [self.moneyCalculator evaluateExpression:textToEvaluate allowNegativeResult:NO];

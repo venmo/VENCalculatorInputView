@@ -13,6 +13,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) NSLocale *locale;
 
 /**
+ The currency code to use.
+ Defaults to the Locale currency
+ */
+@property (nonatomic, nullable) NSString *currencyCode;
+
+/**
  Prefix, such as '$' to always show in text field when non-empty
  */
 @property (copy, nonatomic) NSString *prefix;
