@@ -14,7 +14,7 @@ Installation
 The easiest way to get started is to use [CocoaPods](http://cocoapods.org/). Just add the following line to your Podfile:
 
 ```ruby
-pod 'VENCalculatorInputView', '~> 1.5'
+pod 'VENCalculatorInputView', '~> 3.0'
 ```
 
 Sample Usage
