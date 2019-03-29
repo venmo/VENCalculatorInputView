@@ -1,7 +1,8 @@
 language: objective-c
+osx_image: xcode10.2
 before_install:
-- gem i cocoapods --no-ri --no-rdoc
-- brew uninstall xctool; brew install xctool --HEAD;
-xcode_workspace: VENCalculatorInputView.xcworkspace
-xcode_scheme: VENCalculatorInputView
+  - gem i cocoapods --no-document
+  - brew uninstall xctool; brew install xctool --HEAD;
+xcode_project: CalculatorInput.xcodeproj
+xcode_scheme: CalculatorInput-iOS
 xcode_sdk: iphonesimulator
