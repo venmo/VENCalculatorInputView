@@ -170,9 +170,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3676286D1B420FF80081488E /* Build configuration list for PBXNativeTarget "CalculatorInput" */;
 			buildPhases = (
+				367628561B420FF80081488E /* Headers */,
 				367628541B420FF80081488E /* Sources */,
 				367628551B420FF80081488E /* Frameworks */,
-				367628561B420FF80081488E /* Headers */,
 				367628571B420FF80081488E /* Resources */,
 			);
 			buildRules = (
